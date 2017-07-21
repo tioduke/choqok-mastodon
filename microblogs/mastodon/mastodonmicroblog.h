@@ -87,7 +87,8 @@ protected Q_SLOTS:
 
 protected:
     static const QString homeTimeline;
-    static const QString publicTimeline;
+    static const QString notificationsTimeline;
+//    static const QString publicTimeline;
 
     QString authorizationMetaData(MastodonAccount *account) const;
 

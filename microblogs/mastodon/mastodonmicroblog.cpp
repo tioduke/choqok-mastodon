@@ -57,7 +57,8 @@ K_PLUGIN_FACTORY_WITH_JSON(MastodonMicroBlogFactory, "choqok_mastodon.json",
                            registerPlugin < MastodonMicroBlog > ();)
 
 const QString MastodonMicroBlog::homeTimeline(QLatin1String("/api/v1/timelines/home"));
-const QString MastodonMicroBlog::publicTimeline(QLatin1String("/api/v1/timelines/public"));
+const QString MastodonMicroBlog::notificationsTimeline(QLatin1String("/api/v1/notifications"));
+//const QString MastodonMicroBlog::publicTimeline(QLatin1String("/api/v1/timelines/public"));
 
 MastodonMicroBlog::MastodonMicroBlog(QObject *parent, const QVariantList &args):
     MicroBlog(QStringLiteral("Mastodon") , parent), d(new Private)
@@ -66,7 +67,7 @@ MastodonMicroBlog::MastodonMicroBlog(QObject *parent, const QVariantList &args):
     setServiceName(QLatin1String("Mastodon"));
     setServiceHomepageUrl(QLatin1String("https://mastodon.social"));
     QStringList timelineNames;
-    timelineNames << QLatin1String("Home") << QLatin1String("Local") << QLatin1String("Federated");
+    timelineNames << QLatin1String("Home") << QLatin1String("Notifications"); //<< QLatin1String("Local") << QLatin1String("Federated");
     setTimelineNames(timelineNames);
     setTimelinesInfo();
 }
@@ -371,18 +372,25 @@ void MastodonMicroBlog::setTimelinesInfo()
     m_timelinesPaths[QLatin1String("Home")] = homeTimeline;
 
     t = new Choqok::TimelineInfo;
-    t->name = i18nc("Timeline Name", "Local");
-    t->description = i18nc("Timeline description", "Local timeline");
-    t->icon = QLatin1String("folder-public");
-    m_timelinesInfos[QLatin1String("Local")] = t;
-    m_timelinesPaths[QLatin1String("Local")] = publicTimeline;
-
-    t = new Choqok::TimelineInfo;
-    t->name = i18nc("Timeline Name", "Federated");
-    t->description = i18nc("Timeline description", "Federated timelime");
-    t->icon = QLatin1String("folder-remote");
-    m_timelinesInfos[QLatin1String("Federated")] = t;
-    m_timelinesPaths[QLatin1String("Federated")] = publicTimeline;
+    t->name = i18nc("Timeline Name", "Notifications");
+    t->description = i18nc("Timeline description", "Notifications");
+    t->icon = QLatin1String("edit-undo");
+    m_timelinesInfos[QLatin1String("Notifications")] = t;
+    m_timelinesPaths[QLatin1String("Notifications")] = notificationsTimeline;
+//
+//    t = new Choqok::TimelineInfo;
+//    t->name = i18nc("Timeline Name", "Local");
+//    t->description = i18nc("Timeline description", "Local timeline");
+//    t->icon = QLatin1String("folder-public");
+//    m_timelinesInfos[QLatin1String("Local")] = t;
+//    m_timelinesPaths[QLatin1String("Local")] = publicTimeline;
+//
+//    t = new Choqok::TimelineInfo;
+//    t->name = i18nc("Timeline Name", "Federated");
+//    t->description = i18nc("Timeline description", "Federated timelime");
+//    t->icon = QLatin1String("folder-remote");
+//    m_timelinesInfos[QLatin1String("Federated")] = t;
+//    m_timelinesPaths[QLatin1String("Federated")] = publicTimeline;
 }
 
 void MastodonMicroBlog::removePost(Choqok::Account *theAccount, Choqok::Post *post)
@@ -545,9 +553,15 @@ void MastodonMicroBlog::updateTimelines(Choqok::Account *theAccount)
             url.setPath(url.path() + QLatin1Char('/') + m_timelinesPaths[timeline]);
 
             QUrlQuery query;
-            if (timeline.compare(QLatin1String("Local")) == 0) {
-                query.addQueryItem(QLatin1String("local"), QLatin1String("true"));
+            if (timeline.compare(QLatin1String("Notifications")) == 0) {
+                const QString lastActivityId(lastTimelineId(theAccount, timeline));
+                if (!lastActivityId.isEmpty()) {
+                    query.addQueryItem(QLatin1String("since_id"), lastActivityId);
+                }
             }
+//            else if (timeline.compare(QLatin1String("Local")) == 0) {
+//                query.addQueryItem(QLatin1String("local"), QLatin1String("true"));
+//            }
             url.setQuery(query);
 
             KIO::StoredTransferJob *job = KIO::storedGet(url, KIO::Reload, KIO::HideProgressInfo);
