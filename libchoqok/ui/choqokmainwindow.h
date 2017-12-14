@@ -65,8 +65,8 @@ Q_SIGNALS:
     void currentMicroBlogWidgetChanged(Choqok::UI::MicroBlogWidget *widget);
 
 protected:
-    virtual void hideEvent(QHideEvent *event) override;
-    virtual QSize sizeHint() const override;
+    void hideEvent(QHideEvent *event);
+    QSize sizeHint() const;
 
     QTabWidget *mainWidget;
     QTimer *timelineTimer;

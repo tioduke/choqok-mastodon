@@ -187,17 +187,17 @@ protected Q_SLOTS:
     void avatarFetched(const QString &remoteUrl, const QPixmap &pixmap);
 
     void slotImageFetched(const QString &remoteUrl, const QPixmap &pixmap);
-    virtual void mousePressEvent(QMouseEvent *ev) override;
+    virtual void mousePressEvent(QMouseEvent *ev);
 
 protected:
     virtual void setupUi();
-    virtual void closeEvent(QCloseEvent *event) override;
+    virtual void closeEvent(QCloseEvent *event);
     virtual void setupAvatar();
     virtual void fetchImage();
-    virtual void wheelEvent(QWheelEvent *) override;
-    virtual void resizeEvent(QResizeEvent *event) override;
-    virtual void enterEvent(QEvent *event) override;
-    virtual void leaveEvent(QEvent *event) override;
+    virtual void wheelEvent(QWheelEvent *);
+    virtual void resizeEvent(QResizeEvent *event);
+    virtual void enterEvent(QEvent *event);
+    virtual void leaveEvent(QEvent *event);
     virtual QString prepareStatus(const QString &text);
     QLatin1String getDirection(QString text);
     virtual QString generateSign();
@@ -215,8 +215,8 @@ protected:
     QPushButton *addButton(const QString &objName, const QString &toolTip, const QIcon &icon);
     QMap<QString, QPushButton *> &buttons();
 
-    QString getUsernameHyperlink(const Choqok::User &user) const;
-
+    QString getUsernameHyperlink(const QString& username, const QString& userDesc);
+    
 protected:
     TextBrowser *_mainWidget;
     static const QString baseStyle;

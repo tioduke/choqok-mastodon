@@ -36,7 +36,7 @@ public:
     TightUrl(QObject *parent, const QVariantList &args);
     ~TightUrl();
 
-    virtual QString shorten(const QString &url) override;
+    virtual QString shorten(const QString &url);
 };
 
 #endif

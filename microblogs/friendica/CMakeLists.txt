@@ -18,7 +18,6 @@ kcoreaddons_desktop_to_json(choqok_friendica choqok_friendica.desktop)
 target_link_libraries(choqok_friendica
 PUBLIC
     Qt5::Core
-    Qt5::NetworkAuth
     Qt5::Widgets
     KF5::CoreAddons
     KF5::I18n
@@ -26,6 +25,7 @@ PUBLIC
     KF5::KIOWidgets
     choqok
     gnusocialapihelper
+    ${QTOAUTH_LIBRARY}
 )
 
 install(TARGETS choqok_friendica DESTINATION ${PLUGIN_INSTALL_DIR})

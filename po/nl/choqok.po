@@ -1,0 +1,3095 @@
+# translation of choqok.po to Dutch
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2008, 2009.
+# Bram Schoenmakers <bramschoenmakers@kde.nl>, 2009.
+# Tom Albers, 2009.
+# Kristof Bal <kristof.bal@gmail.com>, 2009.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2009, 2010.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2010.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2010, 2011, 2012.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2011, 2013, 2014, 2015, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: choqok\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2016-08-28 06:51+0000\n"
+"PO-Revision-Date: 2016-02-07 13:38+0100\n"
+"Last-Translator: Freek de Kruijf <freek@opensuse.org>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Tom Albers,Bram Schoenmakers,Freek de Kruijf"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "toma@kde.org,bramschoenmakers@kde.nl,freekdekruijf@kde.nl"
+
+#. i18n: ectx: Menu (file)
+#: choqok/choqokui.rc:4
+msgid "File"
+msgstr "Bestand"
+
+#. i18n: ectx: Menu (tools)
+#: choqok/choqokui.rc:11 plugins/filter/filterui.rc:4
+#: plugins/nowlistening/nowlisteningui.rc:4
+#: plugins/quickfilter/quickfilterui.rc:4
+#: plugins/searchaction/searchactionui.rc:4
+msgid "Tools"
+msgstr "Hulpmiddelen"
+
+#. i18n: ectx: Menu (settings)
+#. i18n: ectx: attribute (title), widget (QWidget, settingsTab)
+#: choqok/choqokui.rc:15 plugins/uploaders/flickr/flickrprefs.ui:82
+msgid "Settings"
+msgstr "Instellingen"
+
+#. i18n: ectx: Menu (help)
+#: choqok/choqokui.rc:20
+msgid "Help"
+msgstr "Help"
+
+#: choqok/config/accounts/accountswidget.cpp:87
+#, kde-format
+msgid "Cannot load the %1 plugin. Please check your installation."
+msgstr "Kan de %1 plugin niet laden, controleer uw installatie."
+
+#: choqok/config/accounts/accountswidget.cpp:102
+msgid "Cannot find the desired account."
+msgstr "Kan het gewenste account niet vinden."
+
+#: choqok/config/accounts/accountswidget.cpp:122
+msgid "Are you sure you want to remove the selected account?"
+msgstr "Echt het geselecteerde account verwijderen?"
+
+#: choqok/config/accounts/accountswidget.cpp:128
+msgid "Cannot remove the account."
+msgstr "Kan het account niet verwijderen."
+
+#: choqok/config/accounts/accountswidget.cpp:239
+msgid "Select Micro-Blogging Service"
+msgstr "MicroBlogging-service selecteren"
+
+#: choqok/config/accounts/accountswidget.cpp:296
+msgid ""
+"You need to restart Choqok for the accounts priority changes to take effect."
+msgstr ""
+"Het is nodig om Choqok opnieuw te starten om de prioriteitswijzigingen van "
+"accounts effectief te maken."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AccountsWidgetBase)
+#: choqok/config/accounts/accountswidget_base.ui:14
+#: choqok/config/accounts/addaccountdialog.cpp:44
+msgid "Add New Account"
+msgstr "Een nieuw account toevoegen"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnAdd)
+#: choqok/config/accounts/accountswidget_base.ui:40
+msgid "Add a new account"
+msgstr "Een nieuw account toevoegen"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnAdd)
+#: choqok/config/accounts/accountswidget_base.ui:43
+msgid "&Add..."
+msgstr "&Toevoegen..."
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnEdit)
+#: choqok/config/accounts/accountswidget_base.ui:58
+msgid "Modify the selected account"
+msgstr "Bestaand account bewerken"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnEdit)
+#: choqok/config/accounts/accountswidget_base.ui:61
+msgid "&Modify..."
+msgstr "&Wijzigen..."
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnRemove)
+#: choqok/config/accounts/accountswidget_base.ui:76
+msgid "Remove the selected account"
+msgstr "Geselecteerd account verwijderen"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnRemove)
+#: choqok/config/accounts/accountswidget_base.ui:79
+msgid "&Remove"
+msgstr "Ve&rwijderen"
+
+#. i18n: ectx: property (text), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:167
+msgid "Alias"
+msgstr "Alias"
+
+#. i18n: ectx: property (text), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:172
+msgid "Micro-Blog"
+msgstr "Micro-Blog"
+
+#. i18n: ectx: property (text), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:177
+msgid "Read Only"
+msgstr "Alleen-lezen"
+
+#. i18n: ectx: property (toolTip), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:180
+msgid "Read Only account"
+msgstr "Alleen-lezen-account"
+
+#. i18n: ectx: property (text), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:185
+msgid "Include in Quick Post"
+msgstr "In snelbericht voegen"
+
+#. i18n: ectx: property (toolTip), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:188
+msgid "Show in Quick Post"
+msgstr "In snelbericht tonen"
+
+#: choqok/config/accounts/addaccountdialog.cpp:69
+msgid "The Account registration failed."
+msgstr "De accountregistratie is mislukt."
+
+#: choqok/config/accounts/addaccountdialog.cpp:76
+#: choqok/config/accounts/editaccountdialog.cpp:73
+msgid ""
+"Cannot validate your input information.\n"
+"Please check the fields' data.\n"
+"Maybe a required field is empty?"
+msgstr ""
+"Kan uw invoerinformatie niet valideren.\n"
+"Gaarne de gegevens in de velden controleren.\n"
+"Misschien is een vereist veld leeg?"
+
+#: choqok/config/accounts/editaccountdialog.cpp:46
+msgid "Edit Account"
+msgstr "Account bewerken"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_isEmoticonsEnabled)
+#: choqok/config/appearance/appearanceconfig_base.ui:17
+msgid "Enable emoticons"
+msgstr "Emoticons inschakelen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useReverseOrder)
+#: choqok/config/appearance/appearanceconfig_base.ui:24
+msgid "Show posts in reverse order (Needs restart to take effect)"
+msgstr ""
+"Geposte berichten in omgekeerde volgorde tonen (heeft een herstart nodig om "
+"effectief te worden)"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_showRetweetsInChoqokWay)
+#: choqok/config/appearance/appearanceconfig_base.ui:31
+msgid ""
+"You will see post with retweeter name as author, plus Retweeted from "
+"original author note."
+msgstr ""
+"U zult het geposte bericht zien met de naam retweeter als auteur, plus de "
+"notitie Hertweeted van de oorspronkelijke auteur."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showRetweetsInChoqokWay)
+#: choqok/config/appearance/appearanceconfig_base.ui:34
+msgid "Show Retweeted/Repeated posts in Choqok way"
+msgstr "Hertweeted/herhaalde geposte berichten tonen op de Choqok manier"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_isCustomUi)
+#: choqok/config/appearance/appearanceconfig_base.ui:44
+msgid "Use custom appearance"
+msgstr "Eigen uiterlijk gebruiken"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: choqok/config/appearance/appearanceconfig_base.ui:76
+msgid "Post font:"
+msgstr "Lettertype voor posten:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: choqok/config/appearance/appearanceconfig_base.ui:95
+msgid "Post Color Preferences"
+msgstr "Kleurvoorkeuren van geposte berichten"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: choqok/config/appearance/appearanceconfig_base.ui:103
+msgid "Background"
+msgstr "Achtergrond"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: choqok/config/appearance/appearanceconfig_base.ui:113
+msgid "Default color:"
+msgstr "Standaard kleur:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: choqok/config/appearance/appearanceconfig_base.ui:150
+msgid "Unread post color:"
+msgstr "Kleur voor ongelezen gepost bericht:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: choqok/config/appearance/appearanceconfig_base.ui:194
+msgid "Foreground"
+msgstr "Voorgrond"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: choqok/config/appearance/appearanceconfig_base.ui:204
+msgid "Own post color:"
+msgstr "Kleur voor eigen gepost bericht:"
+
+#: choqok/config/behavior/behaviorconfig.cpp:73
+msgid "&General"
+msgstr "Al&gemeen"
+
+#: choqok/config/behavior/behaviorconfig.cpp:80
+msgid "&Notifications"
+msgstr "&Meldingen"
+
+#: choqok/config/behavior/behaviorconfig.cpp:91
+msgid "URL &Shortening"
+msgstr "URL-in&korting"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: choqok/config/behavior/behaviorconfig_general.ui:17
+msgid "General Options"
+msgstr "Algemene opties"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showSplashScreen)
+#: choqok/config/behavior/behaviorconfig_general.ui:23
+msgid "Show splash-screen on startup"
+msgstr "Opstartscherm tonen bij het opstarten"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_markAllAsReadOnExit)
+#: choqok/config/behavior/behaviorconfig_general.ui:33
+msgid "Mark all posts as read on exit"
+msgstr "Alle geposte berichten als gelezen markeren bij verlaten"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_enableSpellChecker)
+#: choqok/config/behavior/behaviorconfig_general.ui:43
+msgid "Enable automatic spellchecking in the message editor"
+msgstr "Automatische spellingcontrole activeren in de berichtbewerker"
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_enableSysTray)
+#: choqok/config/behavior/behaviorconfig_general.ui:50
+msgid "Enable System &Tray"
+msgstr "Systeem&vak inschakelen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_markAllAsReadOnHideToSystray)
+#: choqok/config/behavior/behaviorconfig_general.ui:62
+msgid "Mark all unread posts as read, when hiding to system tray"
+msgstr ""
+"Markeer alle ongelezen geposte berichten als gelezen bij verbergen in het "
+"systeemvak"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useCustomBrowser)
+#: choqok/config/behavior/behaviorconfig_general.ui:83
+msgid "Use &custom web browser:"
+msgstr "&Eigen webbrowser gebruiken:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useCustomRT)
+#: choqok/config/behavior/behaviorconfig_general.ui:101
+msgid "Use custom prefix for ReSend [ReTweet]:"
+msgstr "Aangepast voorvoegsel gebruiken ReSend [Hertweet]:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: choqok/config/behavior/behaviorconfig_general.ui:120
+msgid "Timelines Options"
+msgstr "Opties voor tijdlijnen"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: choqok/config/behavior/behaviorconfig_general.ui:130
+msgid "&Update interval:"
+msgstr "&Bijwerkinterval:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: choqok/config/behavior/behaviorconfig_general.ui:149
+msgid "&Number of posts to show in timelines:"
+msgstr "Aa&ntal te tonen geposte berichten in tijdlijnen:"
+
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_updateInterval)
+#: choqok/config/behavior/behaviorconfig_general.ui:166
+msgid "Disabled"
+msgstr "Uitgeschakeld"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_updateInterval)
+#: choqok/config/behavior/behaviorconfig_general.ui:169
+msgid " minutes"
+msgstr " minuten"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showAllNotifiesInOne)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:17
+msgid "&Show all new posts in one notification"
+msgstr "Alle nieuwe geposte berichten in één melding &tonen"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:26
+msgid "&Notification duration:"
+msgstr "&Duur van kennisgeving:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_notifyInterval)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:39
+msgid " seconds"
+msgstr " seconden"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:57
+msgid "New post notifications"
+msgstr "Meldingen van nieuwe geposte berichten"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_knotify)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:63
+msgid "Show notification using KNotify"
+msgstr "Meldingen tonen met KNotify"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_libindicate)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:70
+msgid "Show notification using Message Indicator"
+msgstr "Meldingen tonen met Message Indicator"
+
+#: choqok/config/behavior/behaviorconfig_shorten.cpp:86
+msgctxt "No shortener service"
+msgid "None"
+msgstr "Geen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_shortenOnPaste)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:17
+msgid "Shorten &URLs on paste"
+msgstr "&URL-adressen bij plakken verkorten"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_removeHttp)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:24
+msgid "Remove \"http://\" from shortened URLs"
+msgstr "Verwijder \"http://\" van ingekorte URL's"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:33
+msgid "Shortening ser&vice:"
+msgstr "Ser&vice voor verkorten:"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, configPlugin)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:56
+#: libchoqok/ui/uploadmedia_base.ui:71
+msgid "Configure plugin"
+msgstr "Plugin instellen"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, aboutPlugin)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:72
+#: libchoqok/ui/uploadmedia_base.ui:90
+msgid "About plugin"
+msgstr "Info over plugin"
+
+#: choqok/config/plugins/choqokpluginconfig.cpp:54
+msgid "General Plugins"
+msgstr "Algemene plugins"
+
+#: choqok/main.cpp:34
+msgid "KDE Micro-Blogging Client."
+msgstr "KDE Micro-Blogging Client."
+
+#: choqok/main.cpp:46
+msgid ""
+"(C) 2008-2010 Mehrdad Momeny\n"
+"(C) 2011-2015 Choqok Developers"
+msgstr ""
+"(C) 2008-2010 Mehrdad Momeny\n"
+"(C) 2011-2015 Ontwikkelaars van Choqok"
+
+#: choqok/main.cpp:51
+msgid "Mehrdad Momeny"
+msgstr "Mehrdad Momeny"
+
+#: choqok/main.cpp:51
+msgid "Author, Developer and Maintainer"
+msgstr "Auteur, ontwikkelaar en onderhouder"
+
+#: choqok/main.cpp:53
+msgid "Andrey Esin"
+msgstr "Andrey Esin"
+
+#: choqok/main.cpp:53 choqok/main.cpp:55 choqok/main.cpp:62
+msgid "Developer"
+msgstr "Ontwikkelaar"
+
+#: choqok/main.cpp:55
+msgid "Andrea Scarpino"
+msgstr "Andrea Scarpino"
+
+#: choqok/main.cpp:58
+msgid "Roozbeh Shafiee"
+msgstr "Roozbeh Shafiee"
+
+#: choqok/main.cpp:58 choqok/main.cpp:59
+msgid "Artworks"
+msgstr "Illustraties"
+
+#: choqok/main.cpp:59
+msgid "Shahrzad Shojaei"
+msgstr "Shahrzad Shojaei"
+
+#: choqok/main.cpp:60
+msgid "Daniel Schaal"
+msgstr "Daniel Schaal"
+
+#: choqok/main.cpp:60 choqok/main.cpp:67
+msgid "UI improvements"
+msgstr "Verbeteringen gebruikersinterface"
+
+#: choqok/main.cpp:61
+msgid "Stephen Henderson"
+msgstr "Stephen Henderson"
+
+#: choqok/main.cpp:61
+msgid "Search API implementation"
+msgstr "Implementatie van zoeken"
+
+#: choqok/main.cpp:62
+msgid "Tejas Dinkar"
+msgstr "Tejas Dinkar"
+
+#: choqok/main.cpp:64
+msgid "Emanuele Bigiarini"
+msgstr "Emanuele Bigiarini"
+
+#: choqok/main.cpp:64
+msgid "D-Bus and Konqueror plugin"
+msgstr "Plug-in voor D-Bus en konqueror"
+
+#: choqok/main.cpp:65
+msgid "Alex Infantes"
+msgstr "Alex Infantes"
+
+#: choqok/main.cpp:65
+msgid "Improvements on Image preview plugin"
+msgstr "Verbeteringen aan de plug-in voor afbeeldingvoorbeeld"
+
+#: choqok/main.cpp:67
+msgid "Bardia Daneshvar"
+msgstr "Bardia Daneshvar"
+
+#: choqok/main.cpp:68
+msgid "Atanas Gospodinov"
+msgstr "Atanas Gospodinov"
+
+#: choqok/main.cpp:68
+msgid "Twitter photo upload"
+msgstr "Foto uploaden voor Twitter"
+
+#: choqok/main.cpp:69
+msgid "Daniel Kreuter"
+msgstr "Daniel Kreuter"
+
+#: choqok/main.cpp:69
+msgid "Twitter microblog developer"
+msgstr "Ontwikkelaar van Twitter-microblog"
+
+#: choqok/main.cpp:70
+msgid "Lim Yuen Hoe"
+msgstr "Lim Yuen Hoe"
+
+#: choqok/main.cpp:70
+msgid "Bug fixes and improvements"
+msgstr "Bugreparaties en verbeteringen"
+
+#: choqok/main.cpp:71
+msgid "Ahmed I. Khalil"
+msgstr "Ahmed I. Khalil"
+
+#: choqok/main.cpp:71
+msgid "Various improvements"
+msgstr "Verschillende verbeteringen"
+
+#: choqok/mainwindow.cpp:85 choqok/mainwindow.cpp:509
+#: choqok/mainwindow.cpp:585 choqok/mainwindow.cpp:641
+#: choqok/systrayicon.cpp:113 choqok/systrayicon.cpp:119
+#: plugins/betternotify/dummynotification.cpp:48
+#: plugins/konqueror/konqchoqok.cpp:45
+msgid "Choqok"
+msgstr "Choqok"
+
+#: choqok/mainwindow.cpp:209
+msgid "Update Timelines"
+msgstr "Tijdlijnen bijwerken"
+
+#: choqok/mainwindow.cpp:215 libchoqok/ui/quickpost.cpp:118
+msgid "Quick Post"
+msgstr "Snelbericht"
+
+#: choqok/mainwindow.cpp:221
+msgid "Mark All As Read"
+msgstr "Alles als gelezen markeren"
+
+#: choqok/mainwindow.cpp:230
+msgctxt "@action"
+msgid "Minimize"
+msgstr "Minimaliseren"
+
+#: choqok/mainwindow.cpp:232
+msgctxt "@action"
+msgid "Restore"
+msgstr "Terugzetten"
+
+#: choqok/mainwindow.cpp:240
+msgid "Enable Update Timer"
+msgstr "Bijwerkinterval inschakelen"
+
+#: choqok/mainwindow.cpp:246
+msgid "Enable Notifications"
+msgstr "Meldingen inschakelen"
+
+#: choqok/mainwindow.cpp:252
+msgid "Hide Menubar"
+msgstr "Menubalk verbergen"
+
+#: choqok/mainwindow.cpp:259
+msgid "Clear Avatar Cache"
+msgstr "Avatar cache legen"
+
+#: choqok/mainwindow.cpp:261
+msgid "You have to restart Choqok to load avatars again"
+msgstr "U dient Choqok opnieuw op te starten om de avatars te laden"
+
+#: choqok/mainwindow.cpp:266
+msgid "Upload Medium..."
+msgstr "Medium uploaden..."
+
+#: choqok/mainwindow.cpp:270
+msgid "Donate"
+msgstr "Doneren"
+
+#: choqok/mainwindow.cpp:294
+msgid ""
+"No account created. You have to create an account before being able to make "
+"posts."
+msgstr ""
+"Geen account aangemaakt. U dient eerst een account aan te maken alvorens "
+"berichten aan te kunnen maken."
+
+#: choqok/mainwindow.cpp:323
+msgid ""
+"In order to use Choqok you need an account at one of the supported micro-"
+"blogging services.\n"
+"Would you like to add your account now?"
+msgstr ""
+"Om Choqok te kunnen gebruiken dient u een account te hebben bij één van de "
+"ondersteunde microblogging-diensten.\n"
+"Wilt u uw account nu toevoegen?"
+
+#: choqok/mainwindow.cpp:507
+#, kde-format
+msgid "Choqok (%1)"
+msgstr "Choqok (%1)"
+
+#: choqok/mainwindow.cpp:574
+msgid "Restore"
+msgstr "Terugzetten"
+
+#: choqok/mainwindow.cpp:580
+msgid "Minimize"
+msgstr "Minimaliseren"
+
+#: choqok/mainwindow.cpp:626
+msgid "Loading timelines..."
+msgstr "Tijdlijnen worden geladen..."
+
+#: choqok/systrayicon.cpp:113
+#, kde-format
+msgid "1 unread post"
+msgid_plural "%1 unread posts"
+msgstr[0] "1 ongelezen bericht"
+msgstr[1] "%1 ongelezen berichten"
+
+#: choqok/systrayicon.cpp:122
+msgid "Choqok - Disabled"
+msgstr "Choqok - Uitgeschakeld"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnAttach)
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:64
+#: libchoqok/ui/quickpost.cpp:95 microblogs/pumpio/pumpiocomposerwidget.cpp:61
+#: microblogs/pumpio/pumpiomessagedialog.ui:90
+#: microblogs/twitter/twittercomposerwidget.cpp:62
+msgid "Attach a file"
+msgstr "Een bestand bijvoegen"
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:104
+#: libchoqok/ui/composerwidget.cpp:139
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:96
+#: microblogs/twitter/twittercomposerwidget.cpp:100
+msgid "Abort"
+msgstr "Afbreken"
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:126
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:442
+#: microblogs/pumpio/pumpiomicroblog.cpp:693
+#: microblogs/twitter/twittercomposerwidget.cpp:122
+msgid "New post submitted successfully"
+msgstr "Nieuw gepost bericht succesvol ingediend"
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:139
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:145
+#: microblogs/pumpio/pumpiomessagedialog.cpp:183
+#: microblogs/twitter/twittercomposerwidget.cpp:135
+msgid "Select Media to Upload"
+msgstr "Selecteer het medium om te uploaden"
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:150
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:156
+#: microblogs/pumpio/pumpiomessagedialog.cpp:194
+#: microblogs/twitter/twittercomposerwidget.cpp:146
+msgid "Discard Attachment"
+msgstr "Bijlage wissen"
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:157
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:163
+#: microblogs/pumpio/pumpiomessagedialog.cpp:201
+#: microblogs/twitter/twittercomposerwidget.cpp:153
+#, kde-format
+msgid "Attaching <b>%1</b>"
+msgstr "<b>%1</b> bijvoegen"
+
+#: helperlibs/gnusocialapihelper/gnusocialapiconversationtimelinewidget.cpp:36
+#, kde-format
+msgid "Conversation %1"
+msgstr "Conversatie %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapiconversationtimelinewidget.cpp:38
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:141
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:316
+msgid "Please wait..."
+msgstr "Even geduld a.u.b..."
+
+#: helperlibs/gnusocialapihelper/gnusocialapiconversationtimelinewidget.cpp:66
+#: helperlibs/twitterapihelper/twitterapishowthread.cpp:52
+msgid "Conversation"
+msgstr "Conversatie"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:61
+#: microblogs/laconica/laconicamicroblog.cpp:40
+msgctxt "Timeline name"
+msgid "Repeated"
+msgstr "Herhaald"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:62
+#: microblogs/laconica/laconicamicroblog.cpp:41
+msgctxt "Timeline description"
+msgid "Your posts that were repeated by others"
+msgstr "Uw geposte berichten die door anderen zijn herhaald"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:168
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:176
+#: libchoqok/mediamanager.cpp:189 libchoqok/mediamanager.cpp:196
+#: microblogs/twitter/twittermicroblog.cpp:157
+#: microblogs/twitter/twittermicroblog.cpp:165
+msgid "Uploading medium failed: cannot read the medium file."
+msgstr ""
+"Het uploaden van het medium is mislukt: kan het mediumbestand niet lezen."
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:222
+#, kde-format
+msgid "Repeat of %1"
+msgstr "Herhaling van %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:224
+#, kde-format
+msgid "Repeated by %1"
+msgstr "Herhaald door %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:230
+msgid "Repeat this notice?"
+msgstr "Deze nototie herhalen?"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:255
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1528
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1554
+msgid ""
+"Retrieving the friends list failed. The data returned from the server is "
+"corrupted."
+msgstr ""
+"De lijst met vrienden ophalen is mislukt. Gegevens die van de server "
+"terugkwamen zijn fout."
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:315
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:765
+#, kde-format
+msgid ""
+"Friends list for account %1 could not be updated:\n"
+"%2"
+msgstr ""
+"Lijst met vrienden voor account %1 kon niet worden bijgewerkt:\n"
+"%2"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:419
+#, kde-format
+msgid "Fetching conversation failed. %1"
+msgstr "Conversatie ophalen is mislukt. %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:88
+#: microblogs/twitter/twitterpostwidget.cpp:77
+msgid "Manual ReSend"
+msgstr "Handmatig opnieuw verzenden"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:90
+msgid "Repeat"
+msgstr "Herhalen"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:91
+msgid "Repeat post using API"
+msgstr "Herhaal gepost bericht met API"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:155
+#, kde-format
+msgid "Search for %1"
+msgstr "Zoeken naar %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:157
+msgid "Open tag page in browser"
+msgstr "Pagina met tag openen in browser"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:173
+msgid "Show latest group posts"
+msgstr "Laatste geposte berichten aan de groep tonen"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:175
+msgid "Open group page in browser"
+msgstr "Groeppagina openen in browser"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:192
+#: microblogs/twitter/twitterpostwidget.cpp:144
+#, kde-format
+msgctxt "Who is user"
+msgid "Who is %1"
+msgstr "Wie is %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:194
+#: microblogs/twitter/twitterpostwidget.cpp:146
+#, kde-format
+msgctxt "Posts from user"
+msgid "Posts from %1"
+msgstr "Geposte berichten van %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:196
+#: microblogs/twitter/twitterpostwidget.cpp:148
+#, kde-format
+msgctxt "Replies to user"
+msgid "Replies to %1"
+msgstr "Reacties aan %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:200
+#: microblogs/twitter/twitterpostwidget.cpp:156
+msgctxt "Open profile page in browser"
+msgid "Open profile in browser"
+msgstr "Profiel openen in browser"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:217
+#: microblogs/twitter/twitterpostwidget.cpp:173
+msgid "Actions"
+msgstr "Acties"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:218
+#: microblogs/twitter/twitterpostwidget.cpp:174
+#, kde-format
+msgctxt "Write a message to user attention"
+msgid "Write to %1"
+msgstr "Schrijven naar %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:223
+#: microblogs/twitter/twitterpostwidget.cpp:180
+#, kde-format
+msgctxt "Send direct message to user"
+msgid "Send private message to %1"
+msgstr "Privébericht naar %1 verzenden"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:229
+#, kde-format
+msgctxt "Unsubscribe from user"
+msgid "Unsubscribe from %1"
+msgstr "Uitschrijven van %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:234
+#, kde-format
+msgctxt "Subscribe to user"
+msgid "Subscribe to %1"
+msgstr "Inschrijven van %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:238
+#: microblogs/twitter/twitterpostwidget.cpp:195
+#, kde-format
+msgctxt "Block user"
+msgid "Block %1"
+msgstr "%1 blokkeren"
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:46
+msgctxt "Dents are Identica posts"
+msgid "Dents Including This Hashtag"
+msgstr "Berichten die deze tag bevatten"
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:49
+msgctxt "Dents are Identica posts"
+msgid "Dents Including This Group"
+msgstr "Berichten die deze groepsnaam bevatten"
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:52
+msgctxt "Dents are Identica posts"
+msgid "Dents From This User"
+msgstr "Berichten van deze gebruiker"
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:55
+msgctxt "Dents are Identica posts"
+msgid "Dents To This User"
+msgstr "Berichten aan deze gebruiker"
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:142
+#: microblogs/twitter/twittersearch.cpp:137
+msgid "Unable to fetch search results."
+msgstr "Het zoeken is mislukt."
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:150
+#: microblogs/twitter/twittersearch.cpp:145
+#, kde-format
+msgid "Unable to fetch search results: %1"
+msgstr "Het zoeken is mislukt: %1"
+
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:60
+msgid "Send Private Message"
+msgstr "Privébericht verzenden"
+
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:84
+msgctxt "Send message to"
+msgid "To:"
+msgstr "Naar:"
+
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:89
+msgid "Reload friends list"
+msgstr "Lijst met vrienden opnieuw laden"
+
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:111
+msgctxt "Send private message"
+msgid "Send"
+msgstr "Verzonden"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:103
+msgctxt "Timeline Name"
+msgid "Home"
+msgstr "Start"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:104
+msgctxt "Timeline description"
+msgid "You and your friends"
+msgstr "U en uw vrienden"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:109
+msgctxt "Timeline Name"
+msgid "Reply"
+msgstr "Beantwoorden"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:110
+msgctxt "Timeline description"
+msgid "Replies to you"
+msgstr "Antwoorden naar u"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:115
+#: microblogs/pumpio/pumpiomicroblog.cpp:1291
+msgctxt "Timeline Name"
+msgid "Inbox"
+msgstr "Postvak in"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:116
+msgctxt "Timeline description"
+msgid "Your incoming private messages"
+msgstr "Uw inkomende privéberichten"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:121
+#: microblogs/pumpio/pumpiomicroblog.cpp:1298
+msgctxt "Timeline Name"
+msgid "Outbox"
+msgstr "Postvak uit"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:122
+msgctxt "Timeline description"
+msgid "Private messages you have sent"
+msgstr "Verzonden privéberichten"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:127
+msgctxt "Timeline Name"
+msgid "Favorite"
+msgstr "Favoriet"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:128
+msgctxt "Timeline description"
+msgid "Your favorites"
+msgstr "Uw favorieten"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:133
+msgctxt "Timeline Name"
+msgid "Public"
+msgstr "Publiek"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:134
+msgctxt "Timeline description"
+msgid "Public timeline"
+msgstr "Publieke tijdslijn"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:139
+msgctxt "Timeline Name"
+msgid "ReTweets"
+msgstr "HerTweets"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:140
+msgctxt "Timeline description"
+msgid "Your posts that were ReTweeted by others"
+msgstr "Uw geposte berichten die door anderen zijn hertweet"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:155
+#: microblogs/pumpio/pumpiomicroblog.cpp:122
+msgid "Send Private Message..."
+msgstr "Privéberichten verzenden..."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:160
+#: plugins/searchaction/searchaction.cpp:45
+msgid "Search..."
+msgstr "Zoeken..."
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnReload)
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:165
+#: microblogs/pumpio/pumpiomessagedialog.ui:31
+msgid "Update Friends List"
+msgstr "Lijst met vrienden bijwerken"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:313
+#: microblogs/pumpio/pumpiomicroblog.cpp:181
+msgid "Creating the new post failed. Text is empty."
+msgstr "Het nieuwe bericht aanmaken is mislukt. De tekst is leeg."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:423
+#, kde-format
+msgid "Creating the new post failed: %1"
+msgstr "Het nieuwe bericht aanmaken is mislukt: %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:434
+msgid "Creating the new post failed. The result data could not be parsed."
+msgstr ""
+"Het nieuwe bericht aanmaken is mislukt. De resulterende gegevens konden niet "
+"worden ontleden."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:438
+#, kde-format
+msgid "Creating the new post failed, with error: %1"
+msgstr "Het nieuwe bericht aanmaken is mislukt, met fout: %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:446
+msgid "Private message sent successfully"
+msgstr "Privébericht met succes verzonden"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:514
+#, kde-format
+msgid "Fetching the new post failed. %1"
+msgstr "Het nieuwe geposte bericht ophalen is mislukt. %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:524
+msgid "Fetching new post failed. The result data could not be parsed."
+msgstr ""
+"Nieuw gepost bericht ophalen is mislukt. Kon de resulterende gegevens niet "
+"ontleden."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:529
+#, kde-format
+msgid "Fetching new post failed, with error:%1"
+msgstr "Nieuwe geposte berichten ophalen is mislukt, met fout:%1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:579
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:588
+#: microblogs/pumpio/pumpiomicroblog.cpp:977
+#, kde-format
+msgid "Removing the post failed. %1"
+msgstr "Het geposte bericht verwijderen is mislukt. %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:636
+#, kde-format
+msgid "Favorite creation failed. %1"
+msgstr "Favoriet aanmaken is mislukt. %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:692
+#, kde-format
+msgid "Removing the favorite failed. %1"
+msgstr "Favoriet verwijderen is mislukt. %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:745
+#, kde-format
+msgid "Updating friends list for account %1..."
+msgstr "Lijst met vrienden bijwerken voor account %1..."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:780
+#, kde-format
+msgid "Friends list for account %1 has been updated."
+msgstr "Lijst met vrienden voor account %1 is bijgewerkt."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:826
+#, kde-format
+msgid "Updating followers list for account %1..."
+msgstr "Lijst met volgers bijwerken voor account %1..."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:846
+#, kde-format
+msgid ""
+"Followers list for account %1 could not be updated:\n"
+"%2"
+msgstr ""
+"Lijst met volgers voor account %1 kon niet worden bijgewerkt:\n"
+"%2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:861
+#, kde-format
+msgid "Followers list for account %1 has been updated."
+msgstr "De volgerslijst voor account %1 is bijgewerkt."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:951
+#, kde-format
+msgid "Timeline update failed: %1"
+msgstr "Tijdlijn bijwerken is mislukt: %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1123
+#, kde-format
+msgid "Creating friendship with %1 failed. %2"
+msgstr "Vriendschap aanmaken met %1 is mislukt. %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1130
+#, kde-format
+msgid "You are now listening to %1's posts."
+msgstr "U luistert nu naar geposte berichten van %1."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1138
+#, kde-format
+msgid "Creating friendship with %1 failed: the server returned invalid data."
+msgstr ""
+"Vriendschap aanmaken met %1 is mislukt. De server gaf ongeldige gegeven "
+"terug."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1143
+#, kde-format
+msgid "Creating friendship with %1 failed: %2"
+msgstr "Vriendschap aanmaken met %1 is mislukt. %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1189
+#, kde-format
+msgid "Destroying friendship with %1 failed. %2"
+msgstr "Vernietigen van vriendschap met %1 is mislukt. %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1196
+#, kde-format
+msgid "You will not receive %1's updates."
+msgstr "U zult geen bijwerkingen van %1 ontvangen."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1204
+#, kde-format
+msgid "Destroying friendship with %1 failed: the server returned invalid data."
+msgstr ""
+"Vriendschap vernietigen met %1 is mislukt. De server leverde ongeldige data."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1209
+#, kde-format
+msgid "Destroying friendship with %1 failed: %2"
+msgstr "Vernietigen van vriendschap met %1 is mislukt. %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1285
+#, kde-format
+msgid "Blocking %1 failed. %2"
+msgstr "Blokkeren van %1 is mislukt.%2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1291
+#, kde-format
+msgid "You will no longer be disturbed by %1."
+msgstr "U zult niet langer door %1 gestoord worden."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1295
+#, kde-format
+msgid "Blocking %1 failed: the server returned invalid data."
+msgstr "Blokkeren van %1 is mislukt.  De server leverde ongeldige data."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1314
+#, kde-format
+msgid "Reporting %1 failed. %2"
+msgstr "Rapporteren van %1 is mislukt. %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1319
+msgid "Report sent successfully"
+msgstr "Rapport met succes verzonden"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1323
+#, kde-format
+msgid "Reporting %1 failed: the server returned invalid data."
+msgstr "Rapporteren van %1 is mislukt: de server leverde ongeldige data terug."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1361
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1380
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1455
+msgid "Could not parse the data that has been received from the server."
+msgstr "Kon de gegevens die van de server zijn ontvangen niet gebruiken."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1582
+msgid ""
+"Retrieving the followers list failed. The data returned from the server is "
+"corrupted."
+msgstr ""
+"De volgerslijst ophalen is mislukt. Gegevens die van de server terugkwamen "
+"zijn fout."
+
+#: helperlibs/twitterapihelper/twitterapimicroblogwidget.cpp:128
+msgid "(The search result is empty.)"
+msgstr "(Geen zoekresultaten)."
+
+#: helperlibs/twitterapihelper/twitterapimicroblogwidget.cpp:241
+#: libchoqok/ui/timelinewidget.cpp:253
+msgid "Mark timeline as read"
+msgstr "Tijdlijn als gelezen markeren"
+
+#: helperlibs/twitterapihelper/twitterapimicroblogwidget.cpp:245
+msgid "Close Timeline"
+msgstr "Tijdlijn sluiten"
+
+#: helperlibs/twitterapihelper/twitterapimicroblogwidget.cpp:246
+msgid "Close All"
+msgstr "Alles sluiten"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:74
+#: microblogs/pumpio/pumpiopostwidget.cpp:182
+msgctxt "@info:tooltip"
+msgid "Reply"
+msgstr "Antwoord"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:79
+#: microblogs/pumpio/pumpiopostwidget.cpp:185
+#, kde-format
+msgid "Reply to %1"
+msgstr "Beantwoorden aan %1"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:84
+#, kde-format
+msgid "Write to %1"
+msgstr "Schrijven naar %1"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:89
+msgid "Reply to all"
+msgstr "Allen beantwoorden"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:93
+msgctxt "@info:tooltip"
+msgid "Favorite"
+msgstr "Favoriet"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:129
+#, kde-format
+msgid "<a href='%1' title='Sent from %2 via OStatus'>%2</a>"
+msgstr "<a href='%1' title='Gezonden vanaf %2 via OStatus'>%2</a>"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:139
+msgid "Show Conversation"
+msgstr "Conversatie tonen"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:147
+#, kde-format
+msgid ""
+"<a href='replyto://%1'>in reply to</a> @<a href='user://%4'>%4</a>&nbsp;<a "
+"href=\"%2\" title=\"%2\">%3</a>"
+msgstr ""
+"<a href='replyto://%1'>in antwoord op</a> @<a href='user://%4'>%4</a>&nbsp;"
+"<a href=\"%2\" title=\"%2\">%3</a>"
+
+#: helperlibs/twitterapihelper/twitterapisearchdialog.cpp:63
+msgctxt "@title:window"
+msgid "Search"
+msgstr "Zoeken"
+
+#: helperlibs/twitterapihelper/twitterapisearchdialog.cpp:91
+msgctxt "Search query"
+msgid "Query:"
+msgstr "Zoekopdracht:"
+
+#: helperlibs/twitterapihelper/twitterapisearchdialog.cpp:102
+msgctxt "@action:button"
+msgid "Search"
+msgstr "Zoeken"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:73
+#: libchoqok/ui/timelinewidget.cpp:58
+#, kde-format
+msgctxt "%1 is the name of a timeline"
+msgid "Search results for %1"
+msgstr "Zoekresultaten voor %1"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:102
+msgid "Close Search"
+msgstr "Zoeken afsluiten"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:108
+msgid "Previous"
+msgstr "Vorige"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:113
+msgid "Next"
+msgstr "Volgende"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:120
+msgid "Page Number"
+msgstr "Paginanummer"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:164
+msgid "Cannot load user information."
+msgstr "Kan de gebruikersinformatie niet laden."
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:253
+msgid "Close"
+msgstr "Sluiten"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:265
+msgctxt "User posts"
+msgid "Posts"
+msgstr "Berichten"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:266
+msgctxt "User friends"
+msgid "Friends"
+msgstr "Vrienden"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:267
+msgctxt "User followers"
+msgid "Followers"
+msgstr "Volgers"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:276
+#, kde-format
+msgid "<table><tr><b>Last Status:</b> %1</tr></table>"
+msgstr "<table><tr><b>Laatste status:</b> %1</tr></table>"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:280
+#, kde-format
+msgid "<h3>%1</h3>"
+msgstr "<h3>%1</h3>"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:390
+msgid "Unsubscribe"
+msgstr "Uitschrijven"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:395
+msgid "Subscribe"
+msgstr "Inschrijven"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:400
+msgid "Block"
+msgstr "Blokkeren"
+
+#: libchoqok/accountmanager.cpp:117 libchoqok/accountmanager.cpp:155
+#, kde-format
+msgid "There is no account with alias %1."
+msgstr "Er is geen account met de alias %1."
+
+#: libchoqok/accountmanager.cpp:170
+msgid ""
+"An account with this alias already exists: a unique alias has to be "
+"specified."
+msgstr "Een account met deze alias bestaat al. De alias moet uniek zijn."
+
+#: libchoqok/choqoktools.cpp:45
+#, kde-format
+msgid ""
+"Custom web browser \"%1\" is unable to open url \"%2\".\n"
+"Please update the custom web browser in Configurations."
+msgstr ""
+"Aangepaste webbrowser \"%1\" is niet instaat de URL \"%2\" te openen.\n"
+"Werk de aangepaste webbrowser bij in Instellingen."
+
+#: libchoqok/choqoktools.cpp:51
+#, kde-format
+msgid ""
+"Unable to open url \"%1\".\n"
+"Please check Qt installation or set a custom web browser in Configurations."
+msgstr ""
+"Kan URL \"%1\" niet openen.\n"
+"Controleer de installatie van Qt of stel een aangepaste webbrowser in in "
+"Instellingen."
+
+#: libchoqok/choqoktools.cpp:64
+msgid "No Error"
+msgstr "Geen fout"
+
+#: libchoqok/choqoktools.cpp:66
+msgid "Bad request"
+msgstr "Onjuist verzoek"
+
+#: libchoqok/choqoktools.cpp:69
+msgid "Consumer Key or Secret has not been provided"
+msgstr "Klant-sleutel of Secret is niet ingevoerd"
+
+#: libchoqok/choqoktools.cpp:71
+msgid "Forbidden"
+msgstr "Verboden"
+
+#: libchoqok/choqoktools.cpp:73
+msgid "Timeout on server"
+msgstr "Server gaf geen antwoord binnen de tijdslimiet"
+
+#: libchoqok/choqoktools.cpp:75 microblogs/twitter/twittereditaccount.cpp:138
+#: microblogs/twitter/twittereditaccount.cpp:169
+msgid "Authorization Error"
+msgstr "Fout bij autorisatie"
+
+#: libchoqok/choqoktools.cpp:77
+msgid "Internal Error"
+msgstr "Interne fout"
+
+#: libchoqok/choqoktools.cpp:82
+msgid "Unknown Error"
+msgstr "Onbekende fout"
+
+#: libchoqok/mediamanager.cpp:105
+msgid "Cannot create a KDE Job. Please check your installation."
+msgstr "Kan geen KDE-taak aanmaken. Controleer uw installatie."
+
+#: libchoqok/mediamanager.cpp:130
+#, kde-format
+msgid "Cannot download image from %1."
+msgstr "Kan de afbeelding niet downloaden van %1."
+
+#: libchoqok/mediamanager.cpp:139
+msgid "The request failed. Cannot get image file."
+msgstr "Het verzoek is mislukt. Kan geen afbeeldingsbestand krijgen."
+
+#: libchoqok/mediamanager.cpp:170
+msgid "No pluginId specified, And last used plugin is null."
+msgstr "Geen plugin-id gespecificeerd en laatst gebruikte plugin is nul."
+
+#: libchoqok/microblog.cpp:86
+msgid "The server returned an error"
+msgstr "De server gaf een fout terug"
+
+#: libchoqok/microblog.cpp:89
+msgid "Error on communication with server"
+msgstr "Fout bij het communiceren met de server"
+
+#: libchoqok/microblog.cpp:92
+msgid "Error on parsing results"
+msgstr "Fout bij het ontleden van resultaten"
+
+#: libchoqok/microblog.cpp:95
+msgid "Authentication error"
+msgstr "Authenticatiefout"
+
+#: libchoqok/microblog.cpp:98
+msgid "The server does not support this feature"
+msgstr "De server ondersteunt deze functie niet"
+
+#: libchoqok/microblog.cpp:101
+msgid "Unknown error"
+msgstr "Onbekende fout"
+
+#: libchoqok/notifymanager.cpp:96
+msgctxt "Show Choqok MainWindow"
+msgid "Show Choqok"
+msgstr "Choqok tonen"
+
+#: libchoqok/notifymanager.h:39
+msgid "Error"
+msgstr "Fout"
+
+#: libchoqok/notifymanager.h:40
+msgid "Success"
+msgstr "Succes"
+
+#: libchoqok/notifymanager.h:42
+msgid "New posts"
+msgstr "Nieuwe geposte berichten"
+
+#: libchoqok/notifymanager.h:43
+msgid "Shortening a URL"
+msgstr "Een URL inkorten"
+
+#: libchoqok/passwordmanager.cpp:79
+msgid ""
+"Cannot open KDE Wallet manager, your secrets will be stored as plain text. "
+"You can install KWallet to fix this."
+msgstr ""
+"Kan KDE portefeuillebeheer niet openen, uw secrets zullen als platte tekst "
+"worden opgeslagen. Installeer KWallet om dit te repareren."
+
+#: libchoqok/ui/choqoktabbar.cpp:772
+msgid "Top"
+msgstr "Bovenaan"
+
+#: libchoqok/ui/choqoktabbar.cpp:773
+msgid "Left"
+msgstr "Links"
+
+#: libchoqok/ui/choqoktabbar.cpp:774
+msgid "Right"
+msgstr "Rechts"
+
+#: libchoqok/ui/choqoktabbar.cpp:775
+msgid "Bottom"
+msgstr "Onderaan"
+
+#: libchoqok/ui/choqoktabbar.cpp:776
+msgid "Small"
+msgstr "Klein"
+
+#: libchoqok/ui/choqoktabbar.cpp:777
+msgid "Medium"
+msgstr "Middel"
+
+#: libchoqok/ui/choqoktabbar.cpp:778
+msgid "Big"
+msgstr "Groot"
+
+#: libchoqok/ui/choqoktabbar.cpp:779
+msgid "Styled Panel"
+msgstr "Paneel met stijl"
+
+#: libchoqok/ui/choqoktextedit.cpp:64
+msgid "<b>Note:</b><br/><i>Ctrl+S</i> to enable/disable auto spell checker."
+msgstr ""
+"<b>Note:</b>,br/><i>Ctrl+S</i> om automatische spellingcontrole in/uit te "
+"schakelen."
+
+#: libchoqok/ui/choqoktextedit.cpp:189
+msgid "Set spell check language"
+msgstr "Taal van de spellingcontrole instellen"
+
+#: libchoqok/ui/choqoktextedit.cpp:193
+msgctxt "Replace URLs by a shortened URL"
+msgid "Shorten URLs"
+msgstr "URL's inkorten"
+
+#: libchoqok/ui/composerwidget.cpp:70
+msgid "Discard Reply"
+msgstr "Antwoord verwerpen"
+
+#: libchoqok/ui/composerwidget.cpp:111
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:185
+#, kde-format
+msgid "Replying to <b>%1</b>"
+msgstr "Beantwoorden aan <b>%1</b>"
+
+#: libchoqok/ui/microblogwidget.cpp:279
+msgid "Mark all timelines as read"
+msgstr "Alle tijdlijnen als gelezen markeren"
+
+#: libchoqok/ui/microblogwidget.cpp:389
+msgid "More"
+msgstr "Meer"
+
+#: libchoqok/ui/microblogwidget.cpp:391
+msgid "Latest update:"
+msgstr "Laatste bijwerking:"
+
+#: libchoqok/ui/postwidget.cpp:204
+msgctxt "@info:tooltip"
+msgid "Remove"
+msgstr "Verwijderen"
+
+#: libchoqok/ui/postwidget.cpp:209
+msgctxt "@info:tooltip"
+msgid "ReSend"
+msgstr "Opnieuw verzenden"
+
+#: libchoqok/ui/postwidget.cpp:464
+msgid "Just now"
+msgstr "Op dit moment"
+
+#: libchoqok/ui/postwidget.cpp:469
+#, kde-format
+msgid "1 sec ago"
+msgid_plural "%1 secs ago"
+msgstr[0] "1 seconde geleden"
+msgstr[1] "%1 seconden geleden"
+
+#: libchoqok/ui/postwidget.cpp:475
+#, kde-format
+msgid "1 min ago"
+msgid_plural "%1 mins ago"
+msgstr[0] "1 minuut geleden"
+msgstr[1] "%1 minuten geleden"
+
+#: libchoqok/ui/postwidget.cpp:481
+#, kde-format
+msgid "1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "1 uur geleden"
+msgstr[1] "%1 uur geleden"
+
+#: libchoqok/ui/postwidget.cpp:486
+#, kde-format
+msgid "1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "1 dag geleden"
+msgstr[1] "ongeveer %1 dagen geleden"
+
+#: libchoqok/ui/postwidget.cpp:491
+msgid "Are you sure you want to remove this post from the server?"
+msgstr ""
+"Bent u er zeker van om dit geposte bericht van de server te verwijderen?"
+
+#: libchoqok/ui/quickpost.cpp:91
+msgctxt "All accounts"
+msgid "All"
+msgstr "Alles"
+
+#: libchoqok/ui/quickpost.cpp:110
+msgctxt "Submit post"
+msgid "Submit"
+msgstr "Indienen"
+
+#: libchoqok/ui/quickpost.cpp:169
+msgid "Cannot create a post without any text."
+msgstr "Kan geen berichten posten zonder tekst."
+
+#: libchoqok/ui/quickpost.cpp:174
+msgid ""
+"Please configure at least one account to be included in \"Quick Post\".\n"
+"Settings -> Configure Choqok... -> Accounts"
+msgstr ""
+"Gaarne minstens één account instellen dat ingevoegd wordt in \"Snelbericht"
+"\".\n"
+"Instellingen -> Choqok instellen... -> Accounts"
+
+#: libchoqok/ui/quickpost.cpp:286
+msgid ""
+"Link to uploaded medium will be added here after uploading process succeed."
+msgstr ""
+"Koppeling naar het geüploade medium zal hier worden toegevoegd nadat dat "
+"proces is gelukt."
+
+#: libchoqok/ui/textbrowser.cpp:120
+msgctxt "Copy text"
+msgid "Copy"
+msgstr "Kopiëren"
+
+#: libchoqok/ui/textbrowser.cpp:126
+msgid "Copy Link Location"
+msgstr "Koppelingslocatie kopiëren"
+
+#: libchoqok/ui/textbrowser.cpp:131
+msgctxt "Select all text"
+msgid "Select All"
+msgstr "Alles selecteren"
+
+#: libchoqok/ui/timelinewidget.cpp:236
+#, kde-format
+msgid "1 new post in %2(%3)"
+msgid_plural "%1 new posts in %2(%3)"
+msgstr[0] "1 nieuw gepost bericht in %2(%3)"
+msgstr[1] "%1 nieuw geposte berichten in %2(%3)"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: libchoqok/ui/uploadmedia_base.ui:22
+msgid "Medium to upload:"
+msgstr "Medium om te uploaden:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: libchoqok/ui/uploadmedia_base.ui:39
+msgid "Upload via:"
+msgstr "Uploaden via:"
+
+#: libchoqok/ui/uploadmediadialog.cpp:63
+msgid "Upload Medium"
+msgstr "Medium voor uploaden"
+
+#: libchoqok/ui/uploadmediadialog.cpp:71
+msgid "Upload"
+msgstr "Uploaden"
+
+#: libchoqok/ui/uploadmediadialog.cpp:129
+msgid "Uploading..."
+msgstr "Uploaden..."
+
+#: libchoqok/ui/uploadmediadialog.cpp:266
+msgid "Medium uploading failed."
+msgstr "Uploaden van medium is mislukt."
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabAccount)
+#: microblogs/friendica/friendicaeditaccount_base.ui:21
+msgid "Friendica Account"
+msgstr "Friendica-account"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: microblogs/friendica/friendicaeditaccount_base.ui:29
+#: microblogs/laconica/laconicaeditaccount_base.ui:29
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:27
+#: microblogs/twitter/twittereditaccount_base.ui:27
+msgid "A&lias:"
+msgstr "A&lias:"
+
+#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_alias)
+#. i18n: ectx: property (toolTip), widget (QLineEdit, cfg_alias)
+#: microblogs/friendica/friendicaeditaccount_base.ui:42
+#: microblogs/laconica/laconicaeditaccount_base.ui:42
+#: microblogs/ocs/ocsconfigurebase.ui:32
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:40
+#: microblogs/twitter/twittereditaccount_base.ui:40
+msgid "The account alias"
+msgstr "Alias van het account"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, kcfg_alias)
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, cfg_alias)
+#: microblogs/friendica/friendicaeditaccount_base.ui:45
+#: microblogs/laconica/laconicaeditaccount_base.ui:45
+#: microblogs/ocs/ocsconfigurebase.ui:35
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:43
+#: microblogs/twitter/twittereditaccount_base.ui:43
+msgid ""
+"The alias is the name you want to give to your account. It should be unique. "
+"You can have several connections to the same service so the alias lets you "
+"give them names."
+msgstr ""
+"De alias is de naam die u aan het account geeft. Het dient uniek te zien. U "
+"kunt meerdere verbindingen met dezelfde dienst hebben, deze verbindingen "
+"kunt u dus onderscheiden met verschillende aliassen."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: microblogs/friendica/friendicaeditaccount_base.ui:62
+#: microblogs/laconica/laconicaeditaccount_base.ui:62
+#: microblogs/ocs/ocsconfigurebase.ui:52
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:60
+#: microblogs/twitter/twittereditaccount_base.ui:60
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">Note:</span><span style=\" font-size:8pt;\"> "
+"The alias must be unique.</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">Opmerking:</span><span style=\" font-size:8pt;"
+"\"> De alias dient uniek te zijn.</span></p></body></html>"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: microblogs/friendica/friendicaeditaccount_base.ui:77
+#: microblogs/laconica/laconicaeditaccount_base.ui:77
+msgid "Server"
+msgstr "Server"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: microblogs/friendica/friendicaeditaccount_base.ui:83
+#: microblogs/laconica/laconicaeditaccount_base.ui:83
+msgid "API path:"
+msgstr "API-pad:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/friendica/friendicaeditaccount_base.ui:103
+msgid "&Friendica server:"
+msgstr "&Friendica-server:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_BasicBox)
+#: microblogs/friendica/friendicaeditaccount_base.ui:122
+#: microblogs/laconica/laconicaeditaccount_base.ui:122
+msgid "Basic Authentication"
+msgstr "Basis authenticatie"
+
+#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_basicUsername)
+#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_basicPassword)
+#: microblogs/friendica/friendicaeditaccount_base.ui:128
+#: microblogs/friendica/friendicaeditaccount_base.ui:145
+#: microblogs/laconica/laconicaeditaccount_base.ui:128
+#: microblogs/laconica/laconicaeditaccount_base.ui:145
+msgid "The name you use to connect to the service"
+msgstr "De naam die gebruikt wordt bij het verbinden met de dienst."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: microblogs/friendica/friendicaeditaccount_base.ui:135
+#: microblogs/laconica/laconicaeditaccount_base.ui:135
+#: microblogs/twitter/twittereditaccount_base.ui:92
+#: plugins/shorteners/yourls/yourlsprefs.ui:47
+#: plugins/uploaders/posterous/posterousprefs.ui:74
+msgid "Password:"
+msgstr "Wachtwoord:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/friendica/friendicaeditaccount_base.ui:155
+#: microblogs/laconica/laconicaeditaccount_base.ui:155
+#: microblogs/twitter/twittereditaccount_base.ui:79
+#: plugins/shorteners/yourls/yourlsprefs.ui:34
+msgid "Username:"
+msgstr "Gebruikersnaam:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabTimelines)
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: microblogs/friendica/friendicaeditaccount_base.ui:182
+#: microblogs/laconica/laconicaeditaccount_base.ui:182
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:175
+#: microblogs/twitter/twittereditaccount_base.ui:183
+msgid "Timelines Configuration"
+msgstr "Tijdlijnenconfiguratie"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: microblogs/friendica/friendicaeditaccount_base.ui:194
+#: microblogs/laconica/laconicaeditaccount_base.ui:194
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:187
+#: microblogs/twitter/twittereditaccount_base.ui:195
+msgid "Which timelines do you like to be enabled?"
+msgstr "Welke tijdlijn wilt u inschakelen?"
+
+#. i18n: ectx: property (text), widget (QTableWidget, timelinesTable)
+#: microblogs/friendica/friendicaeditaccount_base.ui:202
+#: microblogs/laconica/laconicaeditaccount_base.ui:202
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:195
+#: microblogs/twitter/twittereditaccount_base.ui:203
+msgid "Name"
+msgstr "Naam"
+
+#. i18n: ectx: property (text), widget (QTableWidget, timelinesTable)
+#: microblogs/friendica/friendicaeditaccount_base.ui:207
+#: microblogs/laconica/laconicaeditaccount_base.ui:207
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:200
+#: microblogs/twitter/twittereditaccount_base.ui:208
+msgid "Enable"
+msgstr "Activeren"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabConf)
+#: microblogs/friendica/friendicaeditaccount_base.ui:216
+#: microblogs/laconica/laconicaeditaccount_base.ui:216
+msgid "Configuration"
+msgstr "Configuratie"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_changeExclamationMark)
+#: microblogs/friendica/friendicaeditaccount_base.ui:224
+#: microblogs/laconica/laconicaeditaccount_base.ui:224
+msgid ""
+"To prevent spamming on some groups, you can set here to change the "
+"exclamation point (that used to refer to a group), to something else (e.g. "
+"nothing.)"
+msgstr ""
+"Om spam in sommige groepen te voorkomen, kunt u hier het uitroepteken "
+"wijzigen (dat wordt gebruikt om naar een groep te verwijzen), in iets "
+"anders! (bijv. niets)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_changeExclamationMark)
+#: microblogs/friendica/friendicaeditaccount_base.ui:227
+#: microblogs/laconica/laconicaeditaccount_base.ui:227
+msgid "On re-dent, change exclamation mark to:"
+msgstr "Bij nader inzien, wijzig uitroepteken in:"
+
+#. i18n: ectx: property (text), widget (QLineEdit, kcfg_changeToString)
+#: microblogs/friendica/friendicaeditaccount_base.ui:237
+#: microblogs/laconica/laconicaeditaccount_base.ui:237
+msgid "#"
+msgstr "#"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabAccount)
+#: microblogs/laconica/laconicaeditaccount_base.ui:21
+msgid "GNU social Account"
+msgstr "GNU sociaal Account"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/laconica/laconicaeditaccount_base.ui:103
+msgid "&GNU social server:"
+msgstr "&GNU sociaal-server:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: microblogs/ocs/ocsconfigurebase.ui:19
+msgid "&Alias:"
+msgstr "&Alias:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: microblogs/ocs/ocsconfigurebase.ui:67
+msgid "Provider"
+msgstr "Provider"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: microblogs/ocs/ocsconfigurebase.ui:73
+msgid "Select a social desktop provider to use:"
+msgstr "Een leverancier van een te gebruiken sociaal bureaublad:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/ocs/ocsconfigurebase.ui:83
+msgid ""
+"You can manage Social Desktop providers in the KDE Social Desktop "
+"configuration."
+msgstr ""
+"U kunt leveranciers van sociale bureaubladen beheren in de KDE sociale "
+"bureaubladconfiguratie."
+
+#: microblogs/ocs/ocsconfigurewidget.cpp:40
+msgid "Loading..."
+msgstr "Bezig met laden..."
+
+#: microblogs/ocs/ocsconfigurewidget.cpp:69
+msgid "You have to wait for providers list to be loaded."
+msgstr "U zult moeten wachten tot de lijst met leveranciers is geladen."
+
+#: microblogs/ocs/ocsmicroblog.cpp:157
+msgid "OCS plugin is not initialized yet. Try again later."
+msgstr "OCS-plugin is nog niet geïnitialiseerd. Probeer het later nog eens."
+
+#: microblogs/ocs/ocsmicroblog.cpp:191 microblogs/ocs/ocsmicroblog.cpp:198
+msgid "Not Supported"
+msgstr "Niet ondersteund"
+
+#: microblogs/ocs/ocsmicroblog.cpp:264
+#: microblogs/pumpio/pumpiomicroblog.cpp:1277
+msgctxt "Timeline Name"
+msgid "Activity"
+msgstr "Activiteit"
+
+#: microblogs/ocs/ocsmicroblog.cpp:265
+msgid "Social activities"
+msgstr "Sociale activiteiten"
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:110
+#: microblogs/twitter/twittereditaccount.cpp:147
+msgid "PIN"
+msgstr "PIN"
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:111
+#, kde-format
+msgid "Enter the verifier code received from %1"
+msgstr "Voer de verificatiecode in ontvangen van %1"
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:124
+#: microblogs/twitter/twittereditaccount.cpp:165
+msgid "Choqok is authorized successfully."
+msgstr "Choqok is met succes geautoriseerd."
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:125
+#: microblogs/twitter/twittereditaccount.cpp:166
+msgid "Authorized"
+msgstr "Geautoriseerd"
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:152
+#: microblogs/twitter/twittereditaccount.cpp:181
+msgid "Authenticated"
+msgstr "Geauthenticeerd"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabAccount)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:21
+msgid "PumpIO Account"
+msgstr "PumpIO-account"
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_basicAuth)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:73
+#: microblogs/twitter/twittereditaccount_base.ui:73
+msgid "Credentials"
+msgstr "Credentials"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:82
+msgid "Webfinger ID:"
+msgstr "Webfinger-ID:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_credentialsBox)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:98
+#: microblogs/twitter/twittereditaccount_base.ui:112
+msgid "OAuth Authentication"
+msgstr "OAuth authenticatie"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:110
+msgid ""
+"Click the below button; if everything goes well, you will pointed to Pump.io "
+"website to allow access to Choqok."
+msgstr ""
+"Klik op de onderstaande knop; als alles goed gaat dan bent u gericht op de "
+"Pump.io-website om toegang te krijgen tot Choqok."
+
+#. i18n: ectx: property (text), widget (QLabel, kcfg_authenticateStatus)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:136
+#: microblogs/twitter/twittereditaccount.cpp:185
+msgid "Not Authenticated"
+msgstr "Niet geauthenticeerd"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, kcfg_authorize)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:143
+#: microblogs/twitter/twittereditaccount_base.ui:151
+msgid "Verify credentials"
+msgstr "Credentials controleren"
+
+#. i18n: ectx: property (text), widget (QPushButton, kcfg_authorize)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:146
+msgid "&Authenticate with Pump.io Service"
+msgstr "&Authenticeren met de service Pump.io"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, PumpIOMessageDialog)
+#: microblogs/pumpio/pumpiomessagedialog.ui:14
+msgid "Dialog"
+msgstr "Dialoog"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/pumpio/pumpiomessagedialog.ui:46
+#: microblogs/pumpio/pumpiopostwidget.cpp:126
+msgid "CC:"
+msgstr "Cc:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: microblogs/pumpio/pumpiomessagedialog.ui:70
+#: microblogs/pumpio/pumpiopostwidget.cpp:103
+msgid "To:"
+msgstr "Naar:"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:704
+#, kde-format
+msgid "Creating the new post failed. %1"
+msgstr "Het nieuwe bericht aanmaken is mislukt. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:725
+#, kde-format
+msgid "Cannot set/unset the post as favorite. %1"
+msgstr "Kan het geposte bericht niet instellen als (geen) favoriet. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:764
+#, kde-format
+msgid "Cannot fetch post. %1"
+msgstr "Kan gepost bericht niet ophalen. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:806
+#, kde-format
+msgid "Cannot fetch replies. %1"
+msgstr "Kan antwoorden niet ophalen. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:830
+#, kde-format
+msgid "Following list for account %1 has been updated."
+msgstr "De volgende lijst voor account %1 is bijgewerkt."
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:853
+#, kde-format
+msgid "Cannot retrieve the following list. %1"
+msgstr "Kan de volgende lijst niet ophalen. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:876
+#, kde-format
+msgid "Lists for account %1 has been updated."
+msgstr "Lijsten voor account %1 zijn bijgewerkt."
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:903
+#, kde-format
+msgid "Cannot retrieve the lists. %1"
+msgstr "Kan de lijsten niet ophalen. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:925
+msgid "The post has been shared."
+msgstr "Het geposte bericht is gedeeld."
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:939
+#, kde-format
+msgid "Cannot share the post. %1"
+msgstr "Kan het geposte bericht niet delen. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:966
+msgid "Post removed successfully"
+msgstr "Gepost bericht met succes verwijderd"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1012
+msgid "An error occurred when updating the post"
+msgstr "Er is een fout opgetreden bij het bijwerken van het geposte bericht."
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1031
+msgid "An error occurred when fetching the timeline"
+msgstr "Er is een fout opgetreden bij het ophalen van de tijdlijn"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1081
+msgid "An error occurred when uploading the media"
+msgstr "Er is een fout opgetreden bij het uploaden van het medium"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1278
+msgctxt "Timeline description"
+msgid "You and people you follow"
+msgstr "U en de mensen die u volgen"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1284
+msgctxt "Timeline Name"
+msgid "Favorites"
+msgstr "Favorieten"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1285
+msgctxt "Timeline description"
+msgid "Posts you favorited"
+msgstr "Uw favorieten posten"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1292
+msgctxt "Timeline description"
+msgid "Posts sent to you"
+msgstr "Naar u verzonden geposte berichten"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1299
+msgctxt "Timeline description"
+msgid "Posts you sent"
+msgstr "Door u verzonden geposte berichten"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_forpublic)
+#: microblogs/pumpio/pumpiopostwidget.cpp:107
+#: microblogs/pumpio/pumpiopostwidget.cpp:130
+#: plugins/uploaders/flickr/flickrprefs.ui:121
+msgid "Public"
+msgstr "Publiek"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:110
+#: microblogs/pumpio/pumpiopostwidget.cpp:133
+msgid "Followers"
+msgstr "Volgers"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:112
+#: microblogs/pumpio/pumpiopostwidget.cpp:135
+#: microblogs/pumpio/pumpiopostwidget.cpp:153
+msgid "You"
+msgstr "U"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:149
+msgid "Shared by:"
+msgstr "Gedeeld met:"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:165
+msgid "Show conversation"
+msgstr "Conversatie tonen"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:178
+msgctxt "@info:tooltip"
+msgid "Share"
+msgstr "Delen"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:192
+msgctxt "@info:tooltip"
+msgid "Like"
+msgstr "Like"
+
+#: microblogs/pumpio/pumpioshowthread.cpp:48
+#, kde-format
+msgctxt "Thread of specified user"
+msgid "Choqok: %1's thread"
+msgstr "Choqok: thread van %1"
+
+#: microblogs/twitter/twittereditaccount.cpp:148
+msgid "Enter the PIN received from Twitter:"
+msgstr "Voer de via Twitter ontvangen PIN in:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabAccount)
+#: microblogs/twitter/twittereditaccount_base.ui:21
+msgid "Twitter Account"
+msgstr "Twitter-account"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/twitter/twittereditaccount_base.ui:124
+msgid ""
+"Click the below button; if everything goes well, you will pointed to Twitter "
+"website to allow access to Choqok."
+msgstr ""
+"Klik op de onderstaande knop; als alles goed gaat dan bent u gericht op de "
+"Twitter-website om toegang te krijgen tot Choqok."
+
+#. i18n: ectx: property (text), widget (QPushButton, kcfg_authorize)
+#: microblogs/twitter/twittereditaccount_base.ui:154
+msgid "&Authenticate with Twitter Service"
+msgstr "&Authenticeren met de service Twitter"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnAdd)
+#: microblogs/twitter/twitterlistdialog.cpp:71
+#: plugins/filter/filterprefs.ui:81
+msgid "Add"
+msgstr "Toevoegen"
+
+#: microblogs/twitter/twitterlistdialog.cpp:90
+msgid "You should provide both list author username and list name."
+msgstr ""
+"Zowel de gebruikersnaam van de auteur van de lijst als de naam ervan moeten "
+"worden aangeleverd."
+
+#: microblogs/twitter/twitterlistdialog.cpp:112
+msgid "No user."
+msgstr "Geen gebruiker."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, TwitterListDialogBase)
+#: microblogs/twitter/twitterlistdialog_base.ui:14
+msgid "Add List"
+msgstr "Lijst toevoegen"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/twitter/twitterlistdialog_base.ui:26
+msgid "List name:"
+msgstr "Lijstnaam:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: microblogs/twitter/twitterlistdialog_base.ui:52
+msgid "User name:"
+msgstr "Gebruikersnaam:"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, loadUserLists)
+#: microblogs/twitter/twitterlistdialog_base.ui:78
+msgid "Load user lists"
+msgstr "Gebruikerslijst laden"
+
+#. i18n: ectx: property (text), widget (QPushButton, loadUserLists)
+#: microblogs/twitter/twitterlistdialog_base.ui:81
+msgid "Load Lists"
+msgstr "Lijst laden"
+
+#: microblogs/twitter/twittermicroblog.cpp:73
+msgctxt "Timeline Name"
+msgid "Mentions"
+msgstr "Aantal keren genoemd"
+
+#: microblogs/twitter/twittermicroblog.cpp:74
+msgctxt "Timeline description"
+msgid "Mentions of you"
+msgstr "Aantal keren dat u bent genoemd"
+
+#: microblogs/twitter/twittermicroblog.cpp:228
+#, kde-format
+msgid "Retweet of %1"
+msgstr "HerTweet van %1"
+
+#: microblogs/twitter/twittermicroblog.cpp:230
+#, kde-format
+msgid "Retweeted by %1"
+msgstr "HerTweet door %1"
+
+#: microblogs/twitter/twittermicroblog.cpp:236
+msgid "Retweet to your followers?"
+msgstr "Hertweeten naar uw volgers?"
+
+#: microblogs/twitter/twittermicroblog.cpp:243
+msgid "Add User List..."
+msgstr "Gebruikerslijst toevoegen..."
+
+#: microblogs/twitter/twittermicroblog.cpp:305
+#, kde-format
+msgid "Fetching %1's lists failed. %2"
+msgstr "De lijst van %1 ophalen is mislukt. %2"
+
+#: microblogs/twitter/twittermicroblog.cpp:315
+#, kde-format
+msgid "There is no list record for user %1"
+msgstr "Er is geen record in de lijst voor gebruiker %1"
+
+#: microblogs/twitter/twitterpostwidget.cpp:79
+msgid "Retweet"
+msgstr "HerTweet"
+
+#: microblogs/twitter/twitterpostwidget.cpp:80
+msgid "Retweet post using API"
+msgstr "Hertweet gepost bericht met API"
+
+#: microblogs/twitter/twitterpostwidget.cpp:151
+#, kde-format
+msgctxt "Including user name"
+msgid "Including %1"
+msgstr "Bevatten %1"
+
+#: microblogs/twitter/twitterpostwidget.cpp:186
+#, kde-format
+msgctxt "Unfollow user"
+msgid "Unfollow %1"
+msgstr "%1 niet volgen"
+
+#: microblogs/twitter/twitterpostwidget.cpp:191
+#, kde-format
+msgctxt "Follow user"
+msgid "Follow %1"
+msgstr "%1 volgen"
+
+#: microblogs/twitter/twitterpostwidget.cpp:198
+#, kde-format
+msgctxt "Report user"
+msgid "Report %1 as spam"
+msgstr "Rapporteer %1 als spam"
+
+#: microblogs/twitter/twittersearch.cpp:52
+msgctxt "Posts sent to user"
+msgid "To:"
+msgstr "Naar:"
+
+#: microblogs/twitter/twittersearch.cpp:53
+msgctxt "Posts from user, Sent by user"
+msgid "From:"
+msgstr "Van:"
+
+#: microblogs/twitter/twittersearch.cpp:55
+msgid "Custom Search"
+msgstr "Zoekopdracht"
+
+#: microblogs/twitter/twittersearch.cpp:58
+msgctxt "Tweets are Twitter posts"
+msgid "Tweets To This User"
+msgstr "Berichten aan deze gebruiker"
+
+#: microblogs/twitter/twittersearch.cpp:61
+msgctxt "Tweets are Twitter posts"
+msgid "Tweets From This User"
+msgstr "Berichten van deze gebruiker"
+
+#: microblogs/twitter/twittersearch.cpp:64
+msgctxt "Tweets are Twitter posts"
+msgid "Tweets Including This Username"
+msgstr "Tweets inclusief deze gebruikersnaam"
+
+#: microblogs/twitter/twittersearch.cpp:67
+msgctxt "Tweets are Twitter posts"
+msgid "Tweets Including This Hashtag"
+msgstr "Berichten die deze tag bevatten"
+
+#: plugins/betternotify/dummynotification.cpp:48
+msgid "KDE Rocks! :)"
+msgstr "KDE is geweldig! :)"
+
+#: plugins/betternotify/dummynotification.cpp:48
+msgid "OK"
+msgstr "OK"
+
+#: plugins/betternotify/notification.cpp:92
+msgid "Ignore"
+msgstr "Negeren"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: plugins/betternotify/notifyprefs.ui:21
+msgid "Appearance"
+msgstr "Uiterlijk"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: plugins/betternotify/notifyprefs.ui:29
+msgid "Foreground Color:"
+msgstr "Voorgrondkleur:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: plugins/betternotify/notifyprefs.ui:39
+msgid "Background Color:"
+msgstr "Achtergrondkleur:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: plugins/betternotify/notifyprefs.ui:49
+msgid "Font:"
+msgstr "Lettertype:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: plugins/betternotify/notifyprefs.ui:59
+msgid "Notify Interval:"
+msgstr "Interval voor melding:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: plugins/betternotify/notifyprefs.ui:78
+msgid "seconds"
+msgstr "seconden"
+
+#. i18n: ectx: property (text), widget (QPushButton, adjustPosition)
+#: plugins/betternotify/notifyprefs.ui:123
+msgid "Adjust Notification's Position"
+msgstr "Positie van meldingen van nieuwe geposte berichten aanpassen"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: plugins/betternotify/notifyprefs.ui:159
+msgid "Timeline Selection"
+msgstr "Selectie van de tijdlijn"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/betternotify/notifyprefs.ui:171
+msgid "Select Timelines"
+msgstr "Tijdlijnen selecteren"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/betternotify/notifyprefs.ui:181
+msgid "Accounts"
+msgstr "Accounts"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/betternotify/notifyprefs.ui:197
+msgid "Select timelines you wish to see notifications for their new posts:"
+msgstr ""
+"De tijdlijnen selecteren waarvoor u meldingen wilt bij hun nieuwe geposte "
+"berichten:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: plugins/betternotify/notifyprefs.ui:249
+msgid ""
+"<html><head/><body><p><span style=\" font-weight:600;\">Note:</span> Any "
+"change, needs plugin re-load (disable/enable) to take effect.</p></body></"
+"html>"
+msgstr ""
+"<html><head/><body><p><span style=\" font-weight:600;\">Opmerking:</span> "
+"Elke wijziging heeft plug-in herladen nodig (in-/uitschakelen) om effect te "
+"hebben.</p></body></html>"
+
+#: plugins/filter/addeditfilter.cpp:60
+msgid "Modify filter rules"
+msgstr "Filterregels aanpassen"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AddEditFilterBase)
+#: plugins/filter/addeditfilter_base.ui:14
+msgid "Define new filter rules"
+msgstr "Nieuw filterregels definiëren"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/filter/addeditfilter_base.ui:22
+msgid "Fi&lter field:"
+msgstr "Fil&terveld:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/filter/addeditfilter_base.ui:52
+msgid "Fi&lter type:"
+msgstr "Fi&ltertype:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/filter/addeditfilter_base.ui:82
+msgid "Te&xt:"
+msgstr "Te&kst:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: plugins/filter/addeditfilter_base.ui:102
+msgid "Filter action:"
+msgstr "Filteractie:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, dontHideReplies)
+#: plugins/filter/addeditfilter_base.ui:133
+msgid "Do not hide replies to me"
+msgstr "Antwoorden aan mij niet verbergen"
+
+#: plugins/filter/filtermanager.cpp:51
+msgid "Configure Filters..."
+msgstr "Filters instellen..."
+
+#: plugins/filter/filtermanager.cpp:59
+msgid "Hide Post"
+msgstr "Gepost bericht verbergen"
+
+#: plugins/filter/filtermanager.cpp:239
+#, kde-format
+msgid "Hide all posts from <b>@%1</b>?"
+msgstr "Alle geposte berichten van <b>@%1</b> verbergen?"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, mFilteringCtl)
+#: plugins/filter/filterprefs.ui:14
+msgid "Configure Filters"
+msgstr "Filters instellen"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: plugins/filter/filterprefs.ui:24
+msgid "Rules"
+msgstr "Regels"
+
+#. i18n: ectx: property (text), widget (QTableWidget, filters)
+#: plugins/filter/filterprefs.ui:43
+msgid "Field"
+msgstr "Veld"
+
+#. i18n: ectx: property (text), widget (QTableWidget, filters)
+#: plugins/filter/filterprefs.ui:48
+msgid "Type"
+msgstr "Type"
+
+#. i18n: ectx: property (text), widget (QTableWidget, filters)
+#: plugins/filter/filterprefs.ui:53
+msgid "Filter"
+msgstr "Filter"
+
+#. i18n: ectx: property (text), widget (QTableWidget, filters)
+#: plugins/filter/filterprefs.ui:58
+msgid "Action"
+msgstr "Actie"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnEdit)
+#: plugins/filter/filterprefs.ui:91
+msgid "Modify"
+msgstr "Wijzigen"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnRemove)
+#: plugins/filter/filterprefs.ui:114
+msgid "Remove"
+msgstr "Verwijderen"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabSpecial)
+#: plugins/filter/filterprefs.ui:127
+msgid "Special Rules"
+msgstr "Speciale regels"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cfg_hideRepliesNotRelatedToMe)
+#: plugins/filter/filterprefs.ui:133
+msgid "You will see just replies came to you, or mentions you."
+msgstr "U ziet alleen antwoorden aan u gericht of die u noemen."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_hideRepliesNotRelatedToMe)
+#: plugins/filter/filterprefs.ui:136
+msgid "Just show replies to me"
+msgstr "Alleen antwoorden aan mij tonen"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cfg_hideNoneFriendsReplies)
+#: plugins/filter/filterprefs.ui:143
+msgid "You will see just replies between your friends."
+msgstr "U ziet alleen antwoorden tussen uw vrienden."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_hideNoneFriendsReplies)
+#: plugins/filter/filterprefs.ui:146
+msgid "Just show replies to me and my friends"
+msgstr "Alleen antwoorden aan mij en mijn vrienden tonen"
+
+#: plugins/filter/filtersettings.cpp:45
+msgid "Author Username"
+msgstr "Gebruikersnaam van de auteur"
+
+#: plugins/filter/filtersettings.cpp:46
+msgid "Post Text"
+msgstr "Tekst posten"
+
+#: plugins/filter/filtersettings.cpp:47
+msgid "Author Client"
+msgstr "Client van auteur"
+
+#: plugins/filter/filtersettings.cpp:48
+msgid "Reply to User"
+msgstr "Beantwoorden aan gebruiker"
+
+#: plugins/filter/filtersettings.cpp:50
+msgid "Contain"
+msgstr "Bevat"
+
+#: plugins/filter/filtersettings.cpp:51
+msgid "Does Not Contain"
+msgstr "Bevat niet"
+
+#: plugins/filter/filtersettings.cpp:52
+msgid "Exact Match"
+msgstr "Exacte overeenkomst"
+
+#: plugins/filter/filtersettings.cpp:53
+msgid "Regular Expression"
+msgstr "Reguliere expressie"
+
+#: plugins/filter/filtersettings.cpp:55
+msgctxt "@action"
+msgid "Hide Posts"
+msgstr "Gepost bericht verbergen"
+
+#: plugins/filter/filtersettings.cpp:56
+msgctxt "@action"
+msgid "Highlight Posts"
+msgstr "Geposte berichten accentueren"
+
+#. i18n: ectx: property (text), widget (QLabel, label_im)
+#: plugins/imstatus/imstatusprefs.ui:19
+msgid "Instant Messenger:"
+msgstr "Instant Messenger:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_reply)
+#: plugins/imstatus/imstatusprefs.ui:31
+msgid "Add replies to status"
+msgstr "Antwoorden aan status toevoegen"
+
+#. i18n: ectx: property (text), widget (QLabel, label_status_templ)
+#: plugins/imstatus/imstatusprefs.ui:38
+msgid "Status template"
+msgstr "Statussjabloon"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/imstatus/imstatusprefs.ui:64
+#, no-c-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<table border=\"0\" style=\"-qt-table-type: root; margin-top:4px; margin-"
+"bottom:4px; margin-left:4px; margin-right:4px;\">\n"
+"<tr>\n"
+"<td style=\"border: none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt;\">Available markup:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%status%</span><span style=\" font-size:8pt;\"> "
+"- new status</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%time%</span><span style=\" font-size:8pt;\"> - "
+"time of adding new status</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%url%</span><span style=\" font-size:8pt;\"> - "
+"URL of new status</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%username%</span><span style=\" font-size:8pt;"
+"\"> - your username</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%fullname%</span><span style=\" font-size:8pt;"
+"\"> - your full name</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%client%</span><span style=\" font-size:8pt;\"> "
+"- add </span><span style=\" font-size:8pt; font-style:italic;\">Choqok</"
+"span><span style=\" font-size:8pt;\"> to status</span></p></td></tr></"
+"table></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<table border=\"0\" style=\"-qt-table-type: root; margin-top:4px; margin-"
+"bottom:4px; margin-left:4px; margin-right:4px;\">\n"
+"<tr>\n"
+"<td style=\"border: none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt;\">Beschikbare opmaak:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%status%</span><span style=\" font-size:8pt;\"> "
+"- nieuwe status</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%time%</span><span style=\" font-size:8pt;\"> - "
+"tijdstip van toevoegen nieuwe status</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%url%</span><span style=\" font-size:8pt;\"> - "
+"URL van nieuwe status</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%username%</span><span style=\" font-size:8pt;"
+"\"> - uw gebruikernaam</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%fullname%</span><span style=\" font-size:8pt;"
+"\"> - uw volledige naam</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%client%</span><span style=\" font-size:8pt;\"> "
+"- toevoegen van </span><span style=\" font-size:8pt; font-style:italic;"
+"\">Choqok</span><span style=\" font-size:8pt;\"> aan status</span></p></td></"
+"tr></table></body></html>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_repeat)
+#: plugins/imstatus/imstatusprefs.ui:87
+msgid "Add repeats to status"
+msgstr "Herhalingen toevoegen aan status"
+
+#: plugins/konqueror/konqchoqok.cpp:51 plugins/konqueror/konqchoqok.cpp:106
+msgid "Post Text with Choqok"
+msgstr "Post tekst met Choqok"
+
+#: plugins/konqueror/konqchoqok.cpp:56
+msgid "Shorten URL on Paste"
+msgstr "URL-adressen bij plakken inkorten"
+
+#: plugins/konqueror/konqchoqok.cpp:105
+msgid "You need to select text to post."
+msgstr "U moet tekst selecteren om te posten."
+
+#. i18n: ectx: Menu (tools)
+#: plugins/konqueror/konqchoqok.rc:4
+msgid "&Tools"
+msgstr "H&ulpmiddelen"
+
+#: plugins/nowlistening/nowlistening.cpp:49
+msgid "Now Listening"
+msgstr "Nu aan het luisteren"
+
+#: plugins/nowlistening/nowlistening.cpp:242
+msgctxt "Player is running, But it's not playing."
+msgid "Play your desired music player."
+msgstr "Laat uw gewenste muziekspeler spelen."
+
+#: plugins/nowlistening/nowlistening.cpp:245
+msgid "No supported player found."
+msgstr "Geen ondersteunde muziekspeler gevonden."
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: plugins/nowlistening/nowlisteningprefs.ui:17
+msgid "Valid metadata:"
+msgstr "Geldige metadata:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/nowlistening/nowlisteningprefs.ui:51
+msgid "Template:"
+msgstr "Sjabloon:"
+
+#: plugins/quickfilter/quickfilter.cpp:50
+msgid "Filter by author"
+msgstr "Filteren op auteur"
+
+#: plugins/quickfilter/quickfilter.cpp:52
+msgid "Filter by content"
+msgstr "Filteren op inhoud"
+
+#: plugins/quickfilter/quickfilter.cpp:108
+msgid "Filter out timeline by author"
+msgstr "Uitfilteren van tijdlijn door auteur"
+
+#: plugins/quickfilter/quickfilter.cpp:110
+msgid "Filter out timeline by text"
+msgstr "Uitfilteren van tijdlijn door tekst"
+
+#: plugins/quickfilter/quickfilter.cpp:122
+msgid "Author"
+msgstr "Auteur"
+
+#: plugins/quickfilter/quickfilter.cpp:123
+msgid "Text"
+msgstr "Tekst"
+
+#: plugins/searchaction/searchaction.cpp:65
+msgid "The Search action plugin does not support the current microblog."
+msgstr "De zoekactie-plugin ondersteunt de huidige microblog niet."
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:85
+msgid "API key is invalid"
+msgstr "API sleutel is ongeldig"
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:88
+msgid "Login is invalid"
+msgstr "Aanmelden is ongeldig"
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:91
+msgid "Rate limit exceeded. Try another shortener."
+msgstr "Snelheidslimiet overschreden. Probeer een ander inkortprogramma."
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:94
+#: plugins/shorteners/goo_gl/goo_gl.cpp:69
+#: plugins/shorteners/is_gd/is_gd.cpp:81 plugins/shorteners/ur_ly/ur_ly.cpp:69
+#: plugins/uploaders/flickr/flickr.cpp:208
+#: plugins/uploaders/flickr/flickr.cpp:214
+#: plugins/uploaders/flickr/flickrconfig.cpp:172
+#: plugins/uploaders/flickr/flickrconfig.cpp:177
+#: plugins/uploaders/flickr/flickrconfig.cpp:246
+#: plugins/uploaders/flickr/flickrconfig.cpp:251
+#: plugins/uploaders/imageshack/imageshack.cpp:127
+#: plugins/uploaders/mobypicture/mobypicture.cpp:168
+#: plugins/uploaders/posterous/posterous.cpp:192
+#: plugins/uploaders/twitgoo/twitgoo.cpp:131
+#: plugins/uploaders/twitpic/twitpic.cpp:131
+msgid "Malformed response"
+msgstr "Verkeerd gevormd antwoord"
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:94
+#: plugins/shorteners/bit_ly/bit_ly.cpp:97
+msgid "Bit.ly error"
+msgstr "Fout met bit.ly"
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:96
+#: plugins/shorteners/goo_gl/goo_gl.cpp:71
+#: plugins/shorteners/is_gd/is_gd.cpp:84
+#: plugins/shorteners/tighturl/tighturl.cpp:69
+#: plugins/shorteners/tinyarro_ws/tinyarro_ws.cpp:73
+#: plugins/shorteners/ur1_ca/ur1_ca.cpp:74
+#: plugins/shorteners/ur_ly/ur_ly.cpp:73
+#: plugins/shorteners/yourls/yourls.cpp:89
+#, kde-format
+msgid ""
+"Cannot create a short URL.\n"
+"%1"
+msgstr ""
+"Kan geen kort URL-adres aanmaken.\n"
+"%1"
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:64
+msgctxt ""
+"The your_api_key part of the URL is a fixed part of the URL and should "
+"probably not be changed in localization."
+msgid ""
+"You can find your API key <a href=\"http://bit.ly/a/your_api_key\">here</a>"
+msgstr ""
+"U kunt uw API-key <a href=\"http://bit.ly/a/your_api_key\">hier</a> vinden"
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:107
+msgid "Checking..."
+msgstr "Controleren..."
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:133
+msgctxt ""
+"The your_api_key part of the URL is a fixed part of the URL and should "
+"probably not be changed in localization."
+msgid ""
+"Provided data is invalid. Try another login or API key.\n"
+"You can find it on http://bit.ly/a/your_api_key"
+msgstr ""
+"Geleverde gegevens zijn ongeldig. Probeer een andere aanmeld- of API-key.\n"
+"U kunt het vinden op http://bit.ly/a/your_api_key"
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:136
+msgid "You entered valid information."
+msgstr "U hebt geldige informatie ingevoerd."
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:139
+msgid "bit.ly Config Error"
+msgstr "Instellingsfout met bit.ly"
+
+#. i18n: ectx: property (text), widget (QPushButton, validate_button)
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:143
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:49
+msgid "Validate"
+msgstr "Valideren"
+
+#. i18n: ectx: property (text), widget (QLabel, login)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:19
+msgid "Bit.ly login:"
+msgstr "Bit.ly aanmelding:"
+
+#. i18n: ectx: property (text), widget (QLabel, api_key)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:32
+msgid "Bit.ly API key:"
+msgstr "Bit.ly API-key:"
+
+#. i18n: ectx: property (text), widget (QLabel, help_label)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:58
+msgid "You can find your API key here"
+msgstr "U kunt uw API-Key hier vinden"
+
+#. i18n: ectx: property (text), widget (QLabel, domain)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:73
+msgid "Domain:"
+msgstr "Domein:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:86
+msgid "(No matter for Bit.ly Pro accounts)"
+msgstr "(Geen probleem voor Bit.ly Pro accounts)"
+
+#: plugins/shorteners/goo_gl/goo_gl.cpp:52
+msgid "Error when creating job"
+msgstr "Fout bij het aanmaken van een taak"
+
+#: plugins/shorteners/goo_gl/goo_gl.cpp:52
+#: plugins/shorteners/goo_gl/goo_gl.cpp:64
+#: plugins/shorteners/goo_gl/goo_gl.cpp:69
+#: plugins/shorteners/goo_gl/goo_gl.cpp:71
+msgid "Goo.gl Error"
+msgstr "Fout met Goo.gl"
+
+#: plugins/shorteners/is_gd/is_gd.cpp:73 plugins/shorteners/is_gd/is_gd.cpp:81
+#: plugins/shorteners/is_gd/is_gd.cpp:84
+msgid "is.gd Error"
+msgstr "Fout met is.gd"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_logstats)
+#: plugins/shorteners/is_gd/is_gd_prefs.ui:19
+msgid "Generate Statistics"
+msgstr "Statistieken maken"
+
+#: plugins/shorteners/tighturl/tighturl.cpp:70
+msgid "TightUrl Error"
+msgstr "Fout met TightUrl"
+
+#: plugins/shorteners/tinyarro_ws/tinyarro_ws.cpp:71
+msgid "Tinyarro.ws error"
+msgstr "Fout met tinyarro.ws"
+
+#: plugins/shorteners/tinyarro_ws/tinyarro_ws_config.cpp:63
+msgid "Random host"
+msgstr "Willekeurige host"
+
+#. i18n: ectx: property (text), widget (QLabel, urlHostLabel)
+#: plugins/shorteners/tinyarro_ws/tinyarro_ws_prefs.ui:40
+msgid "Shortener URL host:"
+msgstr "URL-host voor verkorten:"
+
+#: plugins/shorteners/ur1_ca/ur1_ca.cpp:74
+msgid "ur1.ca Error"
+msgstr "Fout met ur1.ca"
+
+#: plugins/shorteners/ur_ly/ur_ly.cpp:69 plugins/shorteners/ur_ly/ur_ly.cpp:74
+msgid "Ur.ly Error"
+msgstr "Fout met ur.ly"
+
+#: plugins/shorteners/yourls/yourls.cpp:86
+msgid "Yourls Error"
+msgstr "Fout met Yourls"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/shorteners/yourls/yourlsprefs.ui:17
+msgid "Yourls API URL:"
+msgstr "Yourls API URL:"
+
+#. i18n: ectx: property (clickMessage), widget (QLineEdit, kcfg_yourlsHost)
+#: plugins/shorteners/yourls/yourlsprefs.ui:27
+msgid "http://SomeDomain.com/yourls/yourls-api.php"
+msgstr "http://SomeDomain.com/yourls/yourls-api.php"
+
+#: plugins/translator/sharedtools.cpp:33
+msgctxt "Translation Language"
+msgid "Chinese Simplified"
+msgstr "Vereenvoudigd Chinees"
+
+#: plugins/translator/sharedtools.cpp:34
+msgctxt "Translation Language"
+msgid "Chinese Traditional"
+msgstr "Traditioneel Chinees"
+
+#: plugins/translator/sharedtools.cpp:35
+msgctxt "Translation Language"
+msgid "Filipino"
+msgstr "Filipijns"
+
+#: plugins/translator/sharedtools.cpp:36
+msgctxt "Translation Language"
+msgid "Haitian Creole"
+msgstr "Haïtiaans Creools"
+
+#: plugins/translator/sharedtools.cpp:37
+msgctxt "Translation Language"
+msgid "Hebrew"
+msgstr "Hebreeuws"
+
+#: plugins/translator/sharedtools.cpp:38
+msgctxt "Translation Language"
+msgid "Norwegian"
+msgstr "Noors"
+
+#: plugins/translator/translator.cpp:53
+msgid "Translate to..."
+msgstr "Vertalen naar..."
+
+#: plugins/translator/translator.cpp:105
+#, kde-format
+msgctxt "%1 is the name of the source language in localized form"
+msgid ""
+"<span style=\"color:%2; font-size:small;\">Translated from %1: (<a "
+"href='choqok://showoriginalpost' style=\"text-decoration:none\" >original "
+"post</a>)</span>"
+msgstr ""
+"<span style=\"color:%2; font-size:small;\">Vertaald uit %1: (<a "
+"href='choqok://showoriginalpost' style=\"text-decoration:none\" >originele "
+"posting</a>)</span>"
+
+#: plugins/translator/translator.cpp:116
+#, kde-format
+msgid "Translation failed: %1"
+msgstr "Vertaling is mislukt: %1"
+
+#: plugins/translator/translator.cpp:135
+msgid "Configure Translator"
+msgstr "Vertaler instellen"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/translator/translatorprefs.ui:17
+msgid "Select languages to be shown in translate menu"
+msgstr "De talen selecteren om in het vertaalmenu te tonen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useUntinyDotCom)
+#: plugins/untiny/untinyprefs.ui:17
+msgid "Use untiny.com service"
+msgstr "untiny.com service gebruiken"
+
+#: plugins/uploaders/flickr/flickr.cpp:172
+msgid "The photo required argument was missing"
+msgstr "Het bij de foto vereiste argument ontbrak"
+
+#: plugins/uploaders/flickr/flickr.cpp:175
+msgid "The file was not correctly uploaded"
+msgstr "Het bestand is niet juist geüpload"
+
+#: plugins/uploaders/flickr/flickr.cpp:178
+msgid "The file was zero bytes in length"
+msgstr "De bestandsgrootte is nul bytes"
+
+#: plugins/uploaders/flickr/flickr.cpp:181
+msgid "Filetype was not recognised"
+msgstr "Bestandstype is niet herkend"
+
+#: plugins/uploaders/flickr/flickr.cpp:184
+msgid "The calling user has reached their monthly bandwidth limit"
+msgstr ""
+"De oproepende gebruiker heeft zijn/haar maandelijkse bandbreedtelimiet "
+"bereikt"
+
+#: plugins/uploaders/flickr/flickr.cpp:188
+#: plugins/uploaders/flickr/flickrconfig.cpp:161
+msgid "Signature problem. Please try again later"
+msgstr "Probleem met ondertekening, probeer het later nog eens"
+
+#: plugins/uploaders/flickr/flickr.cpp:195
+msgid "Login failed. Please re-authenticate Choqok"
+msgstr "Aanmelden is mislukt. Authentiseer Choqok opnieuw"
+
+#: plugins/uploaders/flickr/flickr.cpp:198
+#: plugins/uploaders/flickr/flickrconfig.cpp:164
+#: plugins/uploaders/flickr/flickrconfig.cpp:238
+msgid "The requested service is temporarily unavailable. Try again later"
+msgstr ""
+"De gevraagde service is tijdelijk niet beschikbaar. Probeer het later opnieuw"
+
+#: plugins/uploaders/flickr/flickr.cpp:201
+#: plugins/uploaders/flickr/flickrconfig.cpp:167
+#, kde-format
+msgid "Unknown Error:%1. Please try again later"
+msgstr "Onbekende fout:%1. Probeer het later nog eens"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:183
+#: plugins/uploaders/flickr/flickrconfig.cpp:258
+msgid "Flickr authorization"
+msgstr "Flickr autorisatie"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:235
+msgid "Something happens with signature. Please retry"
+msgstr "Er is iets gebeurd met uw handtekening. Probeer het nog eens"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:241
+#, kde-format
+msgid "Something happens wrong. Error %1. Try again later"
+msgstr "Er ging iets verkeerd. Fout %1. Probeer het later opnieuw"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:278
+#, kde-format
+msgid "Authorized as %1"
+msgstr "Geautoriseerd als %1"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:285
+msgid "Not authorized"
+msgstr "Niet geautoriseerd"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:299
+msgid "Click here when you authorized Choqok"
+msgstr "Hier klikken wanneer u Choqok hebt geautoriseerd."
+
+#. i18n: ectx: attribute (title), widget (QWidget, authTab)
+#: plugins/uploaders/flickr/flickrprefs.ui:24
+msgid "Authorization"
+msgstr "Autorisatie"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/uploaders/flickr/flickrprefs.ui:51
+msgid ""
+"Click the below button; if everything goes well, you will pointed to Flickr."
+"com website to allow access to Choqok."
+msgstr ""
+"Klik op de onderstaande knop; als alles goed gaat dan bent u gericht op de "
+"website Flickr om toegang te krijgen tot Choqok."
+
+#. i18n: ectx: property (text), widget (QPushButton, authButton)
+#: plugins/uploaders/flickr/flickrprefs.ui:61
+msgid "Click here to authorize Choqok on Flickr.com"
+msgstr "Klik hier om Choqok te autoriseren op Flickr.com"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: plugins/uploaders/flickr/flickrprefs.ui:90
+msgid "Who can view photo"
+msgstr "Wie uw foto mag bekijken"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_forprivate)
+#: plugins/uploaders/flickr/flickrprefs.ui:96
+msgid "Private"
+msgstr "Privé"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_forfriends)
+#: plugins/uploaders/flickr/flickrprefs.ui:105
+msgid "Visible for friends"
+msgstr "Zichtbaar voor vrienden"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_forfamily)
+#: plugins/uploaders/flickr/flickrprefs.ui:112
+msgid "Visible for family"
+msgstr "Zichtbaar voor familie"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: plugins/uploaders/flickr/flickrprefs.ui:134
+msgid "Set safety level"
+msgstr "Beveiligingsniveau instellen"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_safe)
+#: plugins/uploaders/flickr/flickrprefs.ui:140
+msgid "Safe"
+msgstr "Veilig"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_moderate)
+#: plugins/uploaders/flickr/flickrprefs.ui:150
+msgid "Moderate"
+msgstr "Redelijk"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_restricted)
+#: plugins/uploaders/flickr/flickrprefs.ui:157
+msgid "Restricted"
+msgstr "Beperkt"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_hidefromsearch)
+#: plugins/uploaders/flickr/flickrprefs.ui:169
+msgid "Hide picture from public search"
+msgstr "Afbeelding verbergen voor publiek zoeken"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_shorturl)
+#: plugins/uploaders/flickr/flickrprefs.ui:176
+msgid "Use Flic.kr to short URLs"
+msgstr "Flic.kr voor korte URL's gebruiken"
+
+#: plugins/uploaders/imageshack/imageshack.cpp:53
+msgid "Just supporting image uploading"
+msgstr "Alleen uploaden van afbeeldingen wordt ondersteund"
+
+#: plugins/uploaders/mobypicture/mobypicture.cpp:64
+#: plugins/uploaders/posterous/posterous.cpp:119
+#: plugins/uploaders/twitgoo/twitgoo.cpp:61
+#: plugins/uploaders/twitpic/twitpic.cpp:60
+msgid "There is no Twitter account configured to use."
+msgstr "Er is geen geldig te gebruiken Twitter-account ingesteld."
+
+#: plugins/uploaders/mobypicture/mobypictureconfig.cpp:88
+#: plugins/uploaders/posterous/posterousconfig.cpp:89
+#: plugins/uploaders/twitgoo/twitgooconfig.cpp:78
+#: plugins/uploaders/twitpic/twitpicconfig.cpp:78
+msgid "You have to configure at least one Twitter account to use this plugin."
+msgstr ""
+"U moet minstens één Twitter-account hebben ingesteld om deze plug-in te "
+"kunnen gebruiken."
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_oauth)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:40
+#: plugins/uploaders/posterous/posterousprefs.ui:40
+msgid "&Twitter account"
+msgstr "&Twitter-account"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_basic)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:47
+msgid "Mobypicture &login and password:"
+msgstr "Mobypicture aanme&lden en wachtwoord:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:57
+#: plugins/uploaders/posterous/posterousprefs.ui:57
+msgid "Upload files using:"
+msgstr "Bestanden uploaden met:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:64
+msgid "Login:"
+msgstr "Aanmelding:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:74
+msgid "Password (PIN):"
+msgstr "Wachtwoord (PIN):"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_basic)
+#: plugins/uploaders/posterous/posterousprefs.ui:47
+msgid "Posterous &login and password:"
+msgstr "Posterous aanme&lden en wachtwoord:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/uploaders/posterous/posterousprefs.ui:64
+msgid "E-mail:"
+msgstr "E-mail:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/uploaders/twitgoo/twitgooprefs.ui:17
+#: plugins/uploaders/twitpic/twitpicprefs.ui:17
+msgid "Twitter account:"
+msgstr "Twitter-account:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_directLink)
+#: plugins/uploaders/twitgoo/twitgooprefs.ui:50
+msgid "Get direct link to file"
+msgstr "Directe koppeling naar bestand verkrijgen"

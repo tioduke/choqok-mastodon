@@ -47,7 +47,7 @@ protected:
     bool showed;
 
 protected Q_SLOTS:
-    virtual void accept() override;
+    virtual void accept();
     void currentPluginChanged(int index);
     void slotAboutClicked();
     void slotConfigureClicked();

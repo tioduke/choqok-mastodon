@@ -161,16 +161,12 @@ void AccountsWidget::addAccountToTable(Choqok::Account *account)
 //     accountsTable->setCellWidget ( row, 0, enable );
     accountsTable->setItem(row, 0, new QTableWidgetItem(account->alias()));
     accountsTable->setItem(row, 1, new QTableWidgetItem(QIcon::fromTheme(account->microblog()->pluginIcon()), account->microblog()->serviceName()));
-    QCheckBox *enabled = new QCheckBox(accountsTable);
-    enabled->setChecked(account->isEnabled());
-    accountsTable->setCellWidget(row, 2, enabled);
     QCheckBox *readOnly = new QCheckBox(accountsTable);
     readOnly->setChecked(account->isReadOnly());
-    accountsTable->setCellWidget(row, 3, readOnly);
+    accountsTable->setCellWidget(row, 2, readOnly);
     QCheckBox *quick = new QCheckBox(accountsTable);
     quick->setChecked(account->showInQuickPost());
-    accountsTable->setCellWidget(row, 4, quick);
-    connect(enabled, &QCheckBox::toggled, this, &AccountsWidget::emitChanged);
+    accountsTable->setCellWidget(row, 3, quick);
     connect(readOnly, &QCheckBox::toggled, this, &AccountsWidget::emitChanged);
     connect(quick,    &QCheckBox::toggled, this, &AccountsWidget::emitChanged);
 }
@@ -222,17 +218,12 @@ void AccountsWidget::save()
             acc->setPriority((uint)i);
             changed = true;
         }
-        QCheckBox *enabled = qobject_cast<QCheckBox *>(accountsTable->cellWidget(i, 2));
-        if (enabled && acc->isEnabled() != enabled->isChecked()) {
-            acc->setEnabled(enabled->isChecked());
-            changed = true;
-        }
-        QCheckBox *readOnly = qobject_cast<QCheckBox *>(accountsTable->cellWidget(i, 3));
+        QCheckBox *readOnly = qobject_cast<QCheckBox *>(accountsTable->cellWidget(i, 2));
         if (readOnly && acc->isReadOnly() != readOnly->isChecked()) {
             acc->setReadOnly(readOnly->isChecked());
             changed = true;
         }
-        QCheckBox *showOnQuick = qobject_cast<QCheckBox *>(accountsTable->cellWidget(i, 4));
+        QCheckBox *showOnQuick = qobject_cast<QCheckBox *>(accountsTable->cellWidget(i, 3));
         if (showOnQuick && acc->showInQuickPost() != showOnQuick->isChecked()) {
             acc->setShowInQuickPost(showOnQuick->isChecked());
             changed = true;
@@ -275,18 +266,16 @@ void AccountsWidget::move(bool up)
     }
     emitChanged();
     const int sourceRow = accountsTable->row(accountsTable->selectedItems().at(0));
-    bool sourceEnabled = qobject_cast<QCheckBox *>(accountsTable->cellWidget(sourceRow, 2))->isChecked();
-    bool sourceReadOnly = qobject_cast<QCheckBox *>(accountsTable->cellWidget(sourceRow, 3))->isChecked();
-    bool sourceQuickPost = qobject_cast<QCheckBox *>(accountsTable->cellWidget(sourceRow, 4))->isChecked();
+    bool sourceReadOnly = qobject_cast<QCheckBox *>(accountsTable->cellWidget(sourceRow, 2))->isChecked();
+    bool sourceQuickPost = qobject_cast<QCheckBox *>(accountsTable->cellWidget(sourceRow, 3))->isChecked();
     const int destRow = (up ? sourceRow - 1 : sourceRow + 1);
 
     if (destRow < 0  || (destRow >= accountsTable->rowCount())) {
         return;
     }
 
-    bool destEnabled = qobject_cast<QCheckBox *>(accountsTable->cellWidget(destRow, 2))->isChecked();
-    bool destReadOnly = qobject_cast<QCheckBox *>(accountsTable->cellWidget(destRow, 3))->isChecked();
-    bool destQuickPost = qobject_cast<QCheckBox *>(accountsTable->cellWidget(destRow, 4))->isChecked();
+    bool destReadOnly = qobject_cast<QCheckBox *>(accountsTable->cellWidget(destRow, 2))->isChecked();
+    bool destQuickPost = qobject_cast<QCheckBox *>(accountsTable->cellWidget(destRow, 3))->isChecked();
 
     // take whole rows
     QList<QTableWidgetItem *> sourceItems = takeRow(sourceRow);
@@ -297,13 +286,11 @@ void AccountsWidget::move(bool up)
     setRow(destRow, sourceItems);
 
     // taking whole row doesn't work! so changing value of checkBoxes take place here.
-    qobject_cast<QCheckBox *>(accountsTable->cellWidget(sourceRow, 2))->setChecked(destEnabled);
-    qobject_cast<QCheckBox *>(accountsTable->cellWidget(sourceRow, 3))->setChecked(destReadOnly);
-    qobject_cast<QCheckBox *>(accountsTable->cellWidget(sourceRow, 4))->setChecked(destQuickPost);
+    qobject_cast<QCheckBox *>(accountsTable->cellWidget(sourceRow, 2))->setChecked(destReadOnly);
+    qobject_cast<QCheckBox *>(accountsTable->cellWidget(sourceRow, 3))->setChecked(destQuickPost);
 
-    qobject_cast<QCheckBox *>(accountsTable->cellWidget(destRow, 2))->setChecked(sourceEnabled);
-    qobject_cast<QCheckBox *>(accountsTable->cellWidget(destRow, 3))->setChecked(sourceReadOnly);
-    qobject_cast<QCheckBox *>(accountsTable->cellWidget(destRow, 4))->setChecked(sourceQuickPost);
+    qobject_cast<QCheckBox *>(accountsTable->cellWidget(destRow, 2))->setChecked(sourceReadOnly);
+    qobject_cast<QCheckBox *>(accountsTable->cellWidget(destRow, 3))->setChecked(sourceQuickPost);
 
     accountsTable->setCurrentCell(destRow, 0);
     KMessageBox::information(this, i18n("You need to restart Choqok for the accounts priority changes to take effect."),

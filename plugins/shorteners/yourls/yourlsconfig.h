@@ -37,8 +37,8 @@ public:
     YourlsConfig(QWidget *parent, const QVariantList &);
     ~YourlsConfig();
 
-    virtual void save() override;
-    virtual void load() override;
+    virtual void save();
+    virtual void load();
 
 protected Q_SLOTS:
     void emitChanged();

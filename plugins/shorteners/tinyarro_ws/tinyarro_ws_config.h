@@ -36,8 +36,8 @@ public:
     Tinyarro_ws_Config(QWidget *parent, const QVariantList &);
     ~Tinyarro_ws_Config();
 
-    virtual void save() override;
-    virtual void load() override;
+    virtual void save();
+    virtual void load();
 protected:
     QMap<QString, QString> hostList;
 protected Q_SLOTS:

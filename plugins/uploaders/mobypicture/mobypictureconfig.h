@@ -35,8 +35,8 @@ public:
     MobypictureConfig(QWidget *parent, const QVariantList &);
     ~MobypictureConfig();
 
-    virtual void save() override;
-    virtual void load() override;
+    virtual void save();
+    virtual void load();
 
 protected Q_SLOTS:
     void emitChanged();

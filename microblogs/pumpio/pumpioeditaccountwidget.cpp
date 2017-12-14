@@ -38,7 +38,6 @@
 #include "pumpioaccount.h"
 #include "pumpiodebug.h"
 #include "pumpiomicroblog.h"
-#include "pumpiooauth.h"
 
 PumpIOEditAccountWidget::PumpIOEditAccountWidget(PumpIOMicroBlog *microblog,
         PumpIOAccount *account,
@@ -53,9 +52,8 @@ PumpIOEditAccountWidget::PumpIOEditAccountWidget(PumpIOMicroBlog *microblog,
     if (m_account) {
         kcfg_alias->setText(m_account->alias());
         kcfg_webfingerid->setText(m_account->webfingerID());
-        setAuthenticated(!m_account->token().isEmpty() && !m_account->tokenSecret().isEmpty());
+        isAuthenticated();
     } else {
-        setAuthenticated(false);
         QString newAccountAlias = microblog->serviceName();
         const QString servName = newAccountAlias;
         int counter = 1;
@@ -79,8 +77,6 @@ Choqok::Account *PumpIOEditAccountWidget::apply()
 {
     m_account->setAlias(kcfg_alias->text());
     m_account->setUsername(kcfg_webfingerid->text().split(QLatin1Char('@'))[0]);
-    m_account->setToken(m_account->oAuth()->token());
-    m_account->setTokenSecret(m_account->oAuth()->tokenSecret());
     m_account->writeConfig();
     saveTimelinesTable();
     return m_account;
@@ -89,60 +85,72 @@ Choqok::Account *PumpIOEditAccountWidget::apply()
 void PumpIOEditAccountWidget::authorizeUser()
 {
     qCDebug(CHOQOK);
-    if (kcfg_webfingerid->text().isEmpty() || !kcfg_webfingerid->text().contains(QLatin1Char('@'))) {
-        return;
-    }
+    m_qoauth = new QOAuth::Interface(new KIO::Integration::AccessManager(this), this);
     if (m_account->consumerKey().isEmpty() || m_account->consumerSecret().isEmpty()) {
         registerClient();
     }
+    m_qoauth->setConsumerKey(m_account->consumerKey().toLocal8Bit());
+    m_qoauth->setConsumerSecret(m_account->consumerSecret().toLocal8Bit());
 
-    m_account->oAuth()->grant();
+    QOAuth::ParamMap oAuthParams;
+    oAuthParams.insert("oauth_callback", "oob");
+    QOAuth::ParamMap oAuthRequest = m_qoauth->requestToken(m_account->host() + QLatin1String("/oauth/request_token"),
+                                    QOAuth::GET, QOAuth::HMAC_SHA1, oAuthParams);
 
-    connect(m_account->oAuth(), &QAbstractOAuth::authorizeWithBrowser, &Choqok::openUrl);
-    connect(m_account->oAuth(), &QAbstractOAuth::statusChanged, this, &PumpIOEditAccountWidget::getPinCode);
-}
+    if (m_qoauth->error() == QOAuth::NoError) {
+        const QString token = QLatin1String(oAuthRequest.value(QOAuth::tokenParameterName()));
+        const QString tokenSecret = QLatin1String( oAuthRequest.value(QOAuth::tokenSecretParameterName()));
 
-void PumpIOEditAccountWidget::getPinCode()
-{
-    isAuthenticated = false;
-    if (m_account->oAuth()->status() == QAbstractOAuth::Status::TemporaryCredentialsReceived) {
+        QUrl oAuthAuthorizeURL(m_account->host() + QLatin1String("/oauth/authorize"));
+        QUrlQuery oAuthAuthorizeQuery;
+        oAuthAuthorizeQuery.addQueryItem(QLatin1String("oauth_token"), token);
+        oAuthAuthorizeURL.setQuery(oAuthAuthorizeQuery);
+
+        Choqok::openUrl(oAuthAuthorizeURL);
         QString verifier = QInputDialog::getText(this, i18n("PIN"),
                            i18n("Enter the verifier code received from %1", m_account->host()));
-        if (verifier.isEmpty()) {
-            return;
-        }
 
-        m_account->oAuth()->continueGrantWithVerifier(verifier);
-    } else if (m_account->oAuth()->status() == QAbstractOAuth::Status::Granted) {
-        setAuthenticated(true);
-        KMessageBox::information(this, i18n("Choqok is authorized successfully."), i18n("Authorized"));
+        QOAuth::ParamMap oAuthVerifierParams;
+        oAuthVerifierParams.insert("oauth_verifier", verifier.toUtf8());
+        QOAuth::ParamMap oAuthVerifierRequest = m_qoauth->accessToken(
+                m_account->host() + QLatin1String("/oauth/access_token"),
+                QOAuth::POST, token.toLocal8Bit(),
+                tokenSecret.toLocal8Bit(),
+                QOAuth::HMAC_SHA1, oAuthVerifierParams);
+        if (m_qoauth->error() == QOAuth::NoError) {
+            m_account->setToken(QLatin1String(oAuthVerifierRequest.value(QOAuth::tokenParameterName())));
+            m_account->setTokenSecret(QLatin1String(oAuthVerifierRequest.value(QOAuth::tokenSecretParameterName())));
+            if (isAuthenticated()) {
+                KMessageBox::information(this, i18n("Choqok is authorized successfully."),
+                                         i18n("Authorized"));
+            }
+        } else {
+            qCDebug(CHOQOK) << QLatin1String("QOAuth error:") + Choqok::qoauthErrorText(m_qoauth->error());
+        }
     } else {
-        KMessageBox::detailedError(this, i18n("Authorization Error"), i18n("OAuth authorization error"));
+        qCDebug(CHOQOK) << QLatin1String("QOAuth error:") + Choqok::qoauthErrorText(m_qoauth->error());
     }
 }
 
 bool PumpIOEditAccountWidget::validateData()
 {
-    if (kcfg_alias->text().isEmpty() || kcfg_webfingerid->text().isEmpty() ||
-            !kcfg_webfingerid->text().contains(QLatin1Char('@')) ||
-            !isAuthenticated) {
+    if (kcfg_webfingerid->text().isEmpty() || !kcfg_webfingerid->text().contains(QLatin1Char('@'))
+            || !isAuthenticated()) {
         return false;
     } else {
         return true;
     }
 }
 
-void PumpIOEditAccountWidget::setAuthenticated(bool authenticated)
+bool PumpIOEditAccountWidget::isAuthenticated()
 {
-    isAuthenticated = authenticated;
-    if (authenticated) {
-        kcfg_authorize->setIcon(QIcon::fromTheme(QLatin1String("object-unlocked")));
-        kcfg_authenticateLed->on();
-        kcfg_authenticateStatus->setText(i18n("Authenticated"));
+    if (m_account->token().isEmpty() || m_account->tokenSecret().isEmpty()) {
+        return false;
     } else {
-        kcfg_authorize->setIcon(QIcon::fromTheme(QLatin1String("object-locked")));
-        kcfg_authenticateLed->off();
-        kcfg_authenticateStatus->setText(i18n("Not Authenticated"));
+        kcfg_authorize->setIcon(QIcon::fromTheme(QLatin1String("object-unlocked")));
+        kcfg_authenticateLed->setState(KLed::On);
+        kcfg_authenticateStatus->setText(i18n("Authenticated"));
+        return true;
     }
 }
 
@@ -163,11 +171,6 @@ void PumpIOEditAccountWidget::registerClient()
 {
     if (kcfg_webfingerid->text().contains(QLatin1Char('@'))) {
         m_account->setHost(QLatin1String("https://") + kcfg_webfingerid->text().split(QLatin1Char('@'))[1]);
-
-        m_account->oAuth()->setTemporaryCredentialsUrl(QUrl(m_account->host() + QLatin1String("/oauth/request_token")));
-        m_account->oAuth()->setAuthorizationUrl(QUrl(m_account->host() + QLatin1String("/oauth/authorize")));
-        m_account->oAuth()->setTokenCredentialsUrl(QUrl(m_account->host() + QLatin1String("/oauth/access_token")));
-
         QUrl url(m_account->host() + QLatin1String("/api/client/register"));
         QByteArray data("{"
                         " \"type\": \"client_associate\", "
@@ -196,8 +199,6 @@ void PumpIOEditAccountWidget::registerClient()
                 const QVariantMap result = json.toVariant().toMap();
                 m_account->setConsumerKey(result[QLatin1String("client_id")].toString());
                 m_account->setConsumerSecret(result[QLatin1String("client_secret")].toString());
-                m_account->oAuth()->setClientIdentifier(m_account->consumerKey());
-                m_account->oAuth()->setClientSharedSecret(m_account->consumerSecret());
             } else {
                 qCDebug(CHOQOK) << "Cannot parse JSON reply";
             }

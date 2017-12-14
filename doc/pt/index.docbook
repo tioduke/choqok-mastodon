@@ -1,0 +1,619 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+  <!ENTITY kappname "&choqok;">
+  <!ENTITY package "extragear">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Portuguese "INCLUDE">
+]>
+
+<book lang="&language;">
+
+<bookinfo>
+<title
+>O Manual do &choqok;</title>
+
+<authorgroup>
+<author
+><firstname
+>Mehrdad</firstname
+> <surname
+>Momeny</surname
+> <affiliation
+> <address
+>mehrdad.momeny@gmail.com</address>
+</affiliation>
+</author>
+<author
+><firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> <affiliation
+> <address
+>&Anne-Marie.Mahfouf.mail;</address>
+</affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>José</firstname
+><surname
+>Pires</surname
+><affiliation
+><address
+><email
+>zepires@gmail.com</email
+></address
+></affiliation
+><contrib
+>Tradução</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2009-03-25</date>
+<releaseinfo
+>0.5</releaseinfo>
+
+
+
+<abstract>
+<para
+>&choqok; is a micro-blogging client for KDE (http://choqok.gnufolks.org).</para>
+</abstract>
+
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>micro-blogs</keyword>
+<keyword
+>cliente</keyword>
+<keyword
+>Twitter</keyword>
+<keyword
+>Identi.ca</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction"
+> 
+<title
+>Introdução</title>
+
+<para
+>O &choqok; é um cliente de micro-blogs que suporta de momento os serviços do Identi.ca/Laconica e Twitter.com.</para>
+<para
+>O 'micro-blog' é uma forma de 'blog' multimédia que permite aos utilizadores enviarem pequenas actualizações de texto ou micro-conteúdos multimédia, como fotografias ou 'clips' de áudio, e publicá-las. Estas poderão ser vistas por qualquer pessoa ou por um grupo restrito, o qual poderá ser decidido pelo utilizador. Estas mensagens poderão ser enviadas numa variedade de formatos, incluindo mensagens de texto, mensagens instantâneas, e-mail, áudio digital ou a Web.</para>
+</chapter>
+
+<chapter id="using"
+> 
+<title
+>Usar o &choqok;</title>
+
+<sect1 id="getting-started"
+> 
+<title
+>Começar</title>
+
+<para
+>Na janela principal do &choqok;, existem algumas linhas temporais que lhe permitem ver o que os seus amigos publicam, as respostas para os mesmo e as mensagens directas enviadas e recebidas dos amigos. Também poderá publicar uma mensagem nova.</para>
+
+<para
+>Tudo isto estará disponível quando configurar pelo menos uma conta no &choqok;.</para>
+
+<screenshot>
+<screeninfo
+>Here's a screenshot of the &choqok; main window</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="choqok.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Janela principal do &choqok;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Você tem uma página por conta; na imagem, poderá ver uma página com a alcunha <guilabel
+>identica</guilabel
+> e outra com a alcunha <guilabel
+>twitter</guilabel
+>.</para>
+
+<para
+>No topo da página, poderá optar por enviar uma mensagem directa para alguém inscrito na sua conta. Poderá enviar mensagens directas para os outros utilizadores do mesmo serviço, desde que ambos estejam subscritos um ao outro. Se desligar a opção <guilabel
+>Mensagem directa para</guilabel
+>, a sua mensagem será publicada e todos os seus amigos a irão ler. Se a assinalar, poderá então escolher um nome da lista, para que a mensagem privada só seja enviada para essa pessoa.</para>
+
+<para
+>The text area allows you to post your message which must have less than 140 characters. The number of characters left is displayed in green on bottom right under the text area. The color changes to orange when you reach the 30 characters limit then to red when you reach 0. If your message is longer than 140 characters, you'll be asked if you want to post it anyway. If you agree, it'll be posted up to 140 characters.</para>
+
+<para
+>A página <guilabel
+>Início</guilabel
+> mostra a linha temporal, que consiste em todas as publicações que você e os seus amigos escreverem. Uma publicação escrita com o Identi.ca chama-se um 'dent', enquanto no Twitter se chama um 'tweet' ou 'twit'.</para>
+
+<para
+>A página <guilabel
+>Resposta</guilabel
+> publica as publicações que são respostas para si.</para>
+
+<para
+>Todas as mensagens privadas que enviar serão apresentadas na página <guilabel
+>A Enviar</guilabel
+>, enquanto as recebidas serão apresentadas na <guilabel
+>página Recebido</guilabel
+>.</para>
+
+</sect1>
+
+<sect1 id="search"
+> 
+<title
+>Procurar</title>
+
+<para
+>You can search through services for something (anything that the service-search api can offer to a client).</para>
+
+<para
+>This function is available via the <menuchoice
+><guimenu
+>File</guimenu
+> <guimenuitem
+> Search</guimenuitem
+> </menuchoice
+> menu (shortcut: <keycombo action="simul"
+>&Ctrl; <keycap
+>F</keycap
+></keycombo
+>) For example you can search for a special word in all users' posts:</para>
+
+<screenshot>
+<screeninfo
+>Funcionalidade de pesquisa do &choqok;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="choqok_search.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Funcionalidade de pesquisa do &choqok;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+</sect1>
+
+<sect1 id="configuring-account"
+> 
+<title
+>Configurar uma Conta</title>
+
+<para
+>Open the &choqok; configuration window via <menuchoice
+><guimenu
+>Settings</guimenu
+> <guimenuitem
+> Configure &choqok;...</guimenuitem
+> </menuchoice
+> then go to the <guilabel
+>Accounts</guilabel
+> tab and click the <guibutton
+>Add</guibutton
+> button, the <guilabel
+>Add a new account</guilabel
+> window will appear. </para>
+
+<screenshot>
+<screeninfo
+>Adicionar uma conta</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="add_account.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Adicionar uma conta</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+
+<para
+>Basta indicar a sua alcunha única desejada, o utilizador e a senha, e depois carregar no botão <guibutton
+>OK</guibutton
+>. Isto irá verificar as suas credenciais e, se estiver tudo OK, a sua conta estará pronta a utilizar.</para>
+<para
+>Poderá configurar outras contas subsequentemente.</para>
+</sect1>
+
+<sect1 id="special-features"
+> 
+<title
+>Funcionalidades Especiais</title>
+
+<itemizedlist>
+<listitem
+><para
+>Poderá desactivar a actualização da linha temporal do &choqok; (a linha temporal é a lista das suas publicações e dos seus amigos). </para
+></listitem>
+<listitem
+><para
+>Outra funcionalidade especial é a capacidade de notificar o utilizador sobre as publicações novas recebidas. </para
+></listitem>
+<listitem
+><para
+>You can do a quick post by pressing <keycombo action="simul"
+>&Ctrl; <keycap
+>Meta</keycap
+><keycap
+>T</keycap
+></keycombo
+> to open the quick micro-blog window and write your post: <screenshot>
+<screeninfo
+>Janela de publicação rápida</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="choqok_quick.png" format="PNG"/>
+	  </imageobject>
+	    <textobject>
+	    <phrase
+>Janela de publicação rápida</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<note
+><para
+>Poderá publicar o mesmo texto para todas as contas de uma vez.</para
+></note>
+</para
+></listitem>
+<listitem
+><para
+>Quando forem recebidas publicações novas, o &choqok; marca-as como não-lidas e mostra o número de publicações não-lidas no ícone da bandeja do sistema. Quando for apresentada a janela principal e depois minimizada para a bandeja, irá então marcar todas as mensagens novas como lidas. </para
+></listitem>
+</itemizedlist>
+</sect1>
+
+</chapter>
+
+<chapter id="commands">
+
+<title
+>Referência de Comandos</title>
+
+<sect1 id="filemenu">
+<title
+>O Menu <guimenu
+>Ficheiro</guimenu
+></title>
+<para>
+<variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>T</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>File</guimenu
+> <guimenuitem
+>Quick Tweet</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Open the quick tweet window.</action>
+</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo
+><keycap
+>F5</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ficheiro</guimenu
+> <guimenuitem
+>Actualizar as Linhas Temporais</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Actualiza as linhas temporais.</action>
+</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>R</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ficheiro</guimenu
+> <guimenuitem
+>Marcar Tudo como Lido</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Marca todas as mensagens como lidas.</action>
+</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>File</guimenu
+> <guimenuitem
+>Search</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Abre a janela de pesquisa da conta actual.</action>
+</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ficheiro</guimenu
+> <guimenuitem
+>Minimizar</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Minimiza a janela do &choqok; para a bandeja do sistema.</action>
+</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ficheiro</guimenu
+> <guimenuitem
+>Sair</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Sai</action
+> do &choqok;.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect1>
+<sect1 id="settingsmenu">
+<title
+>O Menu <guimenu
+>Configuração</guimenu
+></title>
+<para
+><variablelist>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>U</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Configurar</guimenu
+> <guimenuitem
+>Activar o Temporizador de Actualizações</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Activa/desactiva</action
+> o temporizador de actualização da linha temporal.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Activar as Notificações</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Activa/desactiva</action
+> as notificações.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Mostrar a Barra de Estado</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Activa ou desactiva</action
+> a barra de estado.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Configurar os Atalhos...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+><action
+>Configura</action
+> os atalhos de teclado usados pelo &choqok;. </action
+> 
+</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Configurar as Barras de Ferramentas...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Configura</action
+> os itens que você deseja colocar na barra de ferramentas. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Configurar o &choqok;...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Mostra</action
+> a janela de configuração do &choqok;. </para
+></listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+</sect1>
+
+<sect1 id="helpmenu">
+<title
+>The <guimenu
+>Help</guimenu
+> Menu</title>
+&help.menu.documentation; </sect1>
+
+</chapter>
+
+
+<chapter id="credits-and-license">
+<title
+>Créditos e Licenças</title>
+
+<para
+>&choqok; copyright 2008-2009 Mehrdad Momeny (mehrdad.momeny AT gmail.com) </para>
+<para
+>Documentation copyright 2009 Mehrdad Momeny (mehrdad.momeny AT gmail.com)</para>
+
+<para
+>Tradução de José Nuno Pires <email
+>zepires@gmail.com</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+>Instalação</title>
+
+<sect1 id="getting-chokoq">
+<title
+>Como Obter o &choqok;</title>
+&install.intro.documentation; </sect1>
+
+<sect1 id="compilation">
+<title
+>Compilação e Instalação</title>
+&install.compile.documentation; </sect1>
+</appendix>
+
+&documentation.index;
+</book>
+
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes: nil
+sgml-general-insert-case: lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

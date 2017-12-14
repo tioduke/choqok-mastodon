@@ -10,8 +10,6 @@ set(twitterhelper_LIB_SRCS
     twitterapidmessagedialog.cpp
     twitterapimicroblog.cpp
     twitterapimicroblogwidget.cpp
-    twitterapioauth.cpp
-    twitterapioauthreplyhandler.cpp
     twitterapisearch.cpp
     twitterapisearchdialog.cpp
     twitterapisearchtimelinewidget.cpp
@@ -31,13 +29,13 @@ target_link_libraries( twitterapihelper
 PUBLIC
     Qt5::Core
     Qt5::Gui
-    Qt5::NetworkAuth
     Qt5::Widgets
     KF5::ConfigCore
     KF5::KIOCore
     KF5::KIOWidgets
     KF5::I18n
     KF5::WidgetsAddons
+    ${QTOAUTH_LIBRARY}
     qca-qt5
     choqok
 )
@@ -54,8 +52,6 @@ install(FILES
     twitterapidmessagedialog.h
     twitterapimicroblog.h
     twitterapimicroblogwidget.h
-    twitterapioauth.h
-    twitterapioauthreplyhandler.h
     twitterapipostwidget.h
     twitterapisearch.h
     twitterapisearchdialog.h

@@ -39,7 +39,7 @@ public:
     Flickr(QObject *parent, const QList< QVariant > &args);
     ~Flickr();
 
-    virtual void upload(const QUrl &localUrl, const QByteArray &medium, const QByteArray &mediumType) override;
+    virtual void upload(const QUrl &localUrl, const QByteArray &medium, const QByteArray &mediumType);
     QString base58encode(quint64);
     QByteArray createSign(QByteArray);
 

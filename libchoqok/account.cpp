@@ -155,7 +155,6 @@ bool Account::isEnabled() const
 void Account::setEnabled(bool enabled)
 {
     d->enable = enabled;
-    Q_EMIT status(this, enabled);
 }
 
 uint Account::postCharLimit() const

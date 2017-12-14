@@ -39,7 +39,7 @@ class CHOQOK_HELPER_EXPORT TwitterApiMicroBlogWidget : public Choqok::UI::MicroB
 public:
     explicit TwitterApiMicroBlogWidget(Choqok::Account *account, QWidget *parent = 0);
     ~TwitterApiMicroBlogWidget();
-    virtual void initUi() override;
+    virtual void initUi();
 
 public Q_SLOTS:
     void slotContextMenu(QWidget *w, const QPoint &pt);

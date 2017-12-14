@@ -43,15 +43,20 @@ public:
     void setCompleter(QCompleter *c);
     QCompleter *completer() const;
 
+protected Q_SLOTS:
+    virtual void updateRemainingCharsCount() override;
+
 protected:
     void keyPressEvent(QKeyEvent *e) override;
     void focusInEvent(QFocusEvent *e) override;
 
 private Q_SLOTS:
     void insertCompletion(const QString &completion);
+    void slotTCoMaximumLength(KJob *job);
 
 private:
 //     QString textUnderCursor() const;
+    void fetchTCoMaximumLength();
 
     class Private;
     Private *const d;

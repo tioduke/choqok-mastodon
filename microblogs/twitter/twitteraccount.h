@@ -42,7 +42,7 @@ public:
     TwitterAccount(TwitterMicroBlog *parent, const QString &alias);
     ~TwitterAccount();
 
-    virtual void setApi(const QString &api) override;
+    void setApi(const QString &api);
 
     QUrl uploadUrl() const;
 

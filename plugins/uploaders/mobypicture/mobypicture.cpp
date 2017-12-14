@@ -29,6 +29,8 @@
 #include <KIO/StoredTransferJob>
 #include <KPluginFactory>
 
+#include <QtOAuth/QtOAuth>
+
 #include "accountmanager.h"
 #include "mediamanager.h"
 #include "passwordmanager.h"
@@ -83,9 +85,14 @@ void Mobypicture::upload(const QUrl &localUrl, const QByteArray &medium, const Q
 
         QByteArray data = Choqok::MediaManager::createMultipartFormData(formdata, listMediafiles);
 
-        job = KIO::storedHttpPost(data, url, KIO::HideProgressInfo);
-        QUrl requrl(QLatin1String("https://api.twitter.com/1/account/verify_credentials.json"));
-        QByteArray credentials = acc->oauthInterface()->authorizationHeader(requrl, QNetworkAccessManager::GetOperation);
+        job = KIO::storedHttpPost(data, url, KIO::HideProgressInfo) ;
+        QOAuth::ParamMap params;
+        QString requrl = QLatin1String("https://api.twitter.com/1/account/verify_credentials.json");
+        QByteArray credentials = acc->oauthInterface()->createParametersString(requrl,
+                                 QOAuth::GET, acc->oauthToken(),
+                                 acc->oauthTokenSecret(),
+                                 QOAuth::HMAC_SHA1,
+                                 params, QOAuth::ParseForHeaderArguments);
 
         QString cHeader = QLatin1String("X-Verify-Credentials-Authorization: ") +  QLatin1String(credentials) + QLatin1String("\r\n");
         cHeader.append(QLatin1String("X-Auth-Service-Provider: https://api.twitter.com/1/account/verify_credentials.json"));

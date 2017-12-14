@@ -54,7 +54,6 @@ target_link_libraries(choqok
 PUBLIC
     Qt5::Core
     Qt5::DBus
-    Qt5::NetworkAuth
     Qt5::Widgets
     KF5::ConfigCore
     KF5::Emoticons

@@ -23,13 +23,14 @@
 
 #include "twitterapiaccount.h"
 
+#include <QtOAuth/QtOAuth>
+
 #include <KIO/AccessManager>
 
 #include "passwordmanager.h"
 
 #include "twitterapidebug.h"
 #include "twitterapimicroblog.h"
-#include "twitterapioauth.h"
 
 class TwitterApiAccount::Private
 {
@@ -51,7 +52,7 @@ public:
     QByteArray oauthConsumerKey;
     QByteArray oauthConsumerSecret;
     bool usingOauth;
-    TwitterApiOAuth *qoauth;
+    QOAuth::Interface *qoauth;
 };
 
 TwitterApiAccount::TwitterApiAccount(TwitterApiMicroBlog *parent, const QString &alias)
@@ -289,7 +290,7 @@ void TwitterApiAccount::setUsingOAuth(bool use)
     d->usingOauth = use;
 }
 
-TwitterApiOAuth *TwitterApiAccount::oauthInterface()
+QOAuth::Interface *TwitterApiAccount::oauthInterface()
 {
     return d->qoauth;
 }
@@ -298,9 +299,11 @@ void TwitterApiAccount::initQOAuthInterface()
 {
     qCDebug(CHOQOK);
     if (!d->qoauth) {
-        d->qoauth = new TwitterApiOAuth(this);
+        d->qoauth = new QOAuth::Interface(new KIO::AccessManager(this), this);
     }
-    d->qoauth->setToken(QLatin1String(d->oauthToken));
-    d->qoauth->setTokenSecret(QLatin1String(d->oauthTokenSecret));
+    d->qoauth->setConsumerKey(d->oauthConsumerKey);
+    d->qoauth->setConsumerSecret(d->oauthConsumerSecret);
+    d->qoauth->setRequestTimeout(20000);
+    d->qoauth->setIgnoreSslErrors(true);
 }
 

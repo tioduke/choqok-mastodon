@@ -1,0 +1,3135 @@
+# translation of choqok.po to
+# Bosnian translation for choqok
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the choqok package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: choqok\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2016-08-28 06:51+0000\n"
+"PO-Revision-Date: 2015-02-24 23:14+0100\n"
+"Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
+"Language-Team:  <bs@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Launchpad (build 17341)\n"
+"X-Launchpad-Export-Date: 2015-02-15 06:21+0000\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Haris Smajlagić,Samir Ribić,Emrah Dautbegovic,Boja Nermin"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"Hs@etf.ba,samir.ribic@etf.unsa.ba,edautbegov1@etf.unsa.ba,nboja1@etf.unsa.ba"
+
+#. i18n: ectx: Menu (file)
+#: choqok/choqokui.rc:4
+msgid "File"
+msgstr "Datoteka"
+
+#. i18n: ectx: Menu (tools)
+#: choqok/choqokui.rc:11 plugins/filter/filterui.rc:4
+#: plugins/nowlistening/nowlisteningui.rc:4
+#: plugins/quickfilter/quickfilterui.rc:4
+#: plugins/searchaction/searchactionui.rc:4
+msgid "Tools"
+msgstr "Alati"
+
+#. i18n: ectx: Menu (settings)
+#. i18n: ectx: attribute (title), widget (QWidget, settingsTab)
+#: choqok/choqokui.rc:15 plugins/uploaders/flickr/flickrprefs.ui:82
+msgid "Settings"
+msgstr "Postavke"
+
+#. i18n: ectx: Menu (help)
+#: choqok/choqokui.rc:20
+msgid "Help"
+msgstr "Pomoć"
+
+#: choqok/config/accounts/accountswidget.cpp:87
+#, kde-format
+msgid "Cannot load the %1 plugin. Please check your installation."
+msgstr "Nije moguće učitati dodatke %1. Provjerite vašu instalaciju."
+
+#: choqok/config/accounts/accountswidget.cpp:102
+msgid "Cannot find the desired account."
+msgstr "Nije moguće pronaći željeni nalog."
+
+#: choqok/config/accounts/accountswidget.cpp:122
+msgid "Are you sure you want to remove the selected account?"
+msgstr "Jeste li sigurni da želite ukloniti označeni nalog?"
+
+#: choqok/config/accounts/accountswidget.cpp:128
+msgid "Cannot remove the account."
+msgstr "Nije moguće ukloniti nalog."
+
+#: choqok/config/accounts/accountswidget.cpp:239
+msgid "Select Micro-Blogging Service"
+msgstr "Označi servis mikroblogginga"
+
+#: choqok/config/accounts/accountswidget.cpp:296
+msgid ""
+"You need to restart Choqok for the accounts priority changes to take effect."
+msgstr ""
+"Potrebno je ponovno pokrenuti Choqok kako bi promjene pri prioritetu naloga "
+"postale važeće."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AccountsWidgetBase)
+#: choqok/config/accounts/accountswidget_base.ui:14
+#: choqok/config/accounts/addaccountdialog.cpp:44
+msgid "Add New Account"
+msgstr "Dodaj novi nalog"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnAdd)
+#: choqok/config/accounts/accountswidget_base.ui:40
+msgid "Add a new account"
+msgstr "Dodaj novi nalog"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnAdd)
+#: choqok/config/accounts/accountswidget_base.ui:43
+msgid "&Add..."
+msgstr "&Dodaj..."
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnEdit)
+#: choqok/config/accounts/accountswidget_base.ui:58
+msgid "Modify the selected account"
+msgstr "Izmijeni odabrani nalog"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnEdit)
+#: choqok/config/accounts/accountswidget_base.ui:61
+msgid "&Modify..."
+msgstr "&Izmijeni..."
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnRemove)
+#: choqok/config/accounts/accountswidget_base.ui:76
+msgid "Remove the selected account"
+msgstr "Ukloni odabrani nalog"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnRemove)
+#: choqok/config/accounts/accountswidget_base.ui:79
+msgid "&Remove"
+msgstr "&Ukloni"
+
+#. i18n: ectx: property (text), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:167
+msgid "Alias"
+msgstr "Pseudonim"
+
+#. i18n: ectx: property (text), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:172
+msgid "Micro-Blog"
+msgstr "Mikroblog"
+
+#. i18n: ectx: property (text), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:177
+msgid "Read Only"
+msgstr "Samo za čitanje"
+
+#. i18n: ectx: property (toolTip), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:180
+msgid "Read Only account"
+msgstr "Nalog samo za čitanje"
+
+#. i18n: ectx: property (text), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:185
+msgid "Include in Quick Post"
+msgstr "Uključi u brzom postu"
+
+#. i18n: ectx: property (toolTip), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:188
+msgid "Show in Quick Post"
+msgstr "Prikaži u brzom postu"
+
+#: choqok/config/accounts/addaccountdialog.cpp:69
+msgid "The Account registration failed."
+msgstr "Registracija naloga neuspješna."
+
+#: choqok/config/accounts/addaccountdialog.cpp:76
+#: choqok/config/accounts/editaccountdialog.cpp:73
+msgid ""
+"Cannot validate your input information.\n"
+"Please check the fields' data.\n"
+"Maybe a required field is empty?"
+msgstr ""
+"Neuspješna potvrda unesenih podataka.\n"
+"Molimo provjerite polja za unos.\n"
+"Možda je izostavljeno jedno od neophodnih polja?"
+
+#: choqok/config/accounts/editaccountdialog.cpp:46
+msgid "Edit Account"
+msgstr "Uredi račun"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_isEmoticonsEnabled)
+#: choqok/config/appearance/appearanceconfig_base.ui:17
+msgid "Enable emoticons"
+msgstr "Uključi emocije"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useReverseOrder)
+#: choqok/config/appearance/appearanceconfig_base.ui:24
+msgid "Show posts in reverse order (Needs restart to take effect)"
+msgstr ""
+"Prikaži slanja u obrnutom redoslijedu (POtrebno ponovo pokrenuti da se "
+"dobije efekat)"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_showRetweetsInChoqokWay)
+#: choqok/config/appearance/appearanceconfig_base.ui:31
+msgid ""
+"You will see post with retweeter name as author, plus Retweeted from "
+"original author note."
+msgstr ""
+"Vidjet ćete poruku sa imenom retvitera kao autora, plus Retweeted napomenu "
+"od originalnog autora."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showRetweetsInChoqokWay)
+#: choqok/config/appearance/appearanceconfig_base.ui:34
+msgid "Show Retweeted/Repeated posts in Choqok way"
+msgstr "Prikaži Retweeted/ponovljena slanaj na Choqok način"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_isCustomUi)
+#: choqok/config/appearance/appearanceconfig_base.ui:44
+msgid "Use custom appearance"
+msgstr "Koristi prilagođen izgled"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: choqok/config/appearance/appearanceconfig_base.ui:76
+msgid "Post font:"
+msgstr "Font za poruku:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: choqok/config/appearance/appearanceconfig_base.ui:95
+msgid "Post Color Preferences"
+msgstr "Podešavanje boje posta"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: choqok/config/appearance/appearanceconfig_base.ui:103
+msgid "Background"
+msgstr "Pozadina"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: choqok/config/appearance/appearanceconfig_base.ui:113
+msgid "Default color:"
+msgstr "Zadana boja:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: choqok/config/appearance/appearanceconfig_base.ui:150
+msgid "Unread post color:"
+msgstr "Boja nepročitanog posta:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: choqok/config/appearance/appearanceconfig_base.ui:194
+msgid "Foreground"
+msgstr "Tekst"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: choqok/config/appearance/appearanceconfig_base.ui:204
+msgid "Own post color:"
+msgstr "Boja vlastitog posta:"
+
+#: choqok/config/behavior/behaviorconfig.cpp:73
+msgid "&General"
+msgstr "&Opšte"
+
+#: choqok/config/behavior/behaviorconfig.cpp:80
+msgid "&Notifications"
+msgstr "&Obavještenja"
+
+#: choqok/config/behavior/behaviorconfig.cpp:91
+msgid "URL &Shortening"
+msgstr "Skraćivanje URL-a"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: choqok/config/behavior/behaviorconfig_general.ui:17
+msgid "General Options"
+msgstr "Opšta podešavanja"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showSplashScreen)
+#: choqok/config/behavior/behaviorconfig_general.ui:23
+msgid "Show splash-screen on startup"
+msgstr "Prikaži pozdravni ekran pri pokretanju"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_markAllAsReadOnExit)
+#: choqok/config/behavior/behaviorconfig_general.ui:33
+msgid "Mark all posts as read on exit"
+msgstr "Označi sve postove kao pročitane po izlasku"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_enableSpellChecker)
+#: choqok/config/behavior/behaviorconfig_general.ui:43
+msgid "Enable automatic spellchecking in the message editor"
+msgstr "Omogući automatsku provjeru pravopisa u uređivaču poruka"
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_enableSysTray)
+#: choqok/config/behavior/behaviorconfig_general.ui:50
+#, fuzzy
+#| msgid "Enable System Tray"
+msgid "Enable System &Tray"
+msgstr "Uključi sistemsku kasetu"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_markAllAsReadOnHideToSystray)
+#: choqok/config/behavior/behaviorconfig_general.ui:62
+msgid "Mark all unread posts as read, when hiding to system tray"
+msgstr ""
+"Označi sve nepročitane postove kao pročitane pri prelasku u sistemsku traku"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useCustomBrowser)
+#: choqok/config/behavior/behaviorconfig_general.ui:83
+msgid "Use &custom web browser:"
+msgstr "&Koristi prilagođeni web-preglednik:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useCustomRT)
+#: choqok/config/behavior/behaviorconfig_general.ui:101
+msgid "Use custom prefix for ReSend [ReTweet]:"
+msgstr "Koristi prilagođeni prefiks za ponovno slanje [ReTweet]:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: choqok/config/behavior/behaviorconfig_general.ui:120
+msgid "Timelines Options"
+msgstr "Opcije vremenske trake"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: choqok/config/behavior/behaviorconfig_general.ui:130
+msgid "&Update interval:"
+msgstr "&Nadogradi interval:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: choqok/config/behavior/behaviorconfig_general.ui:149
+msgid "&Number of posts to show in timelines:"
+msgstr "&Broj postova prikazanih u vremenskim linijama:"
+
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_updateInterval)
+#: choqok/config/behavior/behaviorconfig_general.ui:166
+msgid "Disabled"
+msgstr "Isključen"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_updateInterval)
+#: choqok/config/behavior/behaviorconfig_general.ui:169
+#, fuzzy
+#| msgid " Minute"
+#| msgid_plural " Minutes"
+msgid " minutes"
+msgstr " minuta"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showAllNotifiesInOne)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:17
+msgid "&Show all new posts in one notification"
+msgstr "&Prikaži sve nove postove u jednoj obavijesti"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:26
+msgid "&Notification duration:"
+msgstr "&Trajanje obavijesti:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_notifyInterval)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:39
+#, fuzzy
+#| msgid "seconds"
+msgid " seconds"
+msgstr "sekunde"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:57
+msgid "New post notifications"
+msgstr "Nova obavještenja o slanju"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_knotify)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:63
+msgid "Show notification using KNotify"
+msgstr "Prikaži obavještenja koristeći KNotify"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_libindicate)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:70
+msgid "Show notification using Message Indicator"
+msgstr "Prikaži obavještenja koristeći indikator poruke"
+
+#: choqok/config/behavior/behaviorconfig_shorten.cpp:86
+msgctxt "No shortener service"
+msgid "None"
+msgstr "Ništa"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_shortenOnPaste)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:17
+msgid "Shorten &URLs on paste"
+msgstr "Skrati &URL-ove prilikom umetanja"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_removeHttp)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:24
+msgid "Remove \"http://\" from shortened URLs"
+msgstr "Ukloni \"http://\" sa skraćenih URL-ova"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:33
+#, fuzzy
+#| msgid "Shortening &service:"
+msgid "Shortening ser&vice:"
+msgstr "&Servis skraćivanja:"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, configPlugin)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:56
+#: libchoqok/ui/uploadmedia_base.ui:71
+msgid "Configure plugin"
+msgstr "Izmijeni dodatak"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, aboutPlugin)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:72
+#: libchoqok/ui/uploadmedia_base.ui:90
+msgid "About plugin"
+msgstr "O dodatku"
+
+#: choqok/config/plugins/choqokpluginconfig.cpp:54
+msgid "General Plugins"
+msgstr "Opšti priključci"
+
+#: choqok/main.cpp:34
+msgid "KDE Micro-Blogging Client."
+msgstr "KDE-ov mikrobloging klijent."
+
+#: choqok/main.cpp:46
+msgid ""
+"(C) 2008-2010 Mehrdad Momeny\n"
+"(C) 2011-2015 Choqok Developers"
+msgstr ""
+"(C) 2008-2010 Mehrdad Momeny\n"
+"(C) 2011-2015 Choqok programeri"
+
+#: choqok/main.cpp:51
+msgid "Mehrdad Momeny"
+msgstr "Mehrdad Momeny"
+
+#: choqok/main.cpp:51
+msgid "Author, Developer and Maintainer"
+msgstr "Autor, zazvoj i održavanje"
+
+#: choqok/main.cpp:53
+msgid "Andrey Esin"
+msgstr "Andrey Esin"
+
+#: choqok/main.cpp:53 choqok/main.cpp:55 choqok/main.cpp:62
+msgid "Developer"
+msgstr "Programer"
+
+#: choqok/main.cpp:55
+msgid "Andrea Scarpino"
+msgstr "Andrea Scarpino"
+
+#: choqok/main.cpp:58
+msgid "Roozbeh Shafiee"
+msgstr "Roozbeh Shafiee"
+
+#: choqok/main.cpp:58 choqok/main.cpp:59
+msgid "Artworks"
+msgstr "Crteži"
+
+#: choqok/main.cpp:59
+msgid "Shahrzad Shojaei"
+msgstr "Shahrzad Shojaei"
+
+#: choqok/main.cpp:60
+msgid "Daniel Schaal"
+msgstr "Daniel Schaal"
+
+#: choqok/main.cpp:60 choqok/main.cpp:67
+msgid "UI improvements"
+msgstr "Poboljšanja UI-a"
+
+#: choqok/main.cpp:61
+msgid "Stephen Henderson"
+msgstr "Stephen Henderson"
+
+#: choqok/main.cpp:61
+msgid "Search API implementation"
+msgstr "Implementacija API-ja za pretraživanje"
+
+#: choqok/main.cpp:62
+msgid "Tejas Dinkar"
+msgstr "Tejas Dinkar"
+
+#: choqok/main.cpp:64
+msgid "Emanuele Bigiarini"
+msgstr "Emanuele Bigiarini"
+
+#: choqok/main.cpp:64
+msgid "D-Bus and Konqueror plugin"
+msgstr "D-Bus i Konqueror priključak"
+
+#: choqok/main.cpp:65
+msgid "Alex Infantes"
+msgstr "Alex Infantes"
+
+#: choqok/main.cpp:65
+msgid "Improvements on Image preview plugin"
+msgstr "Poboljšanje priključka Pregled slike"
+
+#: choqok/main.cpp:67
+msgid "Bardia Daneshvar"
+msgstr "Bardia Daneshvar"
+
+#: choqok/main.cpp:68
+msgid "Atanas Gospodinov"
+msgstr "Atanas Gospodinov"
+
+#: choqok/main.cpp:68
+msgid "Twitter photo upload"
+msgstr "Twitter učitavanje slike"
+
+#: choqok/main.cpp:69
+msgid "Daniel Kreuter"
+msgstr "Daniel Kreuter"
+
+#: choqok/main.cpp:69
+msgid "Twitter microblog developer"
+msgstr "Twitter mikroblog razvoj"
+
+#: choqok/main.cpp:70
+msgid "Lim Yuen Hoe"
+msgstr "Lim Yuen Hoe"
+
+#: choqok/main.cpp:70
+msgid "Bug fixes and improvements"
+msgstr "Popravke grešaka i unapređenja"
+
+#: choqok/main.cpp:71
+msgid "Ahmed I. Khalil"
+msgstr "Ahmed I. Khalil"
+
+#: choqok/main.cpp:71
+msgid "Various improvements"
+msgstr "Razna poboljšanja"
+
+#: choqok/mainwindow.cpp:85 choqok/mainwindow.cpp:509
+#: choqok/mainwindow.cpp:585 choqok/mainwindow.cpp:641
+#: choqok/systrayicon.cpp:113 choqok/systrayicon.cpp:119
+#: plugins/betternotify/dummynotification.cpp:48
+#: plugins/konqueror/konqchoqok.cpp:45
+msgid "Choqok"
+msgstr "Choqok"
+
+#: choqok/mainwindow.cpp:209
+msgid "Update Timelines"
+msgstr "Ažuriraj vremenske tokove"
+
+#: choqok/mainwindow.cpp:215 libchoqok/ui/quickpost.cpp:118
+msgid "Quick Post"
+msgstr "Brzo slanje"
+
+#: choqok/mainwindow.cpp:221
+msgid "Mark All As Read"
+msgstr "Označi sve kao pročitane"
+
+#: choqok/mainwindow.cpp:230
+msgctxt "@action"
+msgid "Minimize"
+msgstr "Minimiziraj"
+
+#: choqok/mainwindow.cpp:232
+msgctxt "@action"
+msgid "Restore"
+msgstr "Obnovi"
+
+#: choqok/mainwindow.cpp:240
+msgid "Enable Update Timer"
+msgstr "Omogući sat ažuriranja"
+
+#: choqok/mainwindow.cpp:246
+msgid "Enable Notifications"
+msgstr "Uključi obavještenja"
+
+#: choqok/mainwindow.cpp:252
+msgid "Hide Menubar"
+msgstr "Sakrij traku menija"
+
+#: choqok/mainwindow.cpp:259
+msgid "Clear Avatar Cache"
+msgstr "Očisti privremenu memoriju avatara"
+
+#: choqok/mainwindow.cpp:261
+msgid "You have to restart Choqok to load avatars again"
+msgstr "Potrebno je restartovati Choqok kako bi avatari bili ponovo učitani"
+
+#: choqok/mainwindow.cpp:266
+msgid "Upload Medium..."
+msgstr "Slanje medija..."
+
+#: choqok/mainwindow.cpp:270
+msgid "Donate"
+msgstr "Donirajte"
+
+#: choqok/mainwindow.cpp:294
+msgid ""
+"No account created. You have to create an account before being able to make "
+"posts."
+msgstr ""
+"Nema kreiranih naloga. Potrebno je kreirati nalog da bi objava postova bila "
+"moguća."
+
+#: choqok/mainwindow.cpp:323
+msgid ""
+"In order to use Choqok you need an account at one of the supported micro-"
+"blogging services.\n"
+"Would you like to add your account now?"
+msgstr ""
+"Kako biste koristili Choqok, potrebno je imati barem jedan nalog pri nekom "
+"podržanom servisu mikroblogginga.\n"
+"Da li želite dodati jedan nalog sada?"
+
+#: choqok/mainwindow.cpp:507
+#, kde-format
+msgid "Choqok (%1)"
+msgstr "Choqok (%1)"
+
+#: choqok/mainwindow.cpp:574
+msgid "Restore"
+msgstr "Vrati"
+
+#: choqok/mainwindow.cpp:580
+msgid "Minimize"
+msgstr "Minimiziraj"
+
+#: choqok/mainwindow.cpp:626
+msgid "Loading timelines..."
+msgstr "Učitavanje vremenskih tokova..."
+
+#: choqok/systrayicon.cpp:113
+#, kde-format
+msgid "1 unread post"
+msgid_plural "%1 unread posts"
+msgstr[0] "%1 nepročitan post"
+msgstr[1] "%1 nepročitana posta"
+msgstr[2] "%1 nepročitaniha postova"
+
+#: choqok/systrayicon.cpp:122
+msgid "Choqok - Disabled"
+msgstr "Choqok - Onemogućen"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnAttach)
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:64
+#: libchoqok/ui/quickpost.cpp:95 microblogs/pumpio/pumpiocomposerwidget.cpp:61
+#: microblogs/pumpio/pumpiomessagedialog.ui:90
+#: microblogs/twitter/twittercomposerwidget.cpp:62
+msgid "Attach a file"
+msgstr "Priloži datoteku"
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:104
+#: libchoqok/ui/composerwidget.cpp:139
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:96
+#: microblogs/twitter/twittercomposerwidget.cpp:100
+msgid "Abort"
+msgstr "Prekini"
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:126
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:442
+#: microblogs/pumpio/pumpiomicroblog.cpp:693
+#: microblogs/twitter/twittercomposerwidget.cpp:122
+msgid "New post submitted successfully"
+msgstr "Nova poruka uspješno poslana."
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:139
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:145
+#: microblogs/pumpio/pumpiomessagedialog.cpp:183
+#: microblogs/twitter/twittercomposerwidget.cpp:135
+msgid "Select Media to Upload"
+msgstr "Odaberij medij za slanje"
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:150
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:156
+#: microblogs/pumpio/pumpiomessagedialog.cpp:194
+#: microblogs/twitter/twittercomposerwidget.cpp:146
+msgid "Discard Attachment"
+msgstr "Odbaci datoteku"
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:157
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:163
+#: microblogs/pumpio/pumpiomessagedialog.cpp:201
+#: microblogs/twitter/twittercomposerwidget.cpp:153
+#, kde-format
+msgid "Attaching <b>%1</b>"
+msgstr "Prilažem <b>%1</b>"
+
+#: helperlibs/gnusocialapihelper/gnusocialapiconversationtimelinewidget.cpp:36
+#, kde-format
+msgid "Conversation %1"
+msgstr "Konverzacija %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapiconversationtimelinewidget.cpp:38
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:141
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:316
+msgid "Please wait..."
+msgstr "Molim sačekajte..."
+
+#: helperlibs/gnusocialapihelper/gnusocialapiconversationtimelinewidget.cpp:66
+#: helperlibs/twitterapihelper/twitterapishowthread.cpp:52
+msgid "Conversation"
+msgstr "Razgovor"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:61
+#: microblogs/laconica/laconicamicroblog.cpp:40
+msgctxt "Timeline name"
+msgid "Repeated"
+msgstr "Ponovljeno"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:62
+#: microblogs/laconica/laconicamicroblog.cpp:41
+msgctxt "Timeline description"
+msgid "Your posts that were repeated by others"
+msgstr "Tvoji postovi su preuzeti od drugih korisnika"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:168
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:176
+#: libchoqok/mediamanager.cpp:189 libchoqok/mediamanager.cpp:196
+#: microblogs/twitter/twittermicroblog.cpp:157
+#: microblogs/twitter/twittermicroblog.cpp:165
+msgid "Uploading medium failed: cannot read the medium file."
+msgstr "Slanje medija neuspješno: neuspjelo čitanje medija."
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:222
+#, kde-format
+msgid "Repeat of %1"
+msgstr "Ponavljanje od %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:224
+#, kde-format
+msgid "Repeated by %1"
+msgstr "Ponovio %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:230
+msgid "Repeat this notice?"
+msgstr "Ponovi ovu napomenu?"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:255
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1528
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1554
+msgid ""
+"Retrieving the friends list failed. The data returned from the server is "
+"corrupted."
+msgstr ""
+"Neuspješno preuzimanje liste prijatelja. Primljeni podaci sa servera su "
+"pokvareni."
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:315
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:765
+#, kde-format
+msgid ""
+"Friends list for account %1 could not be updated:\n"
+"%2"
+msgstr ""
+"Lista prijatelja za nalog %1 se ne može ažurirati:\n"
+"%2"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:419
+#, kde-format
+msgid "Fetching conversation failed. %1"
+msgstr "Neuspjelo dobavljanje konverzacije. %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:88
+#: microblogs/twitter/twitterpostwidget.cpp:77
+msgid "Manual ReSend"
+msgstr "Manualno ponovno slanje"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:90
+msgid "Repeat"
+msgstr "Ponovi"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:91
+msgid "Repeat post using API"
+msgstr "Ponovi post koristeći API"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:155
+#, kde-format
+msgid "Search for %1"
+msgstr "Traži %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:157
+msgid "Open tag page in browser"
+msgstr "Otvori stranicu oznaka u pregledaču"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:173
+msgid "Show latest group posts"
+msgstr "Pikaži zadnja slanja na grupi"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:175
+msgid "Open group page in browser"
+msgstr "Otvori stranicu grupe u pregledaču"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:192
+#: microblogs/twitter/twitterpostwidget.cpp:144
+#, kde-format
+msgctxt "Who is user"
+msgid "Who is %1"
+msgstr "Ko je %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:194
+#: microblogs/twitter/twitterpostwidget.cpp:146
+#, kde-format
+msgctxt "Posts from user"
+msgid "Posts from %1"
+msgstr "Postovi od %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:196
+#: microblogs/twitter/twitterpostwidget.cpp:148
+#, kde-format
+msgctxt "Replies to user"
+msgid "Replies to %1"
+msgstr "Odgovori za %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:200
+#: microblogs/twitter/twitterpostwidget.cpp:156
+msgctxt "Open profile page in browser"
+msgid "Open profile in browser"
+msgstr "Otvori profil u browser-u"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:217
+#: microblogs/twitter/twitterpostwidget.cpp:173
+msgid "Actions"
+msgstr "Akcije"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:218
+#: microblogs/twitter/twitterpostwidget.cpp:174
+#, kde-format
+msgctxt "Write a message to user attention"
+msgid "Write to %1"
+msgstr "Piši za %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:223
+#: microblogs/twitter/twitterpostwidget.cpp:180
+#, kde-format
+msgctxt "Send direct message to user"
+msgid "Send private message to %1"
+msgstr "Pošalji privatnu poruku %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:229
+#, kde-format
+msgctxt "Unsubscribe from user"
+msgid "Unsubscribe from %1"
+msgstr "Odjavi se od %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:234
+#, kde-format
+msgctxt "Subscribe to user"
+msgid "Subscribe to %1"
+msgstr "Prijavi se na %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:238
+#: microblogs/twitter/twitterpostwidget.cpp:195
+#, kde-format
+msgctxt "Block user"
+msgid "Block %1"
+msgstr "Blokiraj %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:46
+msgctxt "Dents are Identica posts"
+msgid "Dents Including This Hashtag"
+msgstr "Tragovi koji uključuju ovu hash-oznaku"
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:49
+msgctxt "Dents are Identica posts"
+msgid "Dents Including This Group"
+msgstr "Dentovi uključuju ovu grupu"
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:52
+msgctxt "Dents are Identica posts"
+msgid "Dents From This User"
+msgstr "Dentovi ovog korisnika"
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:55
+msgctxt "Dents are Identica posts"
+msgid "Dents To This User"
+msgstr "Dentovi za ovog korisnika"
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:142
+#: microblogs/twitter/twittersearch.cpp:137
+msgid "Unable to fetch search results."
+msgstr "Neuspješno preuzimanje rezultata pretrage."
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:150
+#: microblogs/twitter/twittersearch.cpp:145
+#, kde-format
+msgid "Unable to fetch search results: %1"
+msgstr "Neuspješno preuzimanje rezultata pretrage: %1"
+
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:60
+msgid "Send Private Message"
+msgstr "Pošalji privatnu poruku"
+
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:84
+msgctxt "Send message to"
+msgid "To:"
+msgstr "Za:"
+
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:89
+msgid "Reload friends list"
+msgstr "Osvježi listu prijatelja"
+
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:111
+msgctxt "Send private message"
+msgid "Send"
+msgstr "Šalji"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:103
+msgctxt "Timeline Name"
+msgid "Home"
+msgstr "Početni direktorij"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:104
+msgctxt "Timeline description"
+msgid "You and your friends"
+msgstr "Vi i Vaši prijatelji"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:109
+msgctxt "Timeline Name"
+msgid "Reply"
+msgstr "Odgovori"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:110
+msgctxt "Timeline description"
+msgid "Replies to you"
+msgstr "Odgovori za vas"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:115
+#: microblogs/pumpio/pumpiomicroblog.cpp:1291
+msgctxt "Timeline Name"
+msgid "Inbox"
+msgstr "Dolazna pošta"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:116
+msgctxt "Timeline description"
+msgid "Your incoming private messages"
+msgstr "Vaše dolazne privatne poruke"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:121
+#: microblogs/pumpio/pumpiomicroblog.cpp:1298
+msgctxt "Timeline Name"
+msgid "Outbox"
+msgstr "Odlazna"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:122
+msgctxt "Timeline description"
+msgid "Private messages you have sent"
+msgstr "Privatne poruke koje ste poslali"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:127
+msgctxt "Timeline Name"
+msgid "Favorite"
+msgstr "Omiljeni"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:128
+msgctxt "Timeline description"
+msgid "Your favorites"
+msgstr "Najčešće korišteni"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:133
+msgctxt "Timeline Name"
+msgid "Public"
+msgstr "Javni"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:134
+msgctxt "Timeline description"
+msgid "Public timeline"
+msgstr "Javna vremenska linija"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:139
+msgctxt "Timeline Name"
+msgid "ReTweets"
+msgstr "ReTweets"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:140
+msgctxt "Timeline description"
+msgid "Your posts that were ReTweeted by others"
+msgstr "Vaši postovi koji su drugi preporučili na Twitter-u"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:155
+#: microblogs/pumpio/pumpiomicroblog.cpp:122
+msgid "Send Private Message..."
+msgstr "Pošalji privatnu poruku..."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:160
+#: plugins/searchaction/searchaction.cpp:45
+msgid "Search..."
+msgstr "Traži..."
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnReload)
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:165
+#: microblogs/pumpio/pumpiomessagedialog.ui:31
+msgid "Update Friends List"
+msgstr "Ažuriraj listu prijatelja"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:313
+#: microblogs/pumpio/pumpiomicroblog.cpp:181
+msgid "Creating the new post failed. Text is empty."
+msgstr "Kreiranje novog posta neuspješno. Tekst je prazan."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:423
+#, fuzzy, kde-format
+#| msgid "Creating the new post failed. %1"
+msgid "Creating the new post failed: %1"
+msgstr "Kreiranje nove poruke neuspjelo. %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:434
+msgid "Creating the new post failed. The result data could not be parsed."
+msgstr ""
+"Kreiranje nove poruke neuspjelo. Rezultanti podaci se ne mogu analizirati."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:438
+#, fuzzy, kde-format
+#| msgid "Creating the new post failed, with error: %1"
+msgid "Creating the new post failed, with error: %1"
+msgstr "Kreiranje novog posta neuspjelo, sa greškom: %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:446
+msgid "Private message sent successfully"
+msgstr "Privatna poruka uspješno poslana."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:514
+#, kde-format
+msgid "Fetching the new post failed. %1"
+msgstr "Preuzimanje novih poruka neuspjelo. %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:524
+msgid "Fetching new post failed. The result data could not be parsed."
+msgstr ""
+"Preuzimanje novog posta neuspjelo. Analiza finalnih podataka nije moguća."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:529
+#, fuzzy, kde-format
+#| msgid "Fetching new post failed, with error: %1"
+msgid "Fetching new post failed, with error:%1"
+msgstr "Preuzimanje novog posta neuspjelo, sa greškom: %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:579
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:588
+#: microblogs/pumpio/pumpiomicroblog.cpp:977
+#, kde-format
+msgid "Removing the post failed. %1"
+msgstr "Brisanje posta neuspjelo. %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:636
+#, kde-format
+msgid "Favorite creation failed. %1"
+msgstr "Kreiranje favorita neuspjelo. %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:692
+#, kde-format
+msgid "Removing the favorite failed. %1"
+msgstr "Brisanje favorita neuspjelo. %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:745
+#, kde-format
+msgid "Updating friends list for account %1..."
+msgstr "Ažuriram listu prijatelja za nalog %1 ..."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:780
+#, kde-format
+msgid "Friends list for account %1 has been updated."
+msgstr "Lista prijatelja za nalog %1 je ažurirana."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:826
+#, fuzzy, kde-format
+#| msgid "Updating friends list for account %1..."
+msgid "Updating followers list for account %1..."
+msgstr "Ažuriram listu prijatelja za nalog %1 ..."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:846
+#, fuzzy, kde-format
+#| msgid ""
+#| "Friends list for account %1 could not be updated:\n"
+#| "%2"
+msgid ""
+"Followers list for account %1 could not be updated:\n"
+"%2"
+msgstr ""
+"Lista prijatelja za nalog %1 se ne može ažurirati:\n"
+"%2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:861
+#, fuzzy, kde-format
+#| msgid "Following list for account %1 has been updated."
+msgid "Followers list for account %1 has been updated."
+msgstr "Sljedeća lista za račun %1 je ažurirana."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:951
+#, kde-format
+msgid "Timeline update failed: %1"
+msgstr "Ažuriranje vremenske linije neuspjelo, %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1123
+#, kde-format
+msgid "Creating friendship with %1 failed. %2"
+msgstr "Neuspjelo stvaranje prijateljstva s %1. %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1130
+#, kde-format
+msgid "You are now listening to %1's posts."
+msgstr "Trenutno osluškujete objave od %1."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1138
+#, kde-format
+msgid "Creating friendship with %1 failed: the server returned invalid data."
+msgstr ""
+"Neuspjelo slapanje prijateljstva s %1: server je vratio neispravne podatke."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1143
+#, kde-format
+msgid "Creating friendship with %1 failed: %2"
+msgstr "Sklapanje prijateljstva sa %1 neuspjelo %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1189
+#, kde-format
+msgid "Destroying friendship with %1 failed. %2"
+msgstr "Neuspješan prekid prijateljstva s %1. %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1196
+#, kde-format
+msgid "You will not receive %1's updates."
+msgstr "Nećete primati dopune od %1."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1204
+#, kde-format
+msgid "Destroying friendship with %1 failed: the server returned invalid data."
+msgstr ""
+"Neuspješan prekid prijateljstva s %1: server je vratio neispravne podatke."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1209
+#, kde-format
+msgid "Destroying friendship with %1 failed: %2"
+msgstr "Prekid prijateljstva sa %1 neuspješno: %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1285
+#, kde-format
+msgid "Blocking %1 failed. %2"
+msgstr "Neuspjelo blokiranje %1. %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1291
+#, kde-format
+msgid "You will no longer be disturbed by %1."
+msgstr "Nećete više biti ometani za %1."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1295
+#, kde-format
+msgid "Blocking %1 failed: the server returned invalid data."
+msgstr "Neuspjelo blokiranje %1: server je vratio neispravne podatke."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1314
+#, kde-format
+msgid "Reporting %1 failed. %2"
+msgstr "Izvještavanje %1 neuspjelo. %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1319
+msgid "Report sent successfully"
+msgstr "Izvještaj uspješno poslan."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1323
+#, kde-format
+msgid "Reporting %1 failed: the server returned invalid data."
+msgstr "Neuspjelo izvještavanje %1: server je vratio neispravne podatke."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1361
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1380
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1455
+msgid "Could not parse the data that has been received from the server."
+msgstr "Neuspjela analiza podataka primljenih sa servera."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1582
+#, fuzzy
+#| msgid ""
+#| "Retrieving the friends list failed. The data returned from the server is "
+#| "corrupted."
+msgid ""
+"Retrieving the followers list failed. The data returned from the server is "
+"corrupted."
+msgstr ""
+"Neuspješno preuzimanje liste prijatelja. Primljeni podaci sa servera su "
+"pokvareni."
+
+#: helperlibs/twitterapihelper/twitterapimicroblogwidget.cpp:128
+msgid "(The search result is empty.)"
+msgstr "(rezultat pretrage je prazan.)"
+
+#: helperlibs/twitterapihelper/twitterapimicroblogwidget.cpp:241
+#: libchoqok/ui/timelinewidget.cpp:253
+msgid "Mark timeline as read"
+msgstr "Označi naslovnicu kao pročitano"
+
+#: helperlibs/twitterapihelper/twitterapimicroblogwidget.cpp:245
+msgid "Close Timeline"
+msgstr "Zatvori hronologiju"
+
+#: helperlibs/twitterapihelper/twitterapimicroblogwidget.cpp:246
+msgid "Close All"
+msgstr "Zatvori sve"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:74
+#: microblogs/pumpio/pumpiopostwidget.cpp:182
+msgctxt "@info:tooltip"
+msgid "Reply"
+msgstr "Odgovor"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:79
+#: microblogs/pumpio/pumpiopostwidget.cpp:185
+#, kde-format
+msgid "Reply to %1"
+msgstr "Odgovori na %1"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:84
+#, kde-format
+msgid "Write to %1"
+msgstr "Piši za %1"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:89
+msgid "Reply to all"
+msgstr "Odgovori svima"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:93
+msgctxt "@info:tooltip"
+msgid "Favorite"
+msgstr "Omiljeno"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:129
+#, kde-format
+msgid "<a href='%1' title='Sent from %2 via OStatus'>%2</a>"
+msgstr "<a href='%1' title='Poslano od %2 preko OStatus'>%2</a>"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:139
+msgid "Show Conversation"
+msgstr "Prikaži razgovor"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:147
+#, kde-format
+msgid ""
+"<a href='replyto://%1'>in reply to</a> @<a href='user://%4'>%4</a>&nbsp;<a "
+"href=\"%2\" title=\"%2\">%3</a>"
+msgstr ""
+"<a href='replyto://%1'>odgovor na</a> @<a href='user://%4'>%4</a>&nbsp;<a "
+"href=\"%2\" title=\"%2\">%3</a>"
+
+#: helperlibs/twitterapihelper/twitterapisearchdialog.cpp:63
+msgctxt "@title:window"
+msgid "Search"
+msgstr "Traži"
+
+#: helperlibs/twitterapihelper/twitterapisearchdialog.cpp:91
+msgctxt "Search query"
+msgid "Query:"
+msgstr "Upit:"
+
+#: helperlibs/twitterapihelper/twitterapisearchdialog.cpp:102
+msgctxt "@action:button"
+msgid "Search"
+msgstr "Traži"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:73
+#: libchoqok/ui/timelinewidget.cpp:58
+#, kde-format
+msgctxt "%1 is the name of a timeline"
+msgid "Search results for %1"
+msgstr "Rezultati pretrage za %1"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:102
+msgid "Close Search"
+msgstr "Zatvori pretragu"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:108
+msgid "Previous"
+msgstr "Prethodni"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:113
+msgid "Next"
+msgstr "Sljedeći"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:120
+msgid "Page Number"
+msgstr "Broj stranice"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:164
+msgid "Cannot load user information."
+msgstr "Nije moguće učitati informacije o korisniku."
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:253
+msgid "Close"
+msgstr "Zatvori"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:265
+msgctxt "User posts"
+msgid "Posts"
+msgstr "Postovi"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:266
+msgctxt "User friends"
+msgid "Friends"
+msgstr "Prijatelji"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:267
+msgctxt "User followers"
+msgid "Followers"
+msgstr "Pratioci"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:276
+#, kde-format
+msgid "<table><tr><b>Last Status:</b> %1</tr></table>"
+msgstr "<table><tr><b>Zadnji status:</b> %1</tr></table>"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:280
+#, kde-format
+msgid "<h3>%1</h3>"
+msgstr "<h3>%1</h3>"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:390
+msgid "Unsubscribe"
+msgstr "Otkaži pretplatu"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:395
+msgid "Subscribe"
+msgstr "Pretplati se"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:400
+msgid "Block"
+msgstr "Blokiraj"
+
+#: libchoqok/accountmanager.cpp:117 libchoqok/accountmanager.cpp:155
+#, kde-format
+msgid "There is no account with alias %1."
+msgstr "Ne postoji nalog sa pseudonimom %1."
+
+#: libchoqok/accountmanager.cpp:170
+msgid ""
+"An account with this alias already exists: a unique alias has to be "
+"specified."
+msgstr ""
+"Korisnički nalog sa tim pseudonimom već postoji: jedinstveni pseudonim mora "
+"biti specificiran."
+
+#: libchoqok/choqoktools.cpp:45
+#, kde-format
+msgid ""
+"Custom web browser \"%1\" is unable to open url \"%2\".\n"
+"Please update the custom web browser in Configurations."
+msgstr ""
+
+#: libchoqok/choqoktools.cpp:51
+#, kde-format
+msgid ""
+"Unable to open url \"%1\".\n"
+"Please check Qt installation or set a custom web browser in Configurations."
+msgstr ""
+
+#: libchoqok/choqoktools.cpp:64
+msgid "No Error"
+msgstr "Bez grešaka"
+
+#: libchoqok/choqoktools.cpp:66
+msgid "Bad request"
+msgstr "Loš zahtjev"
+
+#: libchoqok/choqoktools.cpp:69
+msgid "Consumer Key or Secret has not been provided"
+msgstr "Korisnički Ključ ili Tajna nije predočena."
+
+#: libchoqok/choqoktools.cpp:71
+msgid "Forbidden"
+msgstr "Zabranjeno"
+
+#: libchoqok/choqoktools.cpp:73
+msgid "Timeout on server"
+msgstr "Vrijeme odziva servera isteklo."
+
+#: libchoqok/choqoktools.cpp:75 microblogs/twitter/twittereditaccount.cpp:138
+#: microblogs/twitter/twittereditaccount.cpp:169
+msgid "Authorization Error"
+msgstr "Greška  kod Autorizacije"
+
+#: libchoqok/choqoktools.cpp:77
+msgid "Internal Error"
+msgstr "Interna Greška"
+
+#: libchoqok/choqoktools.cpp:82
+msgid "Unknown Error"
+msgstr "Nepoznata greška"
+
+#: libchoqok/mediamanager.cpp:105
+msgid "Cannot create a KDE Job. Please check your installation."
+msgstr "Nije moguće stvoriti posao u KDE-u. Molim provjerite vašu instalaciju."
+
+#: libchoqok/mediamanager.cpp:130
+#, kde-format
+msgid "Cannot download image from %1."
+msgstr "Nije moguće preuzeti sliku s %1."
+
+#: libchoqok/mediamanager.cpp:139
+msgid "The request failed. Cannot get image file."
+msgstr ""
+
+#: libchoqok/mediamanager.cpp:170
+msgid "No pluginId specified, And last used plugin is null."
+msgstr "PluginId nije specificiran, posljednji korišteni dodatak je ništavan."
+
+#: libchoqok/microblog.cpp:86
+msgid "The server returned an error"
+msgstr "Server je vratio grešku"
+
+#: libchoqok/microblog.cpp:89
+msgid "Error on communication with server"
+msgstr "Greška u komunikaciji sa serverom"
+
+#: libchoqok/microblog.cpp:92
+msgid "Error on parsing results"
+msgstr "Greška pri analizi rezultata."
+
+#: libchoqok/microblog.cpp:95
+msgid "Authentication error"
+msgstr "Greška autentifikacije"
+
+#: libchoqok/microblog.cpp:98
+msgid "The server does not support this feature"
+msgstr "Server ne podržava ovu mogućnost"
+
+#: libchoqok/microblog.cpp:101
+msgid "Unknown error"
+msgstr "Nepoznata greška"
+
+#: libchoqok/notifymanager.cpp:96
+msgctxt "Show Choqok MainWindow"
+msgid "Show Choqok"
+msgstr "Prikaži Choqok"
+
+#: libchoqok/notifymanager.h:39
+msgid "Error"
+msgstr "Greška"
+
+#: libchoqok/notifymanager.h:40
+msgid "Success"
+msgstr "Uspješno"
+
+#: libchoqok/notifymanager.h:42
+msgid "New posts"
+msgstr "Novi postovi"
+
+#: libchoqok/notifymanager.h:43
+msgid "Shortening a URL"
+msgstr "Skraćivanje URL-a"
+
+#: libchoqok/passwordmanager.cpp:79
+msgid ""
+"Cannot open KDE Wallet manager, your secrets will be stored as plain text. "
+"You can install KWallet to fix this."
+msgstr ""
+"Ne mogu otovriti KDE upravljač novčanikom, vaše tajne lozinke ćebiti "
+"smještene kao otvoreni tekst, instalirajte KWallet da to popravite."
+
+#: libchoqok/ui/choqoktabbar.cpp:772
+msgid "Top"
+msgstr "Vrh"
+
+#: libchoqok/ui/choqoktabbar.cpp:773
+msgid "Left"
+msgstr "Lijevo"
+
+#: libchoqok/ui/choqoktabbar.cpp:774
+msgid "Right"
+msgstr "Desno"
+
+#: libchoqok/ui/choqoktabbar.cpp:775
+msgid "Bottom"
+msgstr "Dno"
+
+# >> @item:inlistbox Triangle size:
+#: libchoqok/ui/choqoktabbar.cpp:776
+msgid "Small"
+msgstr "Mali"
+
+#: libchoqok/ui/choqoktabbar.cpp:777
+msgid "Medium"
+msgstr "Srednje"
+
+#: libchoqok/ui/choqoktabbar.cpp:778
+msgid "Big"
+msgstr "Veliko"
+
+#: libchoqok/ui/choqoktabbar.cpp:779
+msgid "Styled Panel"
+msgstr "Oblikovana ploča"
+
+#: libchoqok/ui/choqoktextedit.cpp:64
+msgid "<b>Note:</b><br/><i>Ctrl+S</i> to enable/disable auto spell checker."
+msgstr ""
+"<b>Napomena:</b><br/><i>Ctrl+S</i> da uključi/isključi auto spell checker."
+
+#: libchoqok/ui/choqoktextedit.cpp:189
+msgid "Set spell check language"
+msgstr "Postavi jezik kontrole pravopisa"
+
+#: libchoqok/ui/choqoktextedit.cpp:193
+msgctxt "Replace URLs by a shortened URL"
+msgid "Shorten URLs"
+msgstr "Skrati URL-ove"
+
+#: libchoqok/ui/composerwidget.cpp:70
+msgid "Discard Reply"
+msgstr "Odbaci odgovor"
+
+#: libchoqok/ui/composerwidget.cpp:111
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:185
+#, kde-format
+msgid "Replying to <b>%1</b>"
+msgstr "Odgovaram na <b>%1</b>"
+
+#: libchoqok/ui/microblogwidget.cpp:279
+msgid "Mark all timelines as read"
+msgstr "Označi sve vremenske linije kao pročitane"
+
+#: libchoqok/ui/microblogwidget.cpp:389
+msgid "More"
+msgstr "Više"
+
+#: libchoqok/ui/microblogwidget.cpp:391
+msgid "Latest update:"
+msgstr "Najnovija promjena:"
+
+#: libchoqok/ui/postwidget.cpp:204
+msgctxt "@info:tooltip"
+msgid "Remove"
+msgstr "Ukloni"
+
+#: libchoqok/ui/postwidget.cpp:209
+msgctxt "@info:tooltip"
+msgid "ReSend"
+msgstr "Ponovno slanje"
+
+#: libchoqok/ui/postwidget.cpp:464
+msgid "Just now"
+msgstr "Upravo sada"
+
+#: libchoqok/ui/postwidget.cpp:469
+#, kde-format
+msgid "1 sec ago"
+msgid_plural "%1 secs ago"
+msgstr[0] "prije %1 sekundu"
+msgstr[1] "prije %1 sekunde"
+msgstr[2] "prije %1 sekundi"
+
+#: libchoqok/ui/postwidget.cpp:475
+#, kde-format
+msgid "1 min ago"
+msgid_plural "%1 mins ago"
+msgstr[0] "prije %1 minutu"
+msgstr[1] "prije %1 minute"
+msgstr[2] "prije %1 minuta"
+
+#: libchoqok/ui/postwidget.cpp:481
+#, kde-format
+msgid "1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "prije %1 sat"
+msgstr[1] "prije %1 sata"
+msgstr[2] "prije %1 sati"
+
+#: libchoqok/ui/postwidget.cpp:486
+#, kde-format
+msgid "1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "prije %1 dan"
+msgstr[1] "prije %1 dana"
+msgstr[2] "prije %1 dana"
+
+#: libchoqok/ui/postwidget.cpp:491
+msgid "Are you sure you want to remove this post from the server?"
+msgstr "Jeste li sigurni da želite ukloniti ovaj post sa servera?"
+
+#: libchoqok/ui/quickpost.cpp:91
+msgctxt "All accounts"
+msgid "All"
+msgstr "Sve"
+
+#: libchoqok/ui/quickpost.cpp:110
+msgctxt "Submit post"
+msgid "Submit"
+msgstr "Pošalji upit"
+
+#: libchoqok/ui/quickpost.cpp:169
+#, fuzzy
+#| msgid ""
+#| "Cannot create a short URL.\n"
+#| "%1"
+msgid "Cannot create a post without any text."
+msgstr ""
+"Ne možete kreirati kratki URL:\n"
+"%1"
+
+#: libchoqok/ui/quickpost.cpp:174
+msgid ""
+"Please configure at least one account to be included in \"Quick Post\".\n"
+"Settings -> Configure Choqok... -> Accounts"
+msgstr ""
+"Molim konfigurišite barem jedan nalog koji će biti uključen u brzo slanje.\n"
+"Postavke -> Konfiguriši Choqok... -> Nalozi"
+
+#: libchoqok/ui/quickpost.cpp:286
+msgid ""
+"Link to uploaded medium will be added here after uploading process succeed."
+msgstr ""
+"Veza do poslanog medija će biti dodana ovdje nakon što se proces slanja "
+"okonča."
+
+#: libchoqok/ui/textbrowser.cpp:120
+msgctxt "Copy text"
+msgid "Copy"
+msgstr "Kopiraj"
+
+#: libchoqok/ui/textbrowser.cpp:126
+msgid "Copy Link Location"
+msgstr "Kopiraj lokaciju veze"
+
+#: libchoqok/ui/textbrowser.cpp:131
+msgctxt "Select all text"
+msgid "Select All"
+msgstr "Izaberi sve"
+
+#: libchoqok/ui/timelinewidget.cpp:236
+#, kde-format
+msgid "1 new post in %2(%3)"
+msgid_plural "%1 new posts in %2(%3)"
+msgstr[0] "%1 novi post u %2(%3)"
+msgstr[1] "%1 nova posta u %2(%3)"
+msgstr[2] "%1 novih postova u %2(%3)"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: libchoqok/ui/uploadmedia_base.ui:22
+msgid "Medium to upload:"
+msgstr "Medij za slanje:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: libchoqok/ui/uploadmedia_base.ui:39
+msgid "Upload via:"
+msgstr "Pošalji pomoću:"
+
+#: libchoqok/ui/uploadmediadialog.cpp:63
+msgid "Upload Medium"
+msgstr "Pošalji materijal"
+
+#: libchoqok/ui/uploadmediadialog.cpp:71
+msgid "Upload"
+msgstr "Pošalji"
+
+#: libchoqok/ui/uploadmediadialog.cpp:129
+msgid "Uploading..."
+msgstr "Postavljam..."
+
+#: libchoqok/ui/uploadmediadialog.cpp:266
+msgid "Medium uploading failed."
+msgstr "Postavljanje medija neuspješno."
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabAccount)
+#: microblogs/friendica/friendicaeditaccount_base.ui:21
+#, fuzzy
+#| msgid "Edit Account"
+msgid "Friendica Account"
+msgstr "Uredi račun"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: microblogs/friendica/friendicaeditaccount_base.ui:29
+#: microblogs/laconica/laconicaeditaccount_base.ui:29
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:27
+#: microblogs/twitter/twittereditaccount_base.ui:27
+#, fuzzy
+#| msgid "&Alias:"
+msgid "A&lias:"
+msgstr "&Pseudonim:"
+
+#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_alias)
+#. i18n: ectx: property (toolTip), widget (QLineEdit, cfg_alias)
+#: microblogs/friendica/friendicaeditaccount_base.ui:42
+#: microblogs/laconica/laconicaeditaccount_base.ui:42
+#: microblogs/ocs/ocsconfigurebase.ui:32
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:40
+#: microblogs/twitter/twittereditaccount_base.ui:40
+msgid "The account alias"
+msgstr "Pseudonimi naloga"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, kcfg_alias)
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, cfg_alias)
+#: microblogs/friendica/friendicaeditaccount_base.ui:45
+#: microblogs/laconica/laconicaeditaccount_base.ui:45
+#: microblogs/ocs/ocsconfigurebase.ui:35
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:43
+#: microblogs/twitter/twittereditaccount_base.ui:43
+msgid ""
+"The alias is the name you want to give to your account. It should be unique. "
+"You can have several connections to the same service so the alias lets you "
+"give them names."
+msgstr ""
+"Pseudonim je naziv koji želite dati svom nalogu. Treba biti jedinstven. "
+"Možete imati nekoliko veza na isti servis pa vam pseudonim omogućava njihovo "
+"imenovanje."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: microblogs/friendica/friendicaeditaccount_base.ui:62
+#: microblogs/laconica/laconicaeditaccount_base.ui:62
+#: microblogs/ocs/ocsconfigurebase.ui:52
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:60
+#: microblogs/twitter/twittereditaccount_base.ui:60
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">Note:</span><span style=\" font-size:8pt;\"> "
+"The alias must be unique.</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">Napomena:</span><span style=\" font-size:8pt;"
+"\"> Pseudonim mora biti jedinstven.</span></p></body></html>"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: microblogs/friendica/friendicaeditaccount_base.ui:77
+#: microblogs/laconica/laconicaeditaccount_base.ui:77
+msgid "Server"
+msgstr "Server"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: microblogs/friendica/friendicaeditaccount_base.ui:83
+#: microblogs/laconica/laconicaeditaccount_base.ui:83
+msgid "API path:"
+msgstr "API lokacija:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/friendica/friendicaeditaccount_base.ui:103
+msgid "&Friendica server:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_BasicBox)
+#: microblogs/friendica/friendicaeditaccount_base.ui:122
+#: microblogs/laconica/laconicaeditaccount_base.ui:122
+msgid "Basic Authentication"
+msgstr "Osnovna Autentifikacija"
+
+#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_basicUsername)
+#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_basicPassword)
+#: microblogs/friendica/friendicaeditaccount_base.ui:128
+#: microblogs/friendica/friendicaeditaccount_base.ui:145
+#: microblogs/laconica/laconicaeditaccount_base.ui:128
+#: microblogs/laconica/laconicaeditaccount_base.ui:145
+msgid "The name you use to connect to the service"
+msgstr "Ime koje koristite za spajanje na servis"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: microblogs/friendica/friendicaeditaccount_base.ui:135
+#: microblogs/laconica/laconicaeditaccount_base.ui:135
+#: microblogs/twitter/twittereditaccount_base.ui:92
+#: plugins/shorteners/yourls/yourlsprefs.ui:47
+#: plugins/uploaders/posterous/posterousprefs.ui:74
+msgid "Password:"
+msgstr "Šifra:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/friendica/friendicaeditaccount_base.ui:155
+#: microblogs/laconica/laconicaeditaccount_base.ui:155
+#: microblogs/twitter/twittereditaccount_base.ui:79
+#: plugins/shorteners/yourls/yourlsprefs.ui:34
+msgid "Username:"
+msgstr "Korisničko ime:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabTimelines)
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: microblogs/friendica/friendicaeditaccount_base.ui:182
+#: microblogs/laconica/laconicaeditaccount_base.ui:182
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:175
+#: microblogs/twitter/twittereditaccount_base.ui:183
+msgid "Timelines Configuration"
+msgstr "Konfiguracija vremenske linije"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: microblogs/friendica/friendicaeditaccount_base.ui:194
+#: microblogs/laconica/laconicaeditaccount_base.ui:194
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:187
+#: microblogs/twitter/twittereditaccount_base.ui:195
+msgid "Which timelines do you like to be enabled?"
+msgstr "Koje vremenske tokove želite omogućiti?"
+
+#. i18n: ectx: property (text), widget (QTableWidget, timelinesTable)
+#: microblogs/friendica/friendicaeditaccount_base.ui:202
+#: microblogs/laconica/laconicaeditaccount_base.ui:202
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:195
+#: microblogs/twitter/twittereditaccount_base.ui:203
+msgid "Name"
+msgstr "Ime"
+
+#. i18n: ectx: property (text), widget (QTableWidget, timelinesTable)
+#: microblogs/friendica/friendicaeditaccount_base.ui:207
+#: microblogs/laconica/laconicaeditaccount_base.ui:207
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:200
+#: microblogs/twitter/twittereditaccount_base.ui:208
+msgid "Enable"
+msgstr "Omogući"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabConf)
+#: microblogs/friendica/friendicaeditaccount_base.ui:216
+#: microblogs/laconica/laconicaeditaccount_base.ui:216
+msgid "Configuration"
+msgstr "Podešavanje"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_changeExclamationMark)
+#: microblogs/friendica/friendicaeditaccount_base.ui:224
+#: microblogs/laconica/laconicaeditaccount_base.ui:224
+msgid ""
+"To prevent spamming on some groups, you can set here to change the "
+"exclamation point (that used to refer to a group), to something else (e.g. "
+"nothing.)"
+msgstr ""
+"Kako biste spriječili spam na nekim grupama, ovdje možete promijeniti znak "
+"uskličnika (koji se odnosi na grupe) u nešto drugo (npr. ništa)."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_changeExclamationMark)
+#: microblogs/friendica/friendicaeditaccount_base.ui:227
+#: microblogs/laconica/laconicaeditaccount_base.ui:227
+msgid "On re-dent, change exclamation mark to:"
+msgstr "Pri re-dentu, promijeni znak uskličnika u:"
+
+#. i18n: ectx: property (text), widget (QLineEdit, kcfg_changeToString)
+#: microblogs/friendica/friendicaeditaccount_base.ui:237
+#: microblogs/laconica/laconicaeditaccount_base.ui:237
+msgid "#"
+msgstr "#"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabAccount)
+#: microblogs/laconica/laconicaeditaccount_base.ui:21
+msgid "GNU social Account"
+msgstr "GNU social nalog"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/laconica/laconicaeditaccount_base.ui:103
+#, fuzzy
+#| msgid "GNU social server:"
+msgid "&GNU social server:"
+msgstr "GNU social server:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: microblogs/ocs/ocsconfigurebase.ui:19
+msgid "&Alias:"
+msgstr "&Pseudonim:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: microblogs/ocs/ocsconfigurebase.ui:67
+msgid "Provider"
+msgstr "Pružalac"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: microblogs/ocs/ocsconfigurebase.ui:73
+msgid "Select a social desktop provider to use:"
+msgstr "Odaberi pružaoca društvene površi:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/ocs/ocsconfigurebase.ui:83
+msgid ""
+"You can manage Social Desktop providers in the KDE Social Desktop "
+"configuration."
+msgstr ""
+"Možete održavati pružaoce društvene površi u KDE konfiguraciji društvene "
+"površi."
+
+#: microblogs/ocs/ocsconfigurewidget.cpp:40
+msgid "Loading..."
+msgstr "Učitavam..."
+
+#: microblogs/ocs/ocsconfigurewidget.cpp:69
+msgid "You have to wait for providers list to be loaded."
+msgstr "Trebate sačekati učitavanje liste pružaoca usluga."
+
+#: microblogs/ocs/ocsmicroblog.cpp:157
+msgid "OCS plugin is not initialized yet. Try again later."
+msgstr "OCS priključak još nije inicijaliziran. Pokušajte ponovo kasnije."
+
+#: microblogs/ocs/ocsmicroblog.cpp:191 microblogs/ocs/ocsmicroblog.cpp:198
+msgid "Not Supported"
+msgstr "Nije podržano"
+
+#: microblogs/ocs/ocsmicroblog.cpp:264
+#: microblogs/pumpio/pumpiomicroblog.cpp:1277
+msgctxt "Timeline Name"
+msgid "Activity"
+msgstr "Aktivnost"
+
+#: microblogs/ocs/ocsmicroblog.cpp:265
+msgid "Social activities"
+msgstr "Društvene aktivnosti."
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:110
+#: microblogs/twitter/twittereditaccount.cpp:147
+msgid "PIN"
+msgstr "PIN"
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:111
+#, kde-format
+msgid "Enter the verifier code received from %1"
+msgstr "Unesite verifikacijski kod primljen sa %1"
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:124
+#: microblogs/twitter/twittereditaccount.cpp:165
+msgid "Choqok is authorized successfully."
+msgstr "Choqok je uspješno potvrđen."
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:125
+#: microblogs/twitter/twittereditaccount.cpp:166
+msgid "Authorized"
+msgstr "Potvrđen"
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:152
+#: microblogs/twitter/twittereditaccount.cpp:181
+msgid "Authenticated"
+msgstr "Autentifikovan"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabAccount)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:21
+msgid "PumpIO Account"
+msgstr "PumpIO nalog"
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_basicAuth)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:73
+#: microblogs/twitter/twittereditaccount_base.ui:73
+msgid "Credentials"
+msgstr "Akreditivi"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:82
+msgid "Webfinger ID:"
+msgstr "Webfinger ID:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_credentialsBox)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:98
+#: microblogs/twitter/twittereditaccount_base.ui:112
+msgid "OAuth Authentication"
+msgstr "OAuth Autentifikacija"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:110
+msgid ""
+"Click the below button; if everything goes well, you will pointed to Pump.io "
+"website to allow access to Choqok."
+msgstr ""
+"Pritisnite dugme ispod, ako sve prođe dobro, biti ćete usmjereni na Pump.io "
+"da vam se omogući pristup Choqok-u."
+
+#. i18n: ectx: property (text), widget (QLabel, kcfg_authenticateStatus)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:136
+#: microblogs/twitter/twittereditaccount.cpp:185
+msgid "Not Authenticated"
+msgstr "Nije autentifikovan"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, kcfg_authorize)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:143
+#: microblogs/twitter/twittereditaccount_base.ui:151
+msgid "Verify credentials"
+msgstr "Verifikuj akreditive"
+
+#. i18n: ectx: property (text), widget (QPushButton, kcfg_authorize)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:146
+msgid "&Authenticate with Pump.io Service"
+msgstr "&Potvrdi kroz Pump.io"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, PumpIOMessageDialog)
+#: microblogs/pumpio/pumpiomessagedialog.ui:14
+msgid "Dialog"
+msgstr "Dijalog"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/pumpio/pumpiomessagedialog.ui:46
+#: microblogs/pumpio/pumpiopostwidget.cpp:126
+msgid "CC:"
+msgstr "CC:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: microblogs/pumpio/pumpiomessagedialog.ui:70
+#: microblogs/pumpio/pumpiopostwidget.cpp:103
+msgid "To:"
+msgstr "Za:"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:704
+#, kde-format
+msgid "Creating the new post failed. %1"
+msgstr "Kreiranje nove poruke neuspjelo. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:725
+#, kde-format
+msgid "Cannot set/unset the post as favorite. %1"
+msgstr "Ne može postaviti/ukloniti post kao omiljeni. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:764
+#, kde-format
+msgid "Cannot fetch post. %1"
+msgstr "Ne može dobaviti post. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:806
+#, kde-format
+msgid "Cannot fetch replies. %1"
+msgstr "Ne može dobaviti odgovore. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:830
+#, kde-format
+msgid "Following list for account %1 has been updated."
+msgstr "Sljedeća lista za račun %1 je ažurirana."
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:853
+#, kde-format
+msgid "Cannot retrieve the following list. %1"
+msgstr "Ne može vratiti sljedeću listu. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:876
+#, kde-format
+msgid "Lists for account %1 has been updated."
+msgstr "Liste za račun %1 su ažurirane."
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:903
+#, kde-format
+msgid "Cannot retrieve the lists. %1"
+msgstr "Ne može vratiti liste. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:925
+msgid "The post has been shared."
+msgstr "Post je podijeljen."
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:939
+#, kde-format
+msgid "Cannot share the post. %1"
+msgstr "Ne može podijeliti post. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:966
+msgid "Post removed successfully"
+msgstr "Post uspješno uklonjen"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1012
+msgid "An error occurred when updating the post"
+msgstr "Došlo je do greške prilikom ažuriranja posta"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1031
+msgid "An error occurred when fetching the timeline"
+msgstr "Doslo je do greške prilikom dobavljanja vremenske crte."
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1081
+msgid "An error occurred when uploading the media"
+msgstr "Doslo je do greške prilikom postavljanja medija"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1278
+msgctxt "Timeline description"
+msgid "You and people you follow"
+msgstr "Vi i ljudi koji vas prate"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1284
+msgctxt "Timeline Name"
+msgid "Favorites"
+msgstr "Omiljeni"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1285
+msgctxt "Timeline description"
+msgid "Posts you favorited"
+msgstr "Postovi koje ste favorizovali"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1292
+msgctxt "Timeline description"
+msgid "Posts sent to you"
+msgstr "Postovi poslani vama"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1299
+msgctxt "Timeline description"
+msgid "Posts you sent"
+msgstr "Postovi koje ste vi poslali"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_forpublic)
+#: microblogs/pumpio/pumpiopostwidget.cpp:107
+#: microblogs/pumpio/pumpiopostwidget.cpp:130
+#: plugins/uploaders/flickr/flickrprefs.ui:121
+msgid "Public"
+msgstr "Javni"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:110
+#: microblogs/pumpio/pumpiopostwidget.cpp:133
+msgid "Followers"
+msgstr "Pratioci"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:112
+#: microblogs/pumpio/pumpiopostwidget.cpp:135
+#: microblogs/pumpio/pumpiopostwidget.cpp:153
+msgid "You"
+msgstr "Vi"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:149
+msgid "Shared by:"
+msgstr "Podijeljeno od:"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:165
+#, fuzzy
+#| msgid "Show Conversation"
+msgid "Show conversation"
+msgstr "Prikaži razgovor"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:178
+msgctxt "@info:tooltip"
+msgid "Share"
+msgstr "Podijeli"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:192
+msgctxt "@info:tooltip"
+msgid "Like"
+msgstr "Slično"
+
+#: microblogs/pumpio/pumpioshowthread.cpp:48
+#, kde-format
+msgctxt "Thread of specified user"
+msgid "Choqok: %1's thread"
+msgstr "Choqok: %1 nit"
+
+#: microblogs/twitter/twittereditaccount.cpp:148
+msgid "Enter the PIN received from Twitter:"
+msgstr "Unesi PIN koga je poslao Twitter:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabAccount)
+#: microblogs/twitter/twittereditaccount_base.ui:21
+msgid "Twitter Account"
+msgstr "Nalog na Twitter-u"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/twitter/twittereditaccount_base.ui:124
+msgid ""
+"Click the below button; if everything goes well, you will pointed to Twitter "
+"website to allow access to Choqok."
+msgstr ""
+"Kliknite tipku ispod; ako je sve uredu,bićete usmjereni  na web stranicu "
+"Twitter da odobrite pristup za Choqok."
+
+#. i18n: ectx: property (text), widget (QPushButton, kcfg_authorize)
+#: microblogs/twitter/twittereditaccount_base.ui:154
+msgid "&Authenticate with Twitter Service"
+msgstr "&Potvrdi kroz Twitter"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnAdd)
+#: microblogs/twitter/twitterlistdialog.cpp:71
+#: plugins/filter/filterprefs.ui:81
+msgid "Add"
+msgstr "Dodaj"
+
+#: microblogs/twitter/twitterlistdialog.cpp:90
+msgid "You should provide both list author username and list name."
+msgstr "Trebalo bi da date korisničko ime autora liste i naziv lista."
+
+#: microblogs/twitter/twitterlistdialog.cpp:112
+msgid "No user."
+msgstr "Nema korisnika."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, TwitterListDialogBase)
+#: microblogs/twitter/twitterlistdialog_base.ui:14
+msgid "Add List"
+msgstr "Dodaj listu"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/twitter/twitterlistdialog_base.ui:26
+msgid "List name:"
+msgstr "Ime liste:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: microblogs/twitter/twitterlistdialog_base.ui:52
+msgid "User name:"
+msgstr "Korisničko ime:"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, loadUserLists)
+#: microblogs/twitter/twitterlistdialog_base.ui:78
+msgid "Load user lists"
+msgstr "Učitaj korisničke liste"
+
+#. i18n: ectx: property (text), widget (QPushButton, loadUserLists)
+#: microblogs/twitter/twitterlistdialog_base.ui:81
+msgid "Load Lists"
+msgstr "Učitaj liste"
+
+#: microblogs/twitter/twittermicroblog.cpp:73
+msgctxt "Timeline Name"
+msgid "Mentions"
+msgstr "Spominjanja"
+
+#: microblogs/twitter/twittermicroblog.cpp:74
+msgctxt "Timeline description"
+msgid "Mentions of you"
+msgstr "Spominjanja vas"
+
+#: microblogs/twitter/twittermicroblog.cpp:228
+#, kde-format
+msgid "Retweet of %1"
+msgstr "Retweet od %1"
+
+#: microblogs/twitter/twittermicroblog.cpp:230
+#, kde-format
+msgid "Retweeted by %1"
+msgstr "Ponovni tweet %1"
+
+#: microblogs/twitter/twittermicroblog.cpp:236
+msgid "Retweet to your followers?"
+msgstr "Ponoviti tweet za vaše pratioce?"
+
+#: microblogs/twitter/twittermicroblog.cpp:243
+msgid "Add User List..."
+msgstr "Dodaj listu korisnika..."
+
+#: microblogs/twitter/twittermicroblog.cpp:305
+#, kde-format
+msgid "Fetching %1's lists failed. %2"
+msgstr "Dohvatanje %1's listi neuspjelo. %2"
+
+#: microblogs/twitter/twittermicroblog.cpp:315
+#, kde-format
+msgid "There is no list record for user %1"
+msgstr "Nema liste snimaka za korisnika %1"
+
+#: microblogs/twitter/twitterpostwidget.cpp:79
+msgid "Retweet"
+msgstr "Reetweet-uj"
+
+#: microblogs/twitter/twitterpostwidget.cpp:80
+msgid "Retweet post using API"
+msgstr "Retweet-uj post koristeći API"
+
+#: microblogs/twitter/twitterpostwidget.cpp:151
+#, kde-format
+msgctxt "Including user name"
+msgid "Including %1"
+msgstr "Uključujući %1"
+
+#: microblogs/twitter/twitterpostwidget.cpp:186
+#, kde-format
+msgctxt "Unfollow user"
+msgid "Unfollow %1"
+msgstr "Prestani pratiti %1"
+
+#: microblogs/twitter/twitterpostwidget.cpp:191
+#, kde-format
+msgctxt "Follow user"
+msgid "Follow %1"
+msgstr "Prati %1"
+
+#: microblogs/twitter/twitterpostwidget.cpp:198
+#, kde-format
+msgctxt "Report user"
+msgid "Report %1 as spam"
+msgstr "Prijavi %1 kao spam"
+
+#: microblogs/twitter/twittersearch.cpp:52
+msgctxt "Posts sent to user"
+msgid "To:"
+msgstr "Za:"
+
+#: microblogs/twitter/twittersearch.cpp:53
+msgctxt "Posts from user, Sent by user"
+msgid "From:"
+msgstr "Od:"
+
+#: microblogs/twitter/twittersearch.cpp:55
+msgid "Custom Search"
+msgstr "Prilagođena pretraga"
+
+#: microblogs/twitter/twittersearch.cpp:58
+msgctxt "Tweets are Twitter posts"
+msgid "Tweets To This User"
+msgstr "Tweet-i za ovog korisnika"
+
+#: microblogs/twitter/twittersearch.cpp:61
+msgctxt "Tweets are Twitter posts"
+msgid "Tweets From This User"
+msgstr "Tweet-i ovog korisnika"
+
+#: microblogs/twitter/twittersearch.cpp:64
+msgctxt "Tweets are Twitter posts"
+msgid "Tweets Including This Username"
+msgstr "Tweet-i koji sadrže ovo korisničko ime"
+
+#: microblogs/twitter/twittersearch.cpp:67
+msgctxt "Tweets are Twitter posts"
+msgid "Tweets Including This Hashtag"
+msgstr "Tweet-i koji sadrže ovu hash-oznaku"
+
+#: plugins/betternotify/dummynotification.cpp:48
+msgid "KDE Rocks! :)"
+msgstr "KDE Rocks! :)"
+
+#: plugins/betternotify/dummynotification.cpp:48
+msgid "OK"
+msgstr "U redu"
+
+#: plugins/betternotify/notification.cpp:92
+msgid "Ignore"
+msgstr "Ignoriši"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: plugins/betternotify/notifyprefs.ui:21
+msgid "Appearance"
+msgstr "Izgled"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: plugins/betternotify/notifyprefs.ui:29
+msgid "Foreground Color:"
+msgstr "Boja Prednje Strane:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: plugins/betternotify/notifyprefs.ui:39
+msgid "Background Color:"
+msgstr "Boja pozadine:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: plugins/betternotify/notifyprefs.ui:49
+msgid "Font:"
+msgstr "Slova:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: plugins/betternotify/notifyprefs.ui:59
+msgid "Notify Interval:"
+msgstr "Interval obavještenja:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: plugins/betternotify/notifyprefs.ui:78
+msgid "seconds"
+msgstr "sekunde"
+
+#. i18n: ectx: property (text), widget (QPushButton, adjustPosition)
+#: plugins/betternotify/notifyprefs.ui:123
+msgid "Adjust Notification's Position"
+msgstr "Podesi poziciju notifikacija"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: plugins/betternotify/notifyprefs.ui:159
+msgid "Timeline Selection"
+msgstr "Izbor vremenske linije"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/betternotify/notifyprefs.ui:171
+msgid "Select Timelines"
+msgstr "Izaberi vremenske linije"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/betternotify/notifyprefs.ui:181
+msgid "Accounts"
+msgstr "Nalozi"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/betternotify/notifyprefs.ui:197
+msgid "Select timelines you wish to see notifications for their new posts:"
+msgstr ""
+"Izaberi vremenske linije koje želiš da vidiš u obavještenjima za njihove "
+"nove postove:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: plugins/betternotify/notifyprefs.ui:249
+msgid ""
+"<html><head/><body><p><span style=\" font-weight:600;\">Note:</span> Any "
+"change, needs plugin re-load (disable/enable) to take effect.</p></body></"
+"html>"
+msgstr ""
+"<html><head/><body><p><span style=\" font-weight:600;\">Napomena:</span> "
+"Svaka promjena, zahtjeva ponovno učitavanje priključka  (onesposobi/"
+"osposobi) da bi imala efekta.</p></body></html>"
+
+#: plugins/filter/addeditfilter.cpp:60
+msgid "Modify filter rules"
+msgstr "Izmijeni filterska pravila"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AddEditFilterBase)
+#: plugins/filter/addeditfilter_base.ui:14
+msgid "Define new filter rules"
+msgstr "Definiraj nova filterska pravila"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/filter/addeditfilter_base.ui:22
+#, fuzzy
+#| msgid "Filter &field:"
+msgid "Fi&lter field:"
+msgstr "Filter &Polje:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/filter/addeditfilter_base.ui:52
+#, fuzzy
+#| msgid "Filter &type:"
+msgid "Fi&lter type:"
+msgstr "Filter &Vrsta:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/filter/addeditfilter_base.ui:82
+msgid "Te&xt:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: plugins/filter/addeditfilter_base.ui:102
+msgid "Filter action:"
+msgstr "Filterska akcija:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, dontHideReplies)
+#: plugins/filter/addeditfilter_base.ui:133
+msgid "Do not hide replies to me"
+msgstr "Nemoj sakriti odgovore za mene."
+
+#: plugins/filter/filtermanager.cpp:51
+msgid "Configure Filters..."
+msgstr "Podesi filtere..."
+
+#: plugins/filter/filtermanager.cpp:59
+msgid "Hide Post"
+msgstr "Sakrij slanje"
+
+#: plugins/filter/filtermanager.cpp:239
+#, kde-format
+msgid "Hide all posts from <b>@%1</b>?"
+msgstr "Sakrij sve postove od  <b>@%1</b>?"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, mFilteringCtl)
+#: plugins/filter/filterprefs.ui:14
+msgid "Configure Filters"
+msgstr "Podesi filtere"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: plugins/filter/filterprefs.ui:24
+msgid "Rules"
+msgstr "Pravila"
+
+#. i18n: ectx: property (text), widget (QTableWidget, filters)
+#: plugins/filter/filterprefs.ui:43
+msgid "Field"
+msgstr "Polje"
+
+#. i18n: ectx: property (text), widget (QTableWidget, filters)
+#: plugins/filter/filterprefs.ui:48
+msgid "Type"
+msgstr "Vrsta:"
+
+#. i18n: ectx: property (text), widget (QTableWidget, filters)
+#: plugins/filter/filterprefs.ui:53
+msgid "Filter"
+msgstr "Filter"
+
+#. i18n: ectx: property (text), widget (QTableWidget, filters)
+#: plugins/filter/filterprefs.ui:58
+msgid "Action"
+msgstr "Akcija"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnEdit)
+#: plugins/filter/filterprefs.ui:91
+msgid "Modify"
+msgstr "Izmijeni"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnRemove)
+#: plugins/filter/filterprefs.ui:114
+msgid "Remove"
+msgstr "Ukloni"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabSpecial)
+#: plugins/filter/filterprefs.ui:127
+msgid "Special Rules"
+msgstr "Specijalna pravila"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cfg_hideRepliesNotRelatedToMe)
+#: plugins/filter/filterprefs.ui:133
+msgid "You will see just replies came to you, or mentions you."
+msgstr "Vidjet ćeš samo odgovore koji su ti stigli, ili te spominju."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_hideRepliesNotRelatedToMe)
+#: plugins/filter/filterprefs.ui:136
+msgid "Just show replies to me"
+msgstr "Prikaži samo odgovore za mene."
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cfg_hideNoneFriendsReplies)
+#: plugins/filter/filterprefs.ui:143
+msgid "You will see just replies between your friends."
+msgstr "Vidjet ćeš samo odgovore među tvojim prijateljima."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_hideNoneFriendsReplies)
+#: plugins/filter/filterprefs.ui:146
+msgid "Just show replies to me and my friends"
+msgstr "Prikaži samo odgovore meni i mojim prijateljima"
+
+#: plugins/filter/filtersettings.cpp:45
+msgid "Author Username"
+msgstr "Korisničko ime autora"
+
+#: plugins/filter/filtersettings.cpp:46
+msgid "Post Text"
+msgstr "Objavi tekst"
+
+#: plugins/filter/filtersettings.cpp:47
+msgid "Author Client"
+msgstr "Autor klijent"
+
+#: plugins/filter/filtersettings.cpp:48
+msgid "Reply to User"
+msgstr "Odgovori korisniku"
+
+#: plugins/filter/filtersettings.cpp:50
+msgid "Contain"
+msgstr "Sadrži"
+
+#: plugins/filter/filtersettings.cpp:51
+msgid "Does Not Contain"
+msgstr "Ne sadrži"
+
+#: plugins/filter/filtersettings.cpp:52
+msgid "Exact Match"
+msgstr "Tačno poklapanje"
+
+#: plugins/filter/filtersettings.cpp:53
+msgid "Regular Expression"
+msgstr "Regularni Izraz"
+
+#: plugins/filter/filtersettings.cpp:55
+msgctxt "@action"
+msgid "Hide Posts"
+msgstr "Sakrij poruke"
+
+#: plugins/filter/filtersettings.cpp:56
+msgctxt "@action"
+msgid "Highlight Posts"
+msgstr "Isticanje poruka"
+
+#. i18n: ectx: property (text), widget (QLabel, label_im)
+#: plugins/imstatus/imstatusprefs.ui:19
+msgid "Instant Messenger:"
+msgstr "Instant Messenger:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_reply)
+#: plugins/imstatus/imstatusprefs.ui:31
+msgid "Add replies to status"
+msgstr "Dodaj odgovore na statue"
+
+#. i18n: ectx: property (text), widget (QLabel, label_status_templ)
+#: plugins/imstatus/imstatusprefs.ui:38
+msgid "Status template"
+msgstr "Predložak statursa"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/imstatus/imstatusprefs.ui:64
+#, no-c-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<table border=\"0\" style=\"-qt-table-type: root; margin-top:4px; margin-"
+"bottom:4px; margin-left:4px; margin-right:4px;\">\n"
+"<tr>\n"
+"<td style=\"border: none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt;\">Available markup:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%status%</span><span style=\" font-size:8pt;\"> "
+"- new status</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%time%</span><span style=\" font-size:8pt;\"> - "
+"time of adding new status</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%url%</span><span style=\" font-size:8pt;\"> - "
+"URL of new status</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%username%</span><span style=\" font-size:8pt;"
+"\"> - your username</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%fullname%</span><span style=\" font-size:8pt;"
+"\"> - your full name</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%client%</span><span style=\" font-size:8pt;\"> "
+"- add </span><span style=\" font-size:8pt; font-style:italic;\">Choqok</"
+"span><span style=\" font-size:8pt;\"> to status</span></p></td></tr></"
+"table></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<table border=\"0\" style=\"-qt-table-type: root; margin-top:4px; margin-"
+"bottom:4px; margin-left:4px; margin-right:4px;\">\n"
+"<tr>\n"
+"<td style=\"border: none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt;\">Dostupne oznake:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%status%</span><span style=\" font-size:8pt;\"> "
+"- novi status</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%time%</span><span style=\" font-size:8pt;\"> - "
+"vrijeme dodavanja novog statusa</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%url%</span><span style=\" font-size:8pt;\"> - "
+"URL novog statusa</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%username%</span><span style=\" font-size:8pt;"
+"\"> - vaše korisničko ime</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%fullname%</span><span style=\" font-size:8pt;"
+"\"> - vaše puno ime</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%client%</span><span style=\" font-size:8pt;\"> "
+"- dodaj </span><span style=\" font-size:8pt; font-style:italic;\">Choqok</"
+"span><span style=\" font-size:8pt;\"> u status</span></p></td></tr></table></"
+"body></html>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_repeat)
+#: plugins/imstatus/imstatusprefs.ui:87
+msgid "Add repeats to status"
+msgstr "Dodaj ponavljanja u status"
+
+#: plugins/konqueror/konqchoqok.cpp:51 plugins/konqueror/konqchoqok.cpp:106
+msgid "Post Text with Choqok"
+msgstr "Objavi tekst sa Choqok-om"
+
+#: plugins/konqueror/konqchoqok.cpp:56
+msgid "Shorten URL on Paste"
+msgstr "Skratiti URL prilikom umetanja"
+
+#: plugins/konqueror/konqchoqok.cpp:105
+msgid "You need to select text to post."
+msgstr "Morate odabrati tekst prije objave."
+
+#. i18n: ectx: Menu (tools)
+#: plugins/konqueror/konqchoqok.rc:4
+msgid "&Tools"
+msgstr "&Alati"
+
+#: plugins/nowlistening/nowlistening.cpp:49
+msgid "Now Listening"
+msgstr "Trenutno slušam"
+
+#: plugins/nowlistening/nowlistening.cpp:242
+msgctxt "Player is running, But it's not playing."
+msgid "Play your desired music player."
+msgstr "Pokreni svog omiljenog muzičkog izvođača."
+
+#: plugins/nowlistening/nowlistening.cpp:245
+msgid "No supported player found."
+msgstr "Nije pronađen nijedan podržani izvođač."
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: plugins/nowlistening/nowlisteningprefs.ui:17
+msgid "Valid metadata:"
+msgstr "Važeći metapodaci:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/nowlistening/nowlisteningprefs.ui:51
+msgid "Template:"
+msgstr "Šablon:"
+
+#: plugins/quickfilter/quickfilter.cpp:50
+msgid "Filter by author"
+msgstr "Filter po autoru"
+
+#: plugins/quickfilter/quickfilter.cpp:52
+msgid "Filter by content"
+msgstr "Filter po sadržaju"
+
+#: plugins/quickfilter/quickfilter.cpp:108
+msgid "Filter out timeline by author"
+msgstr "Filtriraj vremensku liniju po autoru"
+
+#: plugins/quickfilter/quickfilter.cpp:110
+msgid "Filter out timeline by text"
+msgstr "Filtriraj vremensku liniju po tekstu"
+
+#: plugins/quickfilter/quickfilter.cpp:122
+msgid "Author"
+msgstr "Autor"
+
+#: plugins/quickfilter/quickfilter.cpp:123
+msgid "Text"
+msgstr "Tekst"
+
+#: plugins/searchaction/searchaction.cpp:65
+msgid "The Search action plugin does not support the current microblog."
+msgstr "Dodatak za pretraživanje ne podržava trenutni mikroblog."
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:85
+msgid "API key is invalid"
+msgstr "API ključ je neispravan"
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:88
+msgid "Login is invalid"
+msgstr "Prijava je neispravna"
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:91
+msgid "Rate limit exceeded. Try another shortener."
+msgstr "Limit odnosa je pređen. Probajte drugog kratioca."
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:94
+#: plugins/shorteners/goo_gl/goo_gl.cpp:69
+#: plugins/shorteners/is_gd/is_gd.cpp:81 plugins/shorteners/ur_ly/ur_ly.cpp:69
+#: plugins/uploaders/flickr/flickr.cpp:208
+#: plugins/uploaders/flickr/flickr.cpp:214
+#: plugins/uploaders/flickr/flickrconfig.cpp:172
+#: plugins/uploaders/flickr/flickrconfig.cpp:177
+#: plugins/uploaders/flickr/flickrconfig.cpp:246
+#: plugins/uploaders/flickr/flickrconfig.cpp:251
+#: plugins/uploaders/imageshack/imageshack.cpp:127
+#: plugins/uploaders/mobypicture/mobypicture.cpp:168
+#: plugins/uploaders/posterous/posterous.cpp:192
+#: plugins/uploaders/twitgoo/twitgoo.cpp:131
+#: plugins/uploaders/twitpic/twitpic.cpp:131
+msgid "Malformed response"
+msgstr "Nerazumljiv odgovor"
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:94
+#: plugins/shorteners/bit_ly/bit_ly.cpp:97
+#, fuzzy
+#| msgid "bit.ly Error"
+msgid "Bit.ly error"
+msgstr "bit.ly greška"
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:96
+#: plugins/shorteners/goo_gl/goo_gl.cpp:71
+#: plugins/shorteners/is_gd/is_gd.cpp:84
+#: plugins/shorteners/tighturl/tighturl.cpp:69
+#: plugins/shorteners/tinyarro_ws/tinyarro_ws.cpp:73
+#: plugins/shorteners/ur1_ca/ur1_ca.cpp:74
+#: plugins/shorteners/ur_ly/ur_ly.cpp:73
+#: plugins/shorteners/yourls/yourls.cpp:89
+#, kde-format
+msgid ""
+"Cannot create a short URL.\n"
+"%1"
+msgstr ""
+"Ne možete kreirati kratki URL:\n"
+"%1"
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:64
+msgctxt ""
+"The your_api_key part of the URL is a fixed part of the URL and should "
+"probably not be changed in localization."
+msgid ""
+"You can find your API key <a href=\"http://bit.ly/a/your_api_key\">here</a>"
+msgstr ""
+"Možete naći svoj API ključ <a href=\"http://bit.ly/a/your_api_key\">ovdje</a>"
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:107
+msgid "Checking..."
+msgstr "Provjeravam..."
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:133
+msgctxt ""
+"The your_api_key part of the URL is a fixed part of the URL and should "
+"probably not be changed in localization."
+msgid ""
+"Provided data is invalid. Try another login or API key.\n"
+"You can find it on http://bit.ly/a/your_api_key"
+msgstr ""
+"Dati podaci su neispravni. Probajt drugu prijavu ili API ključ.\n"
+"Možete ga naći na http://bit.ly/a/your_api_key"
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:136
+msgid "You entered valid information."
+msgstr "Unijeli ste ispravnu informaciju."
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:139
+msgid "bit.ly Config Error"
+msgstr "bit.ly konfiguracijska greška"
+
+#. i18n: ectx: property (text), widget (QPushButton, validate_button)
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:143
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:49
+msgid "Validate"
+msgstr "Ovjeri"
+
+#. i18n: ectx: property (text), widget (QLabel, login)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:19
+msgid "Bit.ly login:"
+msgstr "Bit.ly prijava:"
+
+#. i18n: ectx: property (text), widget (QLabel, api_key)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:32
+msgid "Bit.ly API key:"
+msgstr "Bit.ly API ključ:"
+
+#. i18n: ectx: property (text), widget (QLabel, help_label)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:58
+msgid "You can find your API key here"
+msgstr "Možete naći svoj API ključ ovdje"
+
+#. i18n: ectx: property (text), widget (QLabel, domain)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:73
+msgid "Domain:"
+msgstr "Domena:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:86
+msgid "(No matter for Bit.ly Pro accounts)"
+msgstr "(Nema veze za Bit.ly Pro naloge)"
+
+#: plugins/shorteners/goo_gl/goo_gl.cpp:52
+msgid "Error when creating job"
+msgstr "Greška u kreiranju posla"
+
+#: plugins/shorteners/goo_gl/goo_gl.cpp:52
+#: plugins/shorteners/goo_gl/goo_gl.cpp:64
+#: plugins/shorteners/goo_gl/goo_gl.cpp:69
+#: plugins/shorteners/goo_gl/goo_gl.cpp:71
+msgid "Goo.gl Error"
+msgstr "Goo.gl greška"
+
+#: plugins/shorteners/is_gd/is_gd.cpp:73 plugins/shorteners/is_gd/is_gd.cpp:81
+#: plugins/shorteners/is_gd/is_gd.cpp:84
+msgid "is.gd Error"
+msgstr "bit.ly greška"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_logstats)
+#: plugins/shorteners/is_gd/is_gd_prefs.ui:19
+msgid "Generate Statistics"
+msgstr "Generiši statistiku"
+
+#: plugins/shorteners/tighturl/tighturl.cpp:70
+#, fuzzy
+#| msgid "bit.ly Error"
+msgid "TightUrl Error"
+msgstr "bit.ly greška"
+
+#: plugins/shorteners/tinyarro_ws/tinyarro_ws.cpp:71
+msgid "Tinyarro.ws error"
+msgstr "Tinyarro.ws greška"
+
+#: plugins/shorteners/tinyarro_ws/tinyarro_ws_config.cpp:63
+msgid "Random host"
+msgstr "Slučajni host"
+
+#. i18n: ectx: property (text), widget (QLabel, urlHostLabel)
+#: plugins/shorteners/tinyarro_ws/tinyarro_ws_prefs.ui:40
+msgid "Shortener URL host:"
+msgstr "Kratiov URL host:"
+
+#: plugins/shorteners/ur1_ca/ur1_ca.cpp:74
+#, fuzzy
+#| msgid "Yourls Error"
+msgid "ur1.ca Error"
+msgstr "Yourls greška"
+
+#: plugins/shorteners/ur_ly/ur_ly.cpp:69 plugins/shorteners/ur_ly/ur_ly.cpp:74
+#, fuzzy
+#| msgid "3.ly Error"
+msgid "Ur.ly Error"
+msgstr "3.ly greška"
+
+#: plugins/shorteners/yourls/yourls.cpp:86
+msgid "Yourls Error"
+msgstr "Yourls greška"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/shorteners/yourls/yourlsprefs.ui:17
+msgid "Yourls API URL:"
+msgstr "Tvojurl API URL:"
+
+#. i18n: ectx: property (clickMessage), widget (QLineEdit, kcfg_yourlsHost)
+#: plugins/shorteners/yourls/yourlsprefs.ui:27
+msgid "http://SomeDomain.com/yourls/yourls-api.php"
+msgstr "http://NekaDomena.com/tvojurl/tvojurl-api.php"
+
+#: plugins/translator/sharedtools.cpp:33
+msgctxt "Translation Language"
+msgid "Chinese Simplified"
+msgstr "Kineski pojednostavljeni"
+
+#: plugins/translator/sharedtools.cpp:34
+msgctxt "Translation Language"
+msgid "Chinese Traditional"
+msgstr "Kineski tradicionalni"
+
+#: plugins/translator/sharedtools.cpp:35
+msgctxt "Translation Language"
+msgid "Filipino"
+msgstr "Filipinski"
+
+#: plugins/translator/sharedtools.cpp:36
+msgctxt "Translation Language"
+msgid "Haitian Creole"
+msgstr "Haićanskli Kreol"
+
+#: plugins/translator/sharedtools.cpp:37
+msgctxt "Translation Language"
+msgid "Hebrew"
+msgstr "Hebrejski"
+
+#: plugins/translator/sharedtools.cpp:38
+msgctxt "Translation Language"
+msgid "Norwegian"
+msgstr "Norveški"
+
+#: plugins/translator/translator.cpp:53
+msgid "Translate to..."
+msgstr "Prevedi na..."
+
+#: plugins/translator/translator.cpp:105
+#, kde-format
+msgctxt "%1 is the name of the source language in localized form"
+msgid ""
+"<span style=\"color:%2; font-size:small;\">Translated from %1: (<a "
+"href='choqok://showoriginalpost' style=\"text-decoration:none\" >original "
+"post</a>)</span>"
+msgstr ""
+"<span style=\"color:%2; font-size:small;\">Prevedeno s %1: (<a "
+"href='choqok://showoriginalpost' style=\"text-decoration:none\" >originalne "
+"poruke</a>)</span>"
+
+#: plugins/translator/translator.cpp:116
+#, kde-format
+msgid "Translation failed: %1"
+msgstr "Prevođenje neuspjelo. %1"
+
+#: plugins/translator/translator.cpp:135
+msgid "Configure Translator"
+msgstr "Podesi prevodioca"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/translator/translatorprefs.ui:17
+msgid "Select languages to be shown in translate menu"
+msgstr "Odaberite jezike koji će se prikazati u meniju prevođenja"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useUntinyDotCom)
+#: plugins/untiny/untinyprefs.ui:17
+msgid "Use untiny.com service"
+msgstr "Koristi untiny.com servis"
+
+#: plugins/uploaders/flickr/flickr.cpp:172
+msgid "The photo required argument was missing"
+msgstr "Fotografija koja je tražila argument nedostaje"
+
+#: plugins/uploaders/flickr/flickr.cpp:175
+msgid "The file was not correctly uploaded"
+msgstr "Datoteka nije ispravno poslana"
+
+#: plugins/uploaders/flickr/flickr.cpp:178
+msgid "The file was zero bytes in length"
+msgstr "Datoteka ima nula bajta dužinu"
+
+#: plugins/uploaders/flickr/flickr.cpp:181
+msgid "Filetype was not recognised"
+msgstr "Tip datoteke nije prepoznat"
+
+#: plugins/uploaders/flickr/flickr.cpp:184
+msgid "The calling user has reached their monthly bandwidth limit"
+msgstr "Pozivaoc je dostigao svoj mjesečni limit propusnosti"
+
+#: plugins/uploaders/flickr/flickr.cpp:188
+#: plugins/uploaders/flickr/flickrconfig.cpp:161
+msgid "Signature problem. Please try again later"
+msgstr "Problem s potpisom. Probajte kasnije ponovo."
+
+#: plugins/uploaders/flickr/flickr.cpp:195
+msgid "Login failed. Please re-authenticate Choqok"
+msgstr "Prijava neuspjela. Molim ponovo autentificirajte Choqok"
+
+#: plugins/uploaders/flickr/flickr.cpp:198
+#: plugins/uploaders/flickr/flickrconfig.cpp:164
+#: plugins/uploaders/flickr/flickrconfig.cpp:238
+msgid "The requested service is temporarily unavailable. Try again later"
+msgstr "Zahtijevani servis je privremeno nedostupan. Probajte ponovo kasnije"
+
+#: plugins/uploaders/flickr/flickr.cpp:201
+#: plugins/uploaders/flickr/flickrconfig.cpp:167
+#, fuzzy, kde-format
+#| msgid "Unknown Error: %1. Please try again later"
+msgid "Unknown Error:%1. Please try again later"
+msgstr "Nepoznata greška %1.  Probajte ponovo kasnije"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:183
+#: plugins/uploaders/flickr/flickrconfig.cpp:258
+msgid "Flickr authorization"
+msgstr "Flickr autorizacija"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:235
+msgid "Something happens with signature. Please retry"
+msgstr "Nešto se desilo sa potpisom. Molim pokušajte ponovo"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:241
+#, kde-format
+msgid "Something happens wrong. Error %1. Try again later"
+msgstr "Nešto se loše desilo.  Greška %1.  Probajte ponovo kasnije"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:278
+#, kde-format
+msgid "Authorized as %1"
+msgstr "Autorizovan kao %1"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:285
+msgid "Not authorized"
+msgstr "Nema dopuštenja"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:299
+msgid "Click here when you authorized Choqok"
+msgstr "Kliknite ovdje kada ste autorizirali Choqok"
+
+#. i18n: ectx: attribute (title), widget (QWidget, authTab)
+#: plugins/uploaders/flickr/flickrprefs.ui:24
+msgid "Authorization"
+msgstr "Ovlašćenje"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/uploaders/flickr/flickrprefs.ui:51
+msgid ""
+"Click the below button; if everything goes well, you will pointed to Flickr."
+"com website to allow access to Choqok."
+msgstr ""
+"Klikni tipku ispod; ako je sve uredu, bićeš usmjeren na Flickr.com web "
+"stranicu da odobriš pristup u Choqok."
+
+#. i18n: ectx: property (text), widget (QPushButton, authButton)
+#: plugins/uploaders/flickr/flickrprefs.ui:61
+msgid "Click here to authorize Choqok on Flickr.com"
+msgstr "Kliknite ovdje da autorizirate Choqok na Flickr.com"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: plugins/uploaders/flickr/flickrprefs.ui:90
+msgid "Who can view photo"
+msgstr "Ko može vidjeti fotografiju"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_forprivate)
+#: plugins/uploaders/flickr/flickrprefs.ui:96
+msgid "Private"
+msgstr "Privatni"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_forfriends)
+#: plugins/uploaders/flickr/flickrprefs.ui:105
+msgid "Visible for friends"
+msgstr "Vidljivo za prijatelje"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_forfamily)
+#: plugins/uploaders/flickr/flickrprefs.ui:112
+msgid "Visible for family"
+msgstr "Vidljivo za porodicu"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: plugins/uploaders/flickr/flickrprefs.ui:134
+msgid "Set safety level"
+msgstr "POstavi nivo sigurnosti"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_safe)
+#: plugins/uploaders/flickr/flickrprefs.ui:140
+msgid "Safe"
+msgstr "Siguran"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_moderate)
+#: plugins/uploaders/flickr/flickrprefs.ui:150
+msgid "Moderate"
+msgstr "Umjereno"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_restricted)
+#: plugins/uploaders/flickr/flickrprefs.ui:157
+msgid "Restricted"
+msgstr "Ograničeno"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_hidefromsearch)
+#: plugins/uploaders/flickr/flickrprefs.ui:169
+msgid "Hide picture from public search"
+msgstr "Sakriij sliku iz javne pretrage"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_shorturl)
+#: plugins/uploaders/flickr/flickrprefs.ui:176
+msgid "Use Flic.kr to short URLs"
+msgstr "Koristi Flic.kr da se skrati URLs"
+
+#: plugins/uploaders/imageshack/imageshack.cpp:53
+msgid "Just supporting image uploading"
+msgstr "Upravo podržava slanje slika"
+
+#: plugins/uploaders/mobypicture/mobypicture.cpp:64
+#: plugins/uploaders/posterous/posterous.cpp:119
+#: plugins/uploaders/twitgoo/twitgoo.cpp:61
+#: plugins/uploaders/twitpic/twitpic.cpp:60
+msgid "There is no Twitter account configured to use."
+msgstr "Nema Twitter naloga podešenog za upotrebu."
+
+#: plugins/uploaders/mobypicture/mobypictureconfig.cpp:88
+#: plugins/uploaders/posterous/posterousconfig.cpp:89
+#: plugins/uploaders/twitgoo/twitgooconfig.cpp:78
+#: plugins/uploaders/twitpic/twitpicconfig.cpp:78
+msgid "You have to configure at least one Twitter account to use this plugin."
+msgstr ""
+"Trebate konfigurisati barem jedan twitter nalog da koristite ovaj dodatak."
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_oauth)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:40
+#: plugins/uploaders/posterous/posterousprefs.ui:40
+#, fuzzy
+#| msgid "Twitter account"
+msgid "&Twitter account"
+msgstr "Twitter analog"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_basic)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:47
+#, fuzzy
+#| msgid "Mobypicture login and password:"
+msgid "Mobypicture &login and password:"
+msgstr "Mobypicture lkorisničko ime i lozinka:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:57
+#: plugins/uploaders/posterous/posterousprefs.ui:57
+msgid "Upload files using:"
+msgstr "Pošalji datoteke koristeći:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:64
+msgid "Login:"
+msgstr "Prijava:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:74
+msgid "Password (PIN):"
+msgstr "Losinka (PIN):"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_basic)
+#: plugins/uploaders/posterous/posterousprefs.ui:47
+#, fuzzy
+#| msgid "Posterous login and password:"
+msgid "Posterous &login and password:"
+msgstr "Posterous korisničko ime i lozinka:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/uploaders/posterous/posterousprefs.ui:64
+msgid "E-mail:"
+msgstr "E-mail:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/uploaders/twitgoo/twitgooprefs.ui:17
+#: plugins/uploaders/twitpic/twitpicprefs.ui:17
+msgid "Twitter account:"
+msgstr "Twitter  nalog:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_directLink)
+#: plugins/uploaders/twitgoo/twitgooprefs.ui:50
+msgid "Get direct link to file"
+msgstr "Uzmio direktnu vezu na datoteku"

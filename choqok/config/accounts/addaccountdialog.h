@@ -40,7 +40,7 @@ public:
     ~AddAccountDialog();
 
 protected Q_SLOTS:
-    virtual void accept() override;
+    virtual void accept();
 
 private:
     ChoqokEditAccountWidget *widget;

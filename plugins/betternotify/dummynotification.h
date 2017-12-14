@@ -33,9 +33,9 @@ public:
     virtual ~DummyNotification();
 
 protected:
-    virtual void mouseMoveEvent(QMouseEvent *ev) override;
-    virtual void mousePressEvent(QMouseEvent *ev) override;
-    virtual void mouseReleaseEvent(QMouseEvent *ev) override;
+    virtual void mouseMoveEvent(QMouseEvent *ev);
+    virtual void mousePressEvent(QMouseEvent *ev);
+    virtual void mouseReleaseEvent(QMouseEvent *ev);
 
 Q_SIGNALS:
     void positionSelected(QPoint position);

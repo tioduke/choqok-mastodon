@@ -107,7 +107,6 @@ public:
 
 Q_SIGNALS:
     void modified(Choqok::Account *theAccount);
-    void status(Choqok::Account *theAccount, bool enabled);
 
 private:
     class Private;

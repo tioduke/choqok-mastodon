@@ -30,7 +30,11 @@
 #include "choqok_export.h"
 
 #include "twitterapimicroblog.h"
-#include "twitterapioauth.h"
+
+namespace QOAuth
+{
+class Interface;
+}
 
 /**
 @author Mehrdad Momeny \<mehrdad.momeny@gmail.com\>
@@ -96,7 +100,7 @@ public:
     bool usingOAuth() const;
     void setUsingOAuth(bool use = true);
 
-    TwitterApiOAuth *oauthInterface();
+    QOAuth::Interface *oauthInterface();
 protected:
     void setApiUrl(const QUrl &apiUrl);
     void setHomepageUrl(const QUrl &homepageUrl);

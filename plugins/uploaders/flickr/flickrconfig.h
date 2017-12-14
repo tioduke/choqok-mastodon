@@ -37,8 +37,8 @@ public:
     FlickrConfig(QWidget *parent, const QVariantList &);
     ~FlickrConfig();
 
-    virtual void save() override;
-    virtual void load() override;
+    virtual void save();
+    virtual void load();
 
     void getFrob();
     QByteArray createSign(QByteArray);

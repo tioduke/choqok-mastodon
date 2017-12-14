@@ -39,7 +39,7 @@ public:
     Bit_ly(QObject *parent, const QVariantList &args);
     ~Bit_ly();
 
-    virtual QString shorten(const QString &url) override;
+    virtual QString shorten(const QString &url);
 };
 
 #endif //BIT_LY_H

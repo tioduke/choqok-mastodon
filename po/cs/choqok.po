@@ -1,0 +1,3010 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Vít Pelčák <vit@pelcak.org>, 2010, 2011, 2012, 2013, 2014, 2015, 2016.
+# Tomáš Chvátal <tomas.chvatal@gmail.com>, 2012, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: choqok\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2016-08-28 06:51+0000\n"
+"PO-Revision-Date: 2016-02-26 16:51+0100\n"
+"Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 2.0\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Vít Pelčák, Michal Horáček"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "vit@pelcak.org, horacekm@email.cz"
+
+#. i18n: ectx: Menu (file)
+#: choqok/choqokui.rc:4
+msgid "File"
+msgstr "Soubor"
+
+#. i18n: ectx: Menu (tools)
+#: choqok/choqokui.rc:11 plugins/filter/filterui.rc:4
+#: plugins/nowlistening/nowlisteningui.rc:4
+#: plugins/quickfilter/quickfilterui.rc:4
+#: plugins/searchaction/searchactionui.rc:4
+msgid "Tools"
+msgstr "Nástroje"
+
+#. i18n: ectx: Menu (settings)
+#. i18n: ectx: attribute (title), widget (QWidget, settingsTab)
+#: choqok/choqokui.rc:15 plugins/uploaders/flickr/flickrprefs.ui:82
+msgid "Settings"
+msgstr "Nastavení"
+
+#. i18n: ectx: Menu (help)
+#: choqok/choqokui.rc:20
+msgid "Help"
+msgstr "Nápověda"
+
+#: choqok/config/accounts/accountswidget.cpp:87
+#, kde-format
+msgid "Cannot load the %1 plugin. Please check your installation."
+msgstr "Nelze načíst zásuvný modul %1. Prosím, zkontrolujte svou instalaci."
+
+#: choqok/config/accounts/accountswidget.cpp:102
+msgid "Cannot find the desired account."
+msgstr "Nelze najít požadovaný účet."
+
+#: choqok/config/accounts/accountswidget.cpp:122
+msgid "Are you sure you want to remove the selected account?"
+msgstr "Opravdu si přejete odebrat vybraný účet?"
+
+#: choqok/config/accounts/accountswidget.cpp:128
+msgid "Cannot remove the account."
+msgstr "Nelze odebrat účet."
+
+#: choqok/config/accounts/accountswidget.cpp:239
+msgid "Select Micro-Blogging Service"
+msgstr "Vyberte službu pro mikroblogování"
+
+#: choqok/config/accounts/accountswidget.cpp:296
+msgid ""
+"You need to restart Choqok for the accounts priority changes to take effect."
+msgstr "Musíte restartovat Choqok, aby se projevily změny priorit účtů."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AccountsWidgetBase)
+#: choqok/config/accounts/accountswidget_base.ui:14
+#: choqok/config/accounts/addaccountdialog.cpp:44
+msgid "Add New Account"
+msgstr "Přidat nový účet"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnAdd)
+#: choqok/config/accounts/accountswidget_base.ui:40
+msgid "Add a new account"
+msgstr "Přidat nový účet"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnAdd)
+#: choqok/config/accounts/accountswidget_base.ui:43
+msgid "&Add..."
+msgstr "Přid&at..."
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnEdit)
+#: choqok/config/accounts/accountswidget_base.ui:58
+msgid "Modify the selected account"
+msgstr "Upravit zvolený účet"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnEdit)
+#: choqok/config/accounts/accountswidget_base.ui:61
+msgid "&Modify..."
+msgstr "&Upravit..."
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnRemove)
+#: choqok/config/accounts/accountswidget_base.ui:76
+msgid "Remove the selected account"
+msgstr "Odstranit zvolený účet"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnRemove)
+#: choqok/config/accounts/accountswidget_base.ui:79
+msgid "&Remove"
+msgstr "O&dstranit"
+
+#. i18n: ectx: property (text), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:167
+msgid "Alias"
+msgstr "Alias"
+
+#. i18n: ectx: property (text), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:172
+msgid "Micro-Blog"
+msgstr "Mikro-Blog"
+
+#. i18n: ectx: property (text), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:177
+msgid "Read Only"
+msgstr "Pouze ke čtení"
+
+#. i18n: ectx: property (toolTip), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:180
+msgid "Read Only account"
+msgstr "Účet pouze ke čtení"
+
+#. i18n: ectx: property (text), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:185
+msgid "Include in Quick Post"
+msgstr "Zahrnout v rychlém příspěvku"
+
+#. i18n: ectx: property (toolTip), widget (QTableWidget, accountsTable)
+#: choqok/config/accounts/accountswidget_base.ui:188
+msgid "Show in Quick Post"
+msgstr ""
+
+#: choqok/config/accounts/addaccountdialog.cpp:69
+msgid "The Account registration failed."
+msgstr "Registrace účtu selhala."
+
+#: choqok/config/accounts/addaccountdialog.cpp:76
+#: choqok/config/accounts/editaccountdialog.cpp:73
+msgid ""
+"Cannot validate your input information.\n"
+"Please check the fields' data.\n"
+"Maybe a required field is empty?"
+msgstr ""
+"Nelze potvrdit zadané informace.\n"
+"Prosím, zkontrolujte data v polích.\n"
+"Není požadované pole prázdné?"
+
+#: choqok/config/accounts/editaccountdialog.cpp:46
+msgid "Edit Account"
+msgstr "Upravit účet"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_isEmoticonsEnabled)
+#: choqok/config/appearance/appearanceconfig_base.ui:17
+msgid "Enable emoticons"
+msgstr "Povolit emotikony"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useReverseOrder)
+#: choqok/config/appearance/appearanceconfig_base.ui:24
+msgid "Show posts in reverse order (Needs restart to take effect)"
+msgstr "Zobrazit příspěvky v obráceném pořadí (Vyžaduje restart)"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_showRetweetsInChoqokWay)
+#: choqok/config/appearance/appearanceconfig_base.ui:31
+msgid ""
+"You will see post with retweeter name as author, plus Retweeted from "
+"original author note."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showRetweetsInChoqokWay)
+#: choqok/config/appearance/appearanceconfig_base.ui:34
+msgid "Show Retweeted/Repeated posts in Choqok way"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_isCustomUi)
+#: choqok/config/appearance/appearanceconfig_base.ui:44
+msgid "Use custom appearance"
+msgstr "Použít vlastní vzhled"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: choqok/config/appearance/appearanceconfig_base.ui:76
+msgid "Post font:"
+msgstr "Písmo příspěvků:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: choqok/config/appearance/appearanceconfig_base.ui:95
+msgid "Post Color Preferences"
+msgstr "Nastavení barev příspěvků"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: choqok/config/appearance/appearanceconfig_base.ui:103
+msgid "Background"
+msgstr "Pozadí"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: choqok/config/appearance/appearanceconfig_base.ui:113
+msgid "Default color:"
+msgstr "Výchozí barva:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: choqok/config/appearance/appearanceconfig_base.ui:150
+msgid "Unread post color:"
+msgstr "Barva pro nepřečtený komentář"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: choqok/config/appearance/appearanceconfig_base.ui:194
+msgid "Foreground"
+msgstr "Popředí"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: choqok/config/appearance/appearanceconfig_base.ui:204
+msgid "Own post color:"
+msgstr "Barva pro vlastní komentář:"
+
+#: choqok/config/behavior/behaviorconfig.cpp:73
+msgid "&General"
+msgstr "O&becné"
+
+#: choqok/config/behavior/behaviorconfig.cpp:80
+msgid "&Notifications"
+msgstr "Oz&námení"
+
+#: choqok/config/behavior/behaviorconfig.cpp:91
+msgid "URL &Shortening"
+msgstr "Zkracování U&RL"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: choqok/config/behavior/behaviorconfig_general.ui:17
+msgid "General Options"
+msgstr "Obecné volby"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showSplashScreen)
+#: choqok/config/behavior/behaviorconfig_general.ui:23
+msgid "Show splash-screen on startup"
+msgstr "Zobrazit úvodní obrazovku při spuštění"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_markAllAsReadOnExit)
+#: choqok/config/behavior/behaviorconfig_general.ui:33
+msgid "Mark all posts as read on exit"
+msgstr "Při ukončení označit všechny příspěvky za přečtené"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_enableSpellChecker)
+#: choqok/config/behavior/behaviorconfig_general.ui:43
+msgid "Enable automatic spellchecking in the message editor"
+msgstr "Povolit automatickou kontrolou pravopisu v editoru zpráv"
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_enableSysTray)
+#: choqok/config/behavior/behaviorconfig_general.ui:50
+msgid "Enable System &Tray"
+msgstr "Povolit sys&témový panel"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_markAllAsReadOnHideToSystray)
+#: choqok/config/behavior/behaviorconfig_general.ui:62
+msgid "Mark all unread posts as read, when hiding to system tray"
+msgstr ""
+"Při skrývání do oznamovací oblasti označit nepřečtené příspěvky jako "
+"přečtené."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useCustomBrowser)
+#: choqok/config/behavior/behaviorconfig_general.ui:83
+msgid "Use &custom web browser:"
+msgstr "Použít vlastní we&bový prohlížeč:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useCustomRT)
+#: choqok/config/behavior/behaviorconfig_general.ui:101
+msgid "Use custom prefix for ReSend [ReTweet]:"
+msgstr "Použít vlastní předponu pro přeposlané [ReTweet]:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: choqok/config/behavior/behaviorconfig_general.ui:120
+msgid "Timelines Options"
+msgstr "Možnosti časových os"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: choqok/config/behavior/behaviorconfig_general.ui:130
+msgid "&Update interval:"
+msgstr "Interval akt&ualizace:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: choqok/config/behavior/behaviorconfig_general.ui:149
+msgid "&Number of posts to show in timelines:"
+msgstr "Počet příspěvků k zobraze&ní na časových osách:"
+
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_updateInterval)
+#: choqok/config/behavior/behaviorconfig_general.ui:166
+msgid "Disabled"
+msgstr "Zakázáno"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_updateInterval)
+#: choqok/config/behavior/behaviorconfig_general.ui:169
+msgid " minutes"
+msgstr " minuty"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_showAllNotifiesInOne)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:17
+msgid "&Show all new posts in one notification"
+msgstr "Zobrazit všechny nové pří&spěvky v jednom oznámení"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:26
+msgid "&Notification duration:"
+msgstr "Trvání oz&námení:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_notifyInterval)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:39
+msgid " seconds"
+msgstr " sekundy"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:57
+msgid "New post notifications"
+msgstr "Oznámení nových příspěvků"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_knotify)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:63
+msgid "Show notification using KNotify"
+msgstr "Zobrazit oznámení použitím KNotify"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_libindicate)
+#: choqok/config/behavior/behaviorconfig_notifications.ui:70
+msgid "Show notification using Message Indicator"
+msgstr "Zobrazit oznámení použitím Message Indicator"
+
+#: choqok/config/behavior/behaviorconfig_shorten.cpp:86
+msgctxt "No shortener service"
+msgid "None"
+msgstr "Žádný"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_shortenOnPaste)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:17
+msgid "Shorten &URLs on paste"
+msgstr "Zkracovat &URL při vložení"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_removeHttp)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:24
+msgid "Remove \"http://\" from shortened URLs"
+msgstr "Odebrat \"http://\" ze zkrácených URL"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:33
+msgid "Shortening ser&vice:"
+msgstr "Služba pro zkraco&vání:"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, configPlugin)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:56
+#: libchoqok/ui/uploadmedia_base.ui:71
+msgid "Configure plugin"
+msgstr "Nastavit modul"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, aboutPlugin)
+#: choqok/config/behavior/behaviorconfig_shorten_base.ui:72
+#: libchoqok/ui/uploadmedia_base.ui:90
+msgid "About plugin"
+msgstr "O modulu"
+
+#: choqok/config/plugins/choqokpluginconfig.cpp:54
+msgid "General Plugins"
+msgstr "Obecné moduly"
+
+#: choqok/main.cpp:34
+msgid "KDE Micro-Blogging Client."
+msgstr "Klient KDE pro mikroblogování."
+
+#: choqok/main.cpp:46
+msgid ""
+"(C) 2008-2010 Mehrdad Momeny\n"
+"(C) 2011-2015 Choqok Developers"
+msgstr ""
+"(C) 2008-2010 Mehrdad Momeny\n"
+"(C) 2011-2015 Vývojáři Choqok"
+
+#: choqok/main.cpp:51
+msgid "Mehrdad Momeny"
+msgstr "Mehrdad Momeny"
+
+#: choqok/main.cpp:51
+msgid "Author, Developer and Maintainer"
+msgstr ""
+
+#: choqok/main.cpp:53
+msgid "Andrey Esin"
+msgstr "Andrey Esin"
+
+#: choqok/main.cpp:53 choqok/main.cpp:55 choqok/main.cpp:62
+msgid "Developer"
+msgstr "Vývojář"
+
+#: choqok/main.cpp:55
+msgid "Andrea Scarpino"
+msgstr "Andrea Scarpino"
+
+#: choqok/main.cpp:58
+msgid "Roozbeh Shafiee"
+msgstr "Roozbeh Shafiee"
+
+#: choqok/main.cpp:58 choqok/main.cpp:59
+msgid "Artworks"
+msgstr ""
+
+#: choqok/main.cpp:59
+msgid "Shahrzad Shojaei"
+msgstr "Shahrzad Shojaei"
+
+#: choqok/main.cpp:60
+msgid "Daniel Schaal"
+msgstr "Daniel Schaal"
+
+#: choqok/main.cpp:60 choqok/main.cpp:67
+msgid "UI improvements"
+msgstr "Vylepšení uživatelského rozhraní"
+
+#: choqok/main.cpp:61
+msgid "Stephen Henderson"
+msgstr "Stephen Henderson"
+
+#: choqok/main.cpp:61
+msgid "Search API implementation"
+msgstr ""
+
+#: choqok/main.cpp:62
+msgid "Tejas Dinkar"
+msgstr "Tejas Dinkar"
+
+#: choqok/main.cpp:64
+msgid "Emanuele Bigiarini"
+msgstr "Emanuele Bigiarini"
+
+#: choqok/main.cpp:64
+msgid "D-Bus and Konqueror plugin"
+msgstr ""
+
+#: choqok/main.cpp:65
+msgid "Alex Infantes"
+msgstr "Alex Infantes"
+
+#: choqok/main.cpp:65
+msgid "Improvements on Image preview plugin"
+msgstr ""
+
+#: choqok/main.cpp:67
+msgid "Bardia Daneshvar"
+msgstr "Bardia Daneshvar"
+
+#: choqok/main.cpp:68
+msgid "Atanas Gospodinov"
+msgstr "Atanas Gospodinov"
+
+#: choqok/main.cpp:68
+msgid "Twitter photo upload"
+msgstr "Odesílání fotek Twitter"
+
+#: choqok/main.cpp:69
+msgid "Daniel Kreuter"
+msgstr "Daniel Kreuter"
+
+#: choqok/main.cpp:69
+msgid "Twitter microblog developer"
+msgstr ""
+
+#: choqok/main.cpp:70
+msgid "Lim Yuen Hoe"
+msgstr "Lim Yuen Hoe"
+
+#: choqok/main.cpp:70
+msgid "Bug fixes and improvements"
+msgstr "Opravy chyb a vylepšení"
+
+#: choqok/main.cpp:71
+msgid "Ahmed I. Khalil"
+msgstr ""
+
+#: choqok/main.cpp:71
+msgid "Various improvements"
+msgstr "Různá vylepšení"
+
+#: choqok/mainwindow.cpp:85 choqok/mainwindow.cpp:509
+#: choqok/mainwindow.cpp:585 choqok/mainwindow.cpp:641
+#: choqok/systrayicon.cpp:113 choqok/systrayicon.cpp:119
+#: plugins/betternotify/dummynotification.cpp:48
+#: plugins/konqueror/konqchoqok.cpp:45
+msgid "Choqok"
+msgstr "Choqok"
+
+#: choqok/mainwindow.cpp:209
+msgid "Update Timelines"
+msgstr "Aktualizovat časové osy"
+
+#: choqok/mainwindow.cpp:215 libchoqok/ui/quickpost.cpp:118
+msgid "Quick Post"
+msgstr "Rychlý příspěvek"
+
+#: choqok/mainwindow.cpp:221
+msgid "Mark All As Read"
+msgstr "Označit vše za přečtené"
+
+#: choqok/mainwindow.cpp:230
+msgctxt "@action"
+msgid "Minimize"
+msgstr "Minimalizovat"
+
+#: choqok/mainwindow.cpp:232
+msgctxt "@action"
+msgid "Restore"
+msgstr "Obnovit"
+
+#: choqok/mainwindow.cpp:240
+msgid "Enable Update Timer"
+msgstr "Povolit časovač aktualizací"
+
+#: choqok/mainwindow.cpp:246
+msgid "Enable Notifications"
+msgstr "Povolit oznamování"
+
+#: choqok/mainwindow.cpp:252
+msgid "Hide Menubar"
+msgstr "Skrýt hlavní nabídku"
+
+#: choqok/mainwindow.cpp:259
+msgid "Clear Avatar Cache"
+msgstr "Vyčistit mezipaměť avatarů"
+
+#: choqok/mainwindow.cpp:261
+msgid "You have to restart Choqok to load avatars again"
+msgstr ""
+
+#: choqok/mainwindow.cpp:266
+msgid "Upload Medium..."
+msgstr "Odeslat médium"
+
+#: choqok/mainwindow.cpp:270
+msgid "Donate"
+msgstr "Přispět"
+
+#: choqok/mainwindow.cpp:294
+msgid ""
+"No account created. You have to create an account before being able to make "
+"posts."
+msgstr ""
+"Nebyl vytvořen žádný účet. Musíte vytvořit účet dříve než začnete psát "
+"příspěvky."
+
+#: choqok/mainwindow.cpp:323
+msgid ""
+"In order to use Choqok you need an account at one of the supported micro-"
+"blogging services.\n"
+"Would you like to add your account now?"
+msgstr ""
+"Abyste mohli používat Choqok, potřebujete účet od jedné z podporovaných "
+"mikroblogovacích služeb.\n"
+"Chcete nyní přidat váš účet?"
+
+#: choqok/mainwindow.cpp:507
+#, kde-format
+msgid "Choqok (%1)"
+msgstr "Choqok (%1)"
+
+#: choqok/mainwindow.cpp:574
+msgid "Restore"
+msgstr "Obnovit"
+
+#: choqok/mainwindow.cpp:580
+msgid "Minimize"
+msgstr "Minimalizovat"
+
+#: choqok/mainwindow.cpp:626
+msgid "Loading timelines..."
+msgstr "Načítání časových os..."
+
+#: choqok/systrayicon.cpp:113
+#, kde-format
+msgid "1 unread post"
+msgid_plural "%1 unread posts"
+msgstr[0] "1 nepřečtený komentář"
+msgstr[1] "%1 nepřečtené komentáře"
+msgstr[2] "%1 nepřečtených komentářů"
+
+#: choqok/systrayicon.cpp:122
+msgid "Choqok - Disabled"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnAttach)
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:64
+#: libchoqok/ui/quickpost.cpp:95 microblogs/pumpio/pumpiocomposerwidget.cpp:61
+#: microblogs/pumpio/pumpiomessagedialog.ui:90
+#: microblogs/twitter/twittercomposerwidget.cpp:62
+msgid "Attach a file"
+msgstr "Připojit soubor"
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:104
+#: libchoqok/ui/composerwidget.cpp:139
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:96
+#: microblogs/twitter/twittercomposerwidget.cpp:100
+msgid "Abort"
+msgstr "Přerušit"
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:126
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:442
+#: microblogs/pumpio/pumpiomicroblog.cpp:693
+#: microblogs/twitter/twittercomposerwidget.cpp:122
+msgid "New post submitted successfully"
+msgstr "Nový příspěvek byl úspěšně odeslán"
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:139
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:145
+#: microblogs/pumpio/pumpiomessagedialog.cpp:183
+#: microblogs/twitter/twittercomposerwidget.cpp:135
+msgid "Select Media to Upload"
+msgstr "Vybrat médium k odeslání"
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:150
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:156
+#: microblogs/pumpio/pumpiomessagedialog.cpp:194
+#: microblogs/twitter/twittercomposerwidget.cpp:146
+msgid "Discard Attachment"
+msgstr "Zahodit přílohu"
+
+#: helperlibs/gnusocialapihelper/gnusocialapicomposerwidget.cpp:157
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:163
+#: microblogs/pumpio/pumpiomessagedialog.cpp:201
+#: microblogs/twitter/twittercomposerwidget.cpp:153
+#, kde-format
+msgid "Attaching <b>%1</b>"
+msgstr "Připojování <b>%1</b>"
+
+#: helperlibs/gnusocialapihelper/gnusocialapiconversationtimelinewidget.cpp:36
+#, kde-format
+msgid "Conversation %1"
+msgstr "Rozhovor %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapiconversationtimelinewidget.cpp:38
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:141
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:316
+msgid "Please wait..."
+msgstr "Čekejte prosím..."
+
+#: helperlibs/gnusocialapihelper/gnusocialapiconversationtimelinewidget.cpp:66
+#: helperlibs/twitterapihelper/twitterapishowthread.cpp:52
+msgid "Conversation"
+msgstr "Rozhovor"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:61
+#: microblogs/laconica/laconicamicroblog.cpp:40
+msgctxt "Timeline name"
+msgid "Repeated"
+msgstr "Zopakováno"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:62
+#: microblogs/laconica/laconicamicroblog.cpp:41
+msgctxt "Timeline description"
+msgid "Your posts that were repeated by others"
+msgstr "Vaše příspěvky, které byly ostatními opakovány"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:168
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:176
+#: libchoqok/mediamanager.cpp:189 libchoqok/mediamanager.cpp:196
+#: microblogs/twitter/twittermicroblog.cpp:157
+#: microblogs/twitter/twittermicroblog.cpp:165
+msgid "Uploading medium failed: cannot read the medium file."
+msgstr "Odeslání média selhalo: nelze přečíst soubor média."
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:222
+#, kde-format
+msgid "Repeat of %1"
+msgstr "Opakovat po %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:224
+#, kde-format
+msgid "Repeated by %1"
+msgstr "Zopakováno %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:230
+msgid "Repeat this notice?"
+msgstr "Opakovat tuto poznámku?"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:255
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1528
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1554
+msgid ""
+"Retrieving the friends list failed. The data returned from the server is "
+"corrupted."
+msgstr "Obnovení seznamu přítel selhalo. Data ze serveru jsou porušená."
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:315
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:765
+#, kde-format
+msgid ""
+"Friends list for account %1 could not be updated:\n"
+"%2"
+msgstr ""
+"Seznam přátel pro účet %1 nemohl být obnoven:\n"
+"%2"
+
+#: helperlibs/gnusocialapihelper/gnusocialapimicroblog.cpp:419
+#, kde-format
+msgid "Fetching conversation failed. %1"
+msgstr "Stahování rozhovoru selhalo. %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:88
+#: microblogs/twitter/twitterpostwidget.cpp:77
+msgid "Manual ReSend"
+msgstr ""
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:90
+msgid "Repeat"
+msgstr "Opakovat"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:91
+msgid "Repeat post using API"
+msgstr "Zopakovat příspěvek použitím API"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:155
+#, kde-format
+msgid "Search for %1"
+msgstr "Vyhledávám %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:157
+msgid "Open tag page in browser"
+msgstr ""
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:173
+msgid "Show latest group posts"
+msgstr "Zobrazit poslední skupinové příspěvky"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:175
+msgid "Open group page in browser"
+msgstr ""
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:192
+#: microblogs/twitter/twitterpostwidget.cpp:144
+#, kde-format
+msgctxt "Who is user"
+msgid "Who is %1"
+msgstr "Kdo je %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:194
+#: microblogs/twitter/twitterpostwidget.cpp:146
+#, kde-format
+msgctxt "Posts from user"
+msgid "Posts from %1"
+msgstr "Příspěvky od %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:196
+#: microblogs/twitter/twitterpostwidget.cpp:148
+#, kde-format
+msgctxt "Replies to user"
+msgid "Replies to %1"
+msgstr "Odpoví %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:200
+#: microblogs/twitter/twitterpostwidget.cpp:156
+msgctxt "Open profile page in browser"
+msgid "Open profile in browser"
+msgstr "Otevřít profil v prohlížeči"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:217
+#: microblogs/twitter/twitterpostwidget.cpp:173
+msgid "Actions"
+msgstr "Činnosti"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:218
+#: microblogs/twitter/twitterpostwidget.cpp:174
+#, kde-format
+msgctxt "Write a message to user attention"
+msgid "Write to %1"
+msgstr "Napsat %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:223
+#: microblogs/twitter/twitterpostwidget.cpp:180
+#, kde-format
+msgctxt "Send direct message to user"
+msgid "Send private message to %1"
+msgstr "Odeslat soukromou zprávu %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:229
+#, kde-format
+msgctxt "Unsubscribe from user"
+msgid "Unsubscribe from %1"
+msgstr "Odhlásit se z %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:234
+#, kde-format
+msgctxt "Subscribe to user"
+msgid "Subscribe to %1"
+msgstr "Přihlásit do %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapipostwidget.cpp:238
+#: microblogs/twitter/twitterpostwidget.cpp:195
+#, kde-format
+msgctxt "Block user"
+msgid "Block %1"
+msgstr "Blokovat %1"
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:46
+msgctxt "Dents are Identica posts"
+msgid "Dents Including This Hashtag"
+msgstr ""
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:49
+msgctxt "Dents are Identica posts"
+msgid "Dents Including This Group"
+msgstr ""
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:52
+msgctxt "Dents are Identica posts"
+msgid "Dents From This User"
+msgstr ""
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:55
+msgctxt "Dents are Identica posts"
+msgid "Dents To This User"
+msgstr ""
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:142
+#: microblogs/twitter/twittersearch.cpp:137
+msgid "Unable to fetch search results."
+msgstr "Nelze získat výsledky vyhledávání."
+
+#: helperlibs/gnusocialapihelper/gnusocialapisearch.cpp:150
+#: microblogs/twitter/twittersearch.cpp:145
+#, kde-format
+msgid "Unable to fetch search results: %1"
+msgstr "Nelze získat výsledky vyhledávání: %1"
+
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:60
+msgid "Send Private Message"
+msgstr "Odeslat soukromou zprávu"
+
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:84
+msgctxt "Send message to"
+msgid "To:"
+msgstr "Komu: "
+
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:89
+msgid "Reload friends list"
+msgstr "Obnovit seznam přítel"
+
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:111
+msgctxt "Send private message"
+msgid "Send"
+msgstr "Odeslat"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:103
+msgctxt "Timeline Name"
+msgid "Home"
+msgstr "Domů"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:104
+msgctxt "Timeline description"
+msgid "You and your friends"
+msgstr "Vy a vaši přátelé"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:109
+msgctxt "Timeline Name"
+msgid "Reply"
+msgstr "Odpovědět"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:110
+msgctxt "Timeline description"
+msgid "Replies to you"
+msgstr ""
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:115
+#: microblogs/pumpio/pumpiomicroblog.cpp:1291
+msgctxt "Timeline Name"
+msgid "Inbox"
+msgstr "Doručená pošta"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:116
+msgctxt "Timeline description"
+msgid "Your incoming private messages"
+msgstr "Vaše příchozí soukromé zprávy"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:121
+#: microblogs/pumpio/pumpiomicroblog.cpp:1298
+msgctxt "Timeline Name"
+msgid "Outbox"
+msgstr "Odchozí"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:122
+msgctxt "Timeline description"
+msgid "Private messages you have sent"
+msgstr "Soukromé zprávy, které jste odeslali"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:127
+msgctxt "Timeline Name"
+msgid "Favorite"
+msgstr "Oblíbené"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:128
+msgctxt "Timeline description"
+msgid "Your favorites"
+msgstr "Vaše oblíbené"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:133
+msgctxt "Timeline Name"
+msgid "Public"
+msgstr "Veřejné"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:134
+msgctxt "Timeline description"
+msgid "Public timeline"
+msgstr "Veřejná časová osa"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:139
+msgctxt "Timeline Name"
+msgid "ReTweets"
+msgstr ""
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:140
+msgctxt "Timeline description"
+msgid "Your posts that were ReTweeted by others"
+msgstr ""
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:155
+#: microblogs/pumpio/pumpiomicroblog.cpp:122
+msgid "Send Private Message..."
+msgstr "Odeslat soukromou zprávu..."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:160
+#: plugins/searchaction/searchaction.cpp:45
+msgid "Search..."
+msgstr "Hledat..."
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnReload)
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:165
+#: microblogs/pumpio/pumpiomessagedialog.ui:31
+msgid "Update Friends List"
+msgstr "Aktualizovat seznam přátel"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:313
+#: microblogs/pumpio/pumpiomicroblog.cpp:181
+msgid "Creating the new post failed. Text is empty."
+msgstr "Vytváření nového příspěvku selhalo. Text je prázdný."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:423
+#, kde-format
+msgid "Creating the new post failed: %1"
+msgstr "Vytváření nového příspěvku selhalo: %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:434
+msgid "Creating the new post failed. The result data could not be parsed."
+msgstr ""
+"Vytváření nového příspěvku selhalo. Výsledná data nemohou být analyzována."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:438
+#, kde-format
+msgid "Creating the new post failed, with error: %1"
+msgstr "Vytváření nového příspěvku selhalo s chybou: %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:446
+msgid "Private message sent successfully"
+msgstr "Soukromá zpráva úspěšně odeslána"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:514
+#, kde-format
+msgid "Fetching the new post failed. %1"
+msgstr "Získání nového příspěvku selhalo. %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:524
+msgid "Fetching new post failed. The result data could not be parsed."
+msgstr ""
+"Získání nových příspěvků selhalo. Výsledná data nemohla být analyzována."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:529
+#, kde-format
+msgid "Fetching new post failed, with error:%1"
+msgstr "Získání nového příspěvku selhalo s chybou: %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:579
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:588
+#: microblogs/pumpio/pumpiomicroblog.cpp:977
+#, kde-format
+msgid "Removing the post failed. %1"
+msgstr "Odebrání příspěvku selhalo. %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:636
+#, kde-format
+msgid "Favorite creation failed. %1"
+msgstr ""
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:692
+#, kde-format
+msgid "Removing the favorite failed. %1"
+msgstr ""
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:745
+#, kde-format
+msgid "Updating friends list for account %1..."
+msgstr "Obnovování seznamu přátel pro účet %1..."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:780
+#, kde-format
+msgid "Friends list for account %1 has been updated."
+msgstr "Seznam přátel pro účet %1 byl obnoven."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:826
+#, kde-format
+msgid "Updating followers list for account %1..."
+msgstr "Obnovování seznamu následovatelů pro účet %1..."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:846
+#, kde-format
+msgid ""
+"Followers list for account %1 could not be updated:\n"
+"%2"
+msgstr ""
+"Seznam následovatelů pro účet %1 nemohl být obnoven:\n"
+"%2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:861
+#, kde-format
+msgid "Followers list for account %1 has been updated."
+msgstr "Seznam následovatelů pro účet %1 byl aktualizován."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:951
+#, kde-format
+msgid "Timeline update failed: %1"
+msgstr "Selhalo obnovení časové osy: %1"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1123
+#, kde-format
+msgid "Creating friendship with %1 failed. %2"
+msgstr "Vytváření přátelství s %1 selhalo. %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1130
+#, kde-format
+msgid "You are now listening to %1's posts."
+msgstr "Nyní nasloucháte příspěvkům od %1."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1138
+#, kde-format
+msgid "Creating friendship with %1 failed: the server returned invalid data."
+msgstr "Vytváření přátelství s %1 selhalo: server vrátil neplatná data."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1143
+#, kde-format
+msgid "Creating friendship with %1 failed: %2"
+msgstr "Vytváření přátelství s %1 selhalo: %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1189
+#, kde-format
+msgid "Destroying friendship with %1 failed. %2"
+msgstr "Zrušení přátelství s %1 selhalo. %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1196
+#, kde-format
+msgid "You will not receive %1's updates."
+msgstr "Již nebudete dostávat aktualizace od %1."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1204
+#, kde-format
+msgid "Destroying friendship with %1 failed: the server returned invalid data."
+msgstr "Zrušení přátelství s %1 selhalo: server vrátil neplatná data."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1209
+#, kde-format
+msgid "Destroying friendship with %1 failed: %2"
+msgstr "Zrušení přátelství s %1 selhalo: %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1285
+#, kde-format
+msgid "Blocking %1 failed. %2"
+msgstr "Blokování %1 selhalo. %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1291
+#, kde-format
+msgid "You will no longer be disturbed by %1."
+msgstr "Nyní vás již %1 nebude rušit."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1295
+#, kde-format
+msgid "Blocking %1 failed: the server returned invalid data."
+msgstr "Blokování %1 selhalo: server vrátil neplatná data."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1314
+#, kde-format
+msgid "Reporting %1 failed. %2"
+msgstr "Hlášení %1 selhalo. %2"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1319
+msgid "Report sent successfully"
+msgstr "Hlášení bylo úspěšně odesláno"
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1323
+#, kde-format
+msgid "Reporting %1 failed: the server returned invalid data."
+msgstr "Hlášení %1 selhalo: server vrátil neplatná data."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1361
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1380
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1455
+msgid "Could not parse the data that has been received from the server."
+msgstr "Nelze analyzovat data, která byla přijata ze serveru."
+
+#: helperlibs/twitterapihelper/twitterapimicroblog.cpp:1582
+msgid ""
+"Retrieving the followers list failed. The data returned from the server is "
+"corrupted."
+msgstr "Obnovení seznamu následovatelů selhalo. Data ze serveru jsou porušená."
+
+#: helperlibs/twitterapihelper/twitterapimicroblogwidget.cpp:128
+msgid "(The search result is empty.)"
+msgstr "(Výsledek hledání je prázdný.)"
+
+#: helperlibs/twitterapihelper/twitterapimicroblogwidget.cpp:241
+#: libchoqok/ui/timelinewidget.cpp:253
+msgid "Mark timeline as read"
+msgstr "Označit časovou osu jako přečtenou"
+
+#: helperlibs/twitterapihelper/twitterapimicroblogwidget.cpp:245
+msgid "Close Timeline"
+msgstr "Zavřít časovou osu."
+
+#: helperlibs/twitterapihelper/twitterapimicroblogwidget.cpp:246
+msgid "Close All"
+msgstr "Zavřít vše"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:74
+#: microblogs/pumpio/pumpiopostwidget.cpp:182
+msgctxt "@info:tooltip"
+msgid "Reply"
+msgstr "Odpovědět"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:79
+#: microblogs/pumpio/pumpiopostwidget.cpp:185
+#, kde-format
+msgid "Reply to %1"
+msgstr "Odpovědět %1"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:84
+#, kde-format
+msgid "Write to %1"
+msgstr "Napsat %1"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:89
+msgid "Reply to all"
+msgstr "Odpovědět všem"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:93
+msgctxt "@info:tooltip"
+msgid "Favorite"
+msgstr "Oblíbené"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:129
+#, kde-format
+msgid "<a href='%1' title='Sent from %2 via OStatus'>%2</a>"
+msgstr "<a href='%1' title='Sent from %2 via OStatus'>%2</a>"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:139
+msgid "Show Conversation"
+msgstr "Zobrazit rozhovor"
+
+#: helperlibs/twitterapihelper/twitterapipostwidget.cpp:147
+#, kde-format
+msgid ""
+"<a href='replyto://%1'>in reply to</a> @<a href='user://%4'>%4</a>&nbsp;<a "
+"href=\"%2\" title=\"%2\">%3</a>"
+msgstr ""
+"<a href='replyto://%1'>V odpověď pro</a> @<a href='user://%4'>%4</a>&nbsp;<a "
+"href=\"%2\" title=\"%2\">%3</a>"
+
+#: helperlibs/twitterapihelper/twitterapisearchdialog.cpp:63
+msgctxt "@title:window"
+msgid "Search"
+msgstr "Hledat"
+
+#: helperlibs/twitterapihelper/twitterapisearchdialog.cpp:91
+msgctxt "Search query"
+msgid "Query:"
+msgstr "Dotaz:"
+
+#: helperlibs/twitterapihelper/twitterapisearchdialog.cpp:102
+msgctxt "@action:button"
+msgid "Search"
+msgstr "Hledat"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:73
+#: libchoqok/ui/timelinewidget.cpp:58
+#, kde-format
+msgctxt "%1 is the name of a timeline"
+msgid "Search results for %1"
+msgstr "Výsledky hledání pro %1"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:102
+msgid "Close Search"
+msgstr "Zavřít vyhledávání"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:108
+msgid "Previous"
+msgstr "Předchozí"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:113
+msgid "Next"
+msgstr "Následující"
+
+#: helperlibs/twitterapihelper/twitterapisearchtimelinewidget.cpp:120
+msgid "Page Number"
+msgstr "Číslo stránky"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:164
+msgid "Cannot load user information."
+msgstr "Nelze načíst informace o uživateli."
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:253
+msgid "Close"
+msgstr "Zavřít"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:265
+msgctxt "User posts"
+msgid "Posts"
+msgstr "Příspěvky"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:266
+msgctxt "User friends"
+msgid "Friends"
+msgstr "Přátelé"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:267
+msgctxt "User followers"
+msgid "Followers"
+msgstr "Následovníci"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:276
+#, kde-format
+msgid "<table><tr><b>Last Status:</b> %1</tr></table>"
+msgstr "<table><tr><b>Poslední stav:</b> %1</tr></table>"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:280
+#, kde-format
+msgid "<h3>%1</h3>"
+msgstr "<h3>%1</h3>"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:390
+msgid "Unsubscribe"
+msgstr "Odhlásit se"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:395
+msgid "Subscribe"
+msgstr "Zaregistrovat"
+
+#: helperlibs/twitterapihelper/twitterapiwhoiswidget.cpp:400
+msgid "Block"
+msgstr "Blokovat"
+
+#: libchoqok/accountmanager.cpp:117 libchoqok/accountmanager.cpp:155
+#, kde-format
+msgid "There is no account with alias %1."
+msgstr "Není zde žádný účet s přezdívkou %1."
+
+#: libchoqok/accountmanager.cpp:170
+msgid ""
+"An account with this alias already exists: a unique alias has to be "
+"specified."
+msgstr ""
+"Účet s touto přezdívkou již existuje: je nutné použít unikátní přezdívku."
+
+#: libchoqok/choqoktools.cpp:45
+#, kde-format
+msgid ""
+"Custom web browser \"%1\" is unable to open url \"%2\".\n"
+"Please update the custom web browser in Configurations."
+msgstr ""
+
+#: libchoqok/choqoktools.cpp:51
+#, kde-format
+msgid ""
+"Unable to open url \"%1\".\n"
+"Please check Qt installation or set a custom web browser in Configurations."
+msgstr ""
+
+#: libchoqok/choqoktools.cpp:64
+msgid "No Error"
+msgstr "Žádná chyba"
+
+#: libchoqok/choqoktools.cpp:66
+msgid "Bad request"
+msgstr "Neplatný požadavek"
+
+#: libchoqok/choqoktools.cpp:69
+msgid "Consumer Key or Secret has not been provided"
+msgstr ""
+
+#: libchoqok/choqoktools.cpp:71
+msgid "Forbidden"
+msgstr "Zakázáno"
+
+#: libchoqok/choqoktools.cpp:73
+msgid "Timeout on server"
+msgstr "Vypršení časového limitu na serveru"
+
+#: libchoqok/choqoktools.cpp:75 microblogs/twitter/twittereditaccount.cpp:138
+#: microblogs/twitter/twittereditaccount.cpp:169
+msgid "Authorization Error"
+msgstr "Chyba autorizace"
+
+#: libchoqok/choqoktools.cpp:77
+msgid "Internal Error"
+msgstr "Vnitřní chyba"
+
+#: libchoqok/choqoktools.cpp:82
+msgid "Unknown Error"
+msgstr "Neznámá chyba"
+
+#: libchoqok/mediamanager.cpp:105
+msgid "Cannot create a KDE Job. Please check your installation."
+msgstr ""
+
+#: libchoqok/mediamanager.cpp:130
+#, kde-format
+msgid "Cannot download image from %1."
+msgstr "Nelze stáhnout obrázek z %1."
+
+#: libchoqok/mediamanager.cpp:139
+msgid "The request failed. Cannot get image file."
+msgstr ""
+
+#: libchoqok/mediamanager.cpp:170
+msgid "No pluginId specified, And last used plugin is null."
+msgstr ""
+
+#: libchoqok/microblog.cpp:86
+msgid "The server returned an error"
+msgstr "Server vrátil chybu"
+
+#: libchoqok/microblog.cpp:89
+msgid "Error on communication with server"
+msgstr "Chyba při komunikaci se serverem"
+
+#: libchoqok/microblog.cpp:92
+msgid "Error on parsing results"
+msgstr "Chyba při analýze výsledků"
+
+#: libchoqok/microblog.cpp:95
+msgid "Authentication error"
+msgstr "Chyba ověření"
+
+#: libchoqok/microblog.cpp:98
+msgid "The server does not support this feature"
+msgstr "Server nepodporuje tuto vlastnost"
+
+#: libchoqok/microblog.cpp:101
+msgid "Unknown error"
+msgstr "Neznámá chyba"
+
+#: libchoqok/notifymanager.cpp:96
+msgctxt "Show Choqok MainWindow"
+msgid "Show Choqok"
+msgstr "Zobrazit Choqok"
+
+#: libchoqok/notifymanager.h:39
+msgid "Error"
+msgstr "Chyba"
+
+#: libchoqok/notifymanager.h:40
+msgid "Success"
+msgstr "Úspěch"
+
+#: libchoqok/notifymanager.h:42
+msgid "New posts"
+msgstr "Nové příspěvky"
+
+#: libchoqok/notifymanager.h:43
+msgid "Shortening a URL"
+msgstr "Zkracování URL"
+
+#: libchoqok/passwordmanager.cpp:79
+msgid ""
+"Cannot open KDE Wallet manager, your secrets will be stored as plain text. "
+"You can install KWallet to fix this."
+msgstr ""
+"Nelze otevřít KDE Wallet manager, vaše přihlašovací údaje budou uloženy jako "
+"prostý text. Pro opravu můžete nainstalovat KWallet."
+
+#: libchoqok/ui/choqoktabbar.cpp:772
+msgid "Top"
+msgstr "Nahoru"
+
+#: libchoqok/ui/choqoktabbar.cpp:773
+msgid "Left"
+msgstr "Vlevo"
+
+#: libchoqok/ui/choqoktabbar.cpp:774
+msgid "Right"
+msgstr "Vpravo"
+
+#: libchoqok/ui/choqoktabbar.cpp:775
+msgid "Bottom"
+msgstr "Dole"
+
+#: libchoqok/ui/choqoktabbar.cpp:776
+msgid "Small"
+msgstr "Malý"
+
+#: libchoqok/ui/choqoktabbar.cpp:777
+msgid "Medium"
+msgstr "Střední"
+
+#: libchoqok/ui/choqoktabbar.cpp:778
+msgid "Big"
+msgstr "Velký"
+
+#: libchoqok/ui/choqoktabbar.cpp:779
+msgid "Styled Panel"
+msgstr ""
+
+#: libchoqok/ui/choqoktextedit.cpp:64
+msgid "<b>Note:</b><br/><i>Ctrl+S</i> to enable/disable auto spell checker."
+msgstr ""
+"<b>Poznámka:</b><br/><i>Ctrl+S</i> pro zapnutí/vypnutí automatické kontroly "
+"pravopisu."
+
+#: libchoqok/ui/choqoktextedit.cpp:189
+msgid "Set spell check language"
+msgstr "Nastavit jazyk pro kontrolu pravopisu"
+
+#: libchoqok/ui/choqoktextedit.cpp:193
+msgctxt "Replace URLs by a shortened URL"
+msgid "Shorten URLs"
+msgstr "Zkracovat URL"
+
+#: libchoqok/ui/composerwidget.cpp:70
+msgid "Discard Reply"
+msgstr "Zahodit odpověď"
+
+#: libchoqok/ui/composerwidget.cpp:111
+#: microblogs/pumpio/pumpiocomposerwidget.cpp:185
+#, kde-format
+msgid "Replying to <b>%1</b>"
+msgstr "Odpovídání <b>%1</b>"
+
+#: libchoqok/ui/microblogwidget.cpp:279
+msgid "Mark all timelines as read"
+msgstr "Označit všechny časové osy jako přečtené"
+
+#: libchoqok/ui/microblogwidget.cpp:389
+msgid "More"
+msgstr "Více"
+
+#: libchoqok/ui/microblogwidget.cpp:391
+msgid "Latest update:"
+msgstr "Poslední aktualizace:"
+
+#: libchoqok/ui/postwidget.cpp:204
+msgctxt "@info:tooltip"
+msgid "Remove"
+msgstr "Odstranit"
+
+#: libchoqok/ui/postwidget.cpp:209
+msgctxt "@info:tooltip"
+msgid "ReSend"
+msgstr "Poslat znovu"
+
+#: libchoqok/ui/postwidget.cpp:464
+msgid "Just now"
+msgstr "Právě teď"
+
+#: libchoqok/ui/postwidget.cpp:469
+#, kde-format
+msgid "1 sec ago"
+msgid_plural "%1 secs ago"
+msgstr[0] "Před sekundou"
+msgstr[1] "Před %1 sekundami"
+msgstr[2] "Před %1 sekundami"
+
+#: libchoqok/ui/postwidget.cpp:475
+#, kde-format
+msgid "1 min ago"
+msgid_plural "%1 mins ago"
+msgstr[0] "Před minutou"
+msgstr[1] "Před %1 minutami"
+msgstr[2] "Před %1 minutami"
+
+#: libchoqok/ui/postwidget.cpp:481
+#, kde-format
+msgid "1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "Před hodinou"
+msgstr[1] "Před %1 hodinami"
+msgstr[2] "Před %1 hodinami"
+
+#: libchoqok/ui/postwidget.cpp:486
+#, kde-format
+msgid "1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "Včera"
+msgstr[1] "Před %1 dny"
+msgstr[2] "Před %1 dny"
+
+#: libchoqok/ui/postwidget.cpp:491
+msgid "Are you sure you want to remove this post from the server?"
+msgstr "Opravdu si přejete odebrat tento příspěvek ze serveru?"
+
+#: libchoqok/ui/quickpost.cpp:91
+msgctxt "All accounts"
+msgid "All"
+msgstr "Vše"
+
+#: libchoqok/ui/quickpost.cpp:110
+msgctxt "Submit post"
+msgid "Submit"
+msgstr "Odeslat"
+
+#: libchoqok/ui/quickpost.cpp:169
+msgid "Cannot create a post without any text."
+msgstr ""
+
+#: libchoqok/ui/quickpost.cpp:174
+msgid ""
+"Please configure at least one account to be included in \"Quick Post\".\n"
+"Settings -> Configure Choqok... -> Accounts"
+msgstr ""
+
+#: libchoqok/ui/quickpost.cpp:286
+msgid ""
+"Link to uploaded medium will be added here after uploading process succeed."
+msgstr ""
+"Zde bude přidán odkaz k médiu poté, co bude odeslání média úspěšně dokončeno."
+
+#: libchoqok/ui/textbrowser.cpp:120
+msgctxt "Copy text"
+msgid "Copy"
+msgstr "Kopírovat"
+
+#: libchoqok/ui/textbrowser.cpp:126
+msgid "Copy Link Location"
+msgstr "Kopírovat umístění odkazu"
+
+#: libchoqok/ui/textbrowser.cpp:131
+msgctxt "Select all text"
+msgid "Select All"
+msgstr "Vybrat vše"
+
+#: libchoqok/ui/timelinewidget.cpp:236
+#, kde-format
+msgid "1 new post in %2(%3)"
+msgid_plural "%1 new posts in %2(%3)"
+msgstr[0] "1 nový příspěvek v %2(%3)"
+msgstr[1] "%1 nové příspěvky v %2(%3)"
+msgstr[2] "%1 nových příspěvků v %2(%3)"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: libchoqok/ui/uploadmedia_base.ui:22
+msgid "Medium to upload:"
+msgstr "Médium k odeslání:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: libchoqok/ui/uploadmedia_base.ui:39
+msgid "Upload via:"
+msgstr "Odeslat pomocí:"
+
+#: libchoqok/ui/uploadmediadialog.cpp:63
+msgid "Upload Medium"
+msgstr "Odeslat médium"
+
+#: libchoqok/ui/uploadmediadialog.cpp:71
+msgid "Upload"
+msgstr "Odeslat"
+
+#: libchoqok/ui/uploadmediadialog.cpp:129
+msgid "Uploading..."
+msgstr "Odesílání..."
+
+#: libchoqok/ui/uploadmediadialog.cpp:266
+msgid "Medium uploading failed."
+msgstr "Odesílání média selhalo"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabAccount)
+#: microblogs/friendica/friendicaeditaccount_base.ui:21
+msgid "Friendica Account"
+msgstr "Účet Friendica"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: microblogs/friendica/friendicaeditaccount_base.ui:29
+#: microblogs/laconica/laconicaeditaccount_base.ui:29
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:27
+#: microblogs/twitter/twittereditaccount_base.ui:27
+msgid "A&lias:"
+msgstr "&Alias :"
+
+#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_alias)
+#. i18n: ectx: property (toolTip), widget (QLineEdit, cfg_alias)
+#: microblogs/friendica/friendicaeditaccount_base.ui:42
+#: microblogs/laconica/laconicaeditaccount_base.ui:42
+#: microblogs/ocs/ocsconfigurebase.ui:32
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:40
+#: microblogs/twitter/twittereditaccount_base.ui:40
+msgid "The account alias"
+msgstr "Přezdívka účtu"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, kcfg_alias)
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, cfg_alias)
+#: microblogs/friendica/friendicaeditaccount_base.ui:45
+#: microblogs/laconica/laconicaeditaccount_base.ui:45
+#: microblogs/ocs/ocsconfigurebase.ui:35
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:43
+#: microblogs/twitter/twittereditaccount_base.ui:43
+msgid ""
+"The alias is the name you want to give to your account. It should be unique. "
+"You can have several connections to the same service so the alias lets you "
+"give them names."
+msgstr ""
+"Přezdívka je jméno, které si přejete dát vašemu účtu. Mělo by být unikátní. "
+"Můžete mít několik připojení ke stejným službám, proto vám přezdívka umožní "
+"dát jim jména."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: microblogs/friendica/friendicaeditaccount_base.ui:62
+#: microblogs/laconica/laconicaeditaccount_base.ui:62
+#: microblogs/ocs/ocsconfigurebase.ui:52
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:60
+#: microblogs/twitter/twittereditaccount_base.ui:60
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">Note:</span><span style=\" font-size:8pt;\"> "
+"The alias must be unique.</span></p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">Note:</span><span style=\" font-size:8pt;\"> "
+"Přezdívka musí být unikátní.</span></p></body></html>"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: microblogs/friendica/friendicaeditaccount_base.ui:77
+#: microblogs/laconica/laconicaeditaccount_base.ui:77
+msgid "Server"
+msgstr "Server"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: microblogs/friendica/friendicaeditaccount_base.ui:83
+#: microblogs/laconica/laconicaeditaccount_base.ui:83
+msgid "API path:"
+msgstr "Cesta k API:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/friendica/friendicaeditaccount_base.ui:103
+msgid "&Friendica server:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_BasicBox)
+#: microblogs/friendica/friendicaeditaccount_base.ui:122
+#: microblogs/laconica/laconicaeditaccount_base.ui:122
+msgid "Basic Authentication"
+msgstr "Základní ověřování"
+
+#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_basicUsername)
+#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_basicPassword)
+#: microblogs/friendica/friendicaeditaccount_base.ui:128
+#: microblogs/friendica/friendicaeditaccount_base.ui:145
+#: microblogs/laconica/laconicaeditaccount_base.ui:128
+#: microblogs/laconica/laconicaeditaccount_base.ui:145
+msgid "The name you use to connect to the service"
+msgstr "Jméno, které použijete pro připojení ke službě"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: microblogs/friendica/friendicaeditaccount_base.ui:135
+#: microblogs/laconica/laconicaeditaccount_base.ui:135
+#: microblogs/twitter/twittereditaccount_base.ui:92
+#: plugins/shorteners/yourls/yourlsprefs.ui:47
+#: plugins/uploaders/posterous/posterousprefs.ui:74
+msgid "Password:"
+msgstr "Heslo:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/friendica/friendicaeditaccount_base.ui:155
+#: microblogs/laconica/laconicaeditaccount_base.ui:155
+#: microblogs/twitter/twittereditaccount_base.ui:79
+#: plugins/shorteners/yourls/yourlsprefs.ui:34
+msgid "Username:"
+msgstr "Uživatelské jméno:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabTimelines)
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: microblogs/friendica/friendicaeditaccount_base.ui:182
+#: microblogs/laconica/laconicaeditaccount_base.ui:182
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:175
+#: microblogs/twitter/twittereditaccount_base.ui:183
+msgid "Timelines Configuration"
+msgstr "Nastavení časových os"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: microblogs/friendica/friendicaeditaccount_base.ui:194
+#: microblogs/laconica/laconicaeditaccount_base.ui:194
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:187
+#: microblogs/twitter/twittereditaccount_base.ui:195
+msgid "Which timelines do you like to be enabled?"
+msgstr "Kterou časovou osu si přejete povolit?"
+
+#. i18n: ectx: property (text), widget (QTableWidget, timelinesTable)
+#: microblogs/friendica/friendicaeditaccount_base.ui:202
+#: microblogs/laconica/laconicaeditaccount_base.ui:202
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:195
+#: microblogs/twitter/twittereditaccount_base.ui:203
+msgid "Name"
+msgstr "Jméno"
+
+#. i18n: ectx: property (text), widget (QTableWidget, timelinesTable)
+#: microblogs/friendica/friendicaeditaccount_base.ui:207
+#: microblogs/laconica/laconicaeditaccount_base.ui:207
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:200
+#: microblogs/twitter/twittereditaccount_base.ui:208
+msgid "Enable"
+msgstr "Povolit"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabConf)
+#: microblogs/friendica/friendicaeditaccount_base.ui:216
+#: microblogs/laconica/laconicaeditaccount_base.ui:216
+msgid "Configuration"
+msgstr "Nastavení"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_changeExclamationMark)
+#: microblogs/friendica/friendicaeditaccount_base.ui:224
+#: microblogs/laconica/laconicaeditaccount_base.ui:224
+msgid ""
+"To prevent spamming on some groups, you can set here to change the "
+"exclamation point (that used to refer to a group), to something else (e.g. "
+"nothing.)"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_changeExclamationMark)
+#: microblogs/friendica/friendicaeditaccount_base.ui:227
+#: microblogs/laconica/laconicaeditaccount_base.ui:227
+msgid "On re-dent, change exclamation mark to:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLineEdit, kcfg_changeToString)
+#: microblogs/friendica/friendicaeditaccount_base.ui:237
+#: microblogs/laconica/laconicaeditaccount_base.ui:237
+msgid "#"
+msgstr "#"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabAccount)
+#: microblogs/laconica/laconicaeditaccount_base.ui:21
+msgid "GNU social Account"
+msgstr "Účet v síti GNU"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/laconica/laconicaeditaccount_base.ui:103
+msgid "&GNU social server:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: microblogs/ocs/ocsconfigurebase.ui:19
+msgid "&Alias:"
+msgstr "&Alias :"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: microblogs/ocs/ocsconfigurebase.ui:67
+msgid "Provider"
+msgstr "Poskytovatel"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: microblogs/ocs/ocsconfigurebase.ui:73
+msgid "Select a social desktop provider to use:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/ocs/ocsconfigurebase.ui:83
+msgid ""
+"You can manage Social Desktop providers in the KDE Social Desktop "
+"configuration."
+msgstr ""
+
+#: microblogs/ocs/ocsconfigurewidget.cpp:40
+msgid "Loading..."
+msgstr "Probíhá načítání..."
+
+#: microblogs/ocs/ocsconfigurewidget.cpp:69
+msgid "You have to wait for providers list to be loaded."
+msgstr ""
+
+#: microblogs/ocs/ocsmicroblog.cpp:157
+msgid "OCS plugin is not initialized yet. Try again later."
+msgstr "Zásuvný modul OCS není zatím načten. Zkuste to později."
+
+#: microblogs/ocs/ocsmicroblog.cpp:191 microblogs/ocs/ocsmicroblog.cpp:198
+msgid "Not Supported"
+msgstr "Nepodporováno"
+
+#: microblogs/ocs/ocsmicroblog.cpp:264
+#: microblogs/pumpio/pumpiomicroblog.cpp:1277
+msgctxt "Timeline Name"
+msgid "Activity"
+msgstr "Aktivita"
+
+#: microblogs/ocs/ocsmicroblog.cpp:265
+msgid "Social activities"
+msgstr ""
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:110
+#: microblogs/twitter/twittereditaccount.cpp:147
+msgid "PIN"
+msgstr "PIN"
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:111
+#, kde-format
+msgid "Enter the verifier code received from %1"
+msgstr "Vložte ověřovací kód přijatý od %1"
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:124
+#: microblogs/twitter/twittereditaccount.cpp:165
+msgid "Choqok is authorized successfully."
+msgstr "Choqok je úspěšně autorizován."
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:125
+#: microblogs/twitter/twittereditaccount.cpp:166
+msgid "Authorized"
+msgstr "Přístup povolen"
+
+#: microblogs/pumpio/pumpioeditaccountwidget.cpp:152
+#: microblogs/twitter/twittereditaccount.cpp:181
+msgid "Authenticated"
+msgstr "Totožnost ověřena"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabAccount)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:21
+msgid "PumpIO Account"
+msgstr "Účet PumpIO"
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_basicAuth)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:73
+#: microblogs/twitter/twittereditaccount_base.ui:73
+msgid "Credentials"
+msgstr "Přihlašovací údaje"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:82
+msgid "Webfinger ID:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_credentialsBox)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:98
+#: microblogs/twitter/twittereditaccount_base.ui:112
+msgid "OAuth Authentication"
+msgstr "Ověřování OAuth"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:110
+msgid ""
+"Click the below button; if everything goes well, you will pointed to Pump.io "
+"website to allow access to Choqok."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, kcfg_authenticateStatus)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:136
+#: microblogs/twitter/twittereditaccount.cpp:185
+msgid "Not Authenticated"
+msgstr "Neověřena totožnost"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, kcfg_authorize)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:143
+#: microblogs/twitter/twittereditaccount_base.ui:151
+msgid "Verify credentials"
+msgstr "Ověřit přihlašovací údaje"
+
+#. i18n: ectx: property (text), widget (QPushButton, kcfg_authorize)
+#: microblogs/pumpio/pumpioeditaccountwidget.ui:146
+msgid "&Authenticate with Pump.io Service"
+msgstr "&Ověřit službou Pump.io"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, PumpIOMessageDialog)
+#: microblogs/pumpio/pumpiomessagedialog.ui:14
+msgid "Dialog"
+msgstr "Dialog"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/pumpio/pumpiomessagedialog.ui:46
+#: microblogs/pumpio/pumpiopostwidget.cpp:126
+msgid "CC:"
+msgstr "Kopie: "
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: microblogs/pumpio/pumpiomessagedialog.ui:70
+#: microblogs/pumpio/pumpiopostwidget.cpp:103
+msgid "To:"
+msgstr "Komu: "
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:704
+#, kde-format
+msgid "Creating the new post failed. %1"
+msgstr "Vytváření nového příspěvku selhalo. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:725
+#, kde-format
+msgid "Cannot set/unset the post as favorite. %1"
+msgstr "Nelze nastavit/zrušit příspěvek jako oblíbený. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:764
+#, kde-format
+msgid "Cannot fetch post. %1"
+msgstr "Nemůžu získat příspěvek. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:806
+#, kde-format
+msgid "Cannot fetch replies. %1"
+msgstr ""
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:830
+#, kde-format
+msgid "Following list for account %1 has been updated."
+msgstr "Následující seznam pro účet %1 byl aktualizován."
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:853
+#, kde-format
+msgid "Cannot retrieve the following list. %1"
+msgstr "Nelze získat následující účet. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:876
+#, kde-format
+msgid "Lists for account %1 has been updated."
+msgstr "Seznamy pro pro účet %1 byly aktualizovány."
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:903
+#, kde-format
+msgid "Cannot retrieve the lists. %1"
+msgstr "Nelze získat seznamy. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:925
+msgid "The post has been shared."
+msgstr ""
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:939
+#, kde-format
+msgid "Cannot share the post. %1"
+msgstr "Nelze sdílet příspěvek. %1"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:966
+msgid "Post removed successfully"
+msgstr "Příspěvek byl úspěšně odstraněn"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1012
+msgid "An error occurred when updating the post"
+msgstr ""
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1031
+msgid "An error occurred when fetching the timeline"
+msgstr "Při získávání časové osy došlo k chybě"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1081
+msgid "An error occurred when uploading the media"
+msgstr "Upři odesílání médií došlo k chybě"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1278
+msgctxt "Timeline description"
+msgid "You and people you follow"
+msgstr ""
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1284
+msgctxt "Timeline Name"
+msgid "Favorites"
+msgstr "Oblíbené"
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1285
+msgctxt "Timeline description"
+msgid "Posts you favorited"
+msgstr ""
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1292
+msgctxt "Timeline description"
+msgid "Posts sent to you"
+msgstr ""
+
+#: microblogs/pumpio/pumpiomicroblog.cpp:1299
+msgctxt "Timeline description"
+msgid "Posts you sent"
+msgstr "Příspěvky jež jste zaslali"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_forpublic)
+#: microblogs/pumpio/pumpiopostwidget.cpp:107
+#: microblogs/pumpio/pumpiopostwidget.cpp:130
+#: plugins/uploaders/flickr/flickrprefs.ui:121
+msgid "Public"
+msgstr "Veřejný"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:110
+#: microblogs/pumpio/pumpiopostwidget.cpp:133
+msgid "Followers"
+msgstr "Sledující"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:112
+#: microblogs/pumpio/pumpiopostwidget.cpp:135
+#: microblogs/pumpio/pumpiopostwidget.cpp:153
+msgid "You"
+msgstr "Vy"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:149
+msgid "Shared by:"
+msgstr "Sdíleno:"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:165
+msgid "Show conversation"
+msgstr "Zobrazit rozhovor"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:178
+msgctxt "@info:tooltip"
+msgid "Share"
+msgstr "Sdílet"
+
+#: microblogs/pumpio/pumpiopostwidget.cpp:192
+msgctxt "@info:tooltip"
+msgid "Like"
+msgstr ""
+
+#: microblogs/pumpio/pumpioshowthread.cpp:48
+#, kde-format
+msgctxt "Thread of specified user"
+msgid "Choqok: %1's thread"
+msgstr "Choqok: Vlákno %1"
+
+#: microblogs/twitter/twittereditaccount.cpp:148
+msgid "Enter the PIN received from Twitter:"
+msgstr "Vložte PIN přijatý z Twitteru:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabAccount)
+#: microblogs/twitter/twittereditaccount_base.ui:21
+msgid "Twitter Account"
+msgstr "Účet na Twitteru"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/twitter/twittereditaccount_base.ui:124
+msgid ""
+"Click the below button; if everything goes well, you will pointed to Twitter "
+"website to allow access to Choqok."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, kcfg_authorize)
+#: microblogs/twitter/twittereditaccount_base.ui:154
+msgid "&Authenticate with Twitter Service"
+msgstr "&Ověřit službou Twitter"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnAdd)
+#: microblogs/twitter/twitterlistdialog.cpp:71
+#: plugins/filter/filterprefs.ui:81
+msgid "Add"
+msgstr "Přidat"
+
+#: microblogs/twitter/twitterlistdialog.cpp:90
+msgid "You should provide both list author username and list name."
+msgstr ""
+
+#: microblogs/twitter/twitterlistdialog.cpp:112
+msgid "No user."
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, TwitterListDialogBase)
+#: microblogs/twitter/twitterlistdialog_base.ui:14
+msgid "Add List"
+msgstr "Přidat seznam"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: microblogs/twitter/twitterlistdialog_base.ui:26
+msgid "List name:"
+msgstr "Název seznamu:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: microblogs/twitter/twitterlistdialog_base.ui:52
+msgid "User name:"
+msgstr "Uživatelské jméno:"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, loadUserLists)
+#: microblogs/twitter/twitterlistdialog_base.ui:78
+msgid "Load user lists"
+msgstr "Načíst seznamy uživatelů"
+
+#. i18n: ectx: property (text), widget (QPushButton, loadUserLists)
+#: microblogs/twitter/twitterlistdialog_base.ui:81
+msgid "Load Lists"
+msgstr "Načíst seznamy"
+
+#: microblogs/twitter/twittermicroblog.cpp:73
+msgctxt "Timeline Name"
+msgid "Mentions"
+msgstr "Zmínky"
+
+#: microblogs/twitter/twittermicroblog.cpp:74
+msgctxt "Timeline description"
+msgid "Mentions of you"
+msgstr ""
+
+#: microblogs/twitter/twittermicroblog.cpp:228
+#, kde-format
+msgid "Retweet of %1"
+msgstr ""
+
+#: microblogs/twitter/twittermicroblog.cpp:230
+#, kde-format
+msgid "Retweeted by %1"
+msgstr ""
+
+#: microblogs/twitter/twittermicroblog.cpp:236
+msgid "Retweet to your followers?"
+msgstr ""
+
+#: microblogs/twitter/twittermicroblog.cpp:243
+msgid "Add User List..."
+msgstr "Přidat seznam uživatelů..."
+
+#: microblogs/twitter/twittermicroblog.cpp:305
+#, kde-format
+msgid "Fetching %1's lists failed. %2"
+msgstr ""
+
+#: microblogs/twitter/twittermicroblog.cpp:315
+#, kde-format
+msgid "There is no list record for user %1"
+msgstr "Není zde žádný záznam pro uživatele %1"
+
+#: microblogs/twitter/twitterpostwidget.cpp:79
+msgid "Retweet"
+msgstr ""
+
+#: microblogs/twitter/twitterpostwidget.cpp:80
+msgid "Retweet post using API"
+msgstr ""
+
+#: microblogs/twitter/twitterpostwidget.cpp:151
+#, kde-format
+msgctxt "Including user name"
+msgid "Including %1"
+msgstr "Zahrnování %1"
+
+#: microblogs/twitter/twitterpostwidget.cpp:186
+#, kde-format
+msgctxt "Unfollow user"
+msgid "Unfollow %1"
+msgstr ""
+
+#: microblogs/twitter/twitterpostwidget.cpp:191
+#, kde-format
+msgctxt "Follow user"
+msgid "Follow %1"
+msgstr "Následovat %1"
+
+#: microblogs/twitter/twitterpostwidget.cpp:198
+#, kde-format
+msgctxt "Report user"
+msgid "Report %1 as spam"
+msgstr ""
+
+#: microblogs/twitter/twittersearch.cpp:52
+msgctxt "Posts sent to user"
+msgid "To:"
+msgstr "Komu:"
+
+#: microblogs/twitter/twittersearch.cpp:53
+msgctxt "Posts from user, Sent by user"
+msgid "From:"
+msgstr "Od:"
+
+#: microblogs/twitter/twittersearch.cpp:55
+msgid "Custom Search"
+msgstr "Vlastní vyhledávání"
+
+#: microblogs/twitter/twittersearch.cpp:58
+msgctxt "Tweets are Twitter posts"
+msgid "Tweets To This User"
+msgstr ""
+
+#: microblogs/twitter/twittersearch.cpp:61
+msgctxt "Tweets are Twitter posts"
+msgid "Tweets From This User"
+msgstr ""
+
+#: microblogs/twitter/twittersearch.cpp:64
+msgctxt "Tweets are Twitter posts"
+msgid "Tweets Including This Username"
+msgstr ""
+
+#: microblogs/twitter/twittersearch.cpp:67
+msgctxt "Tweets are Twitter posts"
+msgid "Tweets Including This Hashtag"
+msgstr ""
+
+#: plugins/betternotify/dummynotification.cpp:48
+msgid "KDE Rocks! :)"
+msgstr ""
+
+#: plugins/betternotify/dummynotification.cpp:48
+msgid "OK"
+msgstr "OK"
+
+#: plugins/betternotify/notification.cpp:92
+msgid "Ignore"
+msgstr "Ignorovat"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: plugins/betternotify/notifyprefs.ui:21
+msgid "Appearance"
+msgstr "Vzhled"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: plugins/betternotify/notifyprefs.ui:29
+msgid "Foreground Color:"
+msgstr "Barva popředí:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: plugins/betternotify/notifyprefs.ui:39
+msgid "Background Color:"
+msgstr "Barva pozadí:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: plugins/betternotify/notifyprefs.ui:49
+msgid "Font:"
+msgstr "Písmo:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: plugins/betternotify/notifyprefs.ui:59
+msgid "Notify Interval:"
+msgstr "Interval oznámení:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: plugins/betternotify/notifyprefs.ui:78
+msgid "seconds"
+msgstr "sekund"
+
+#. i18n: ectx: property (text), widget (QPushButton, adjustPosition)
+#: plugins/betternotify/notifyprefs.ui:123
+msgid "Adjust Notification's Position"
+msgstr "Upravit pozici oznamování"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: plugins/betternotify/notifyprefs.ui:159
+msgid "Timeline Selection"
+msgstr "Výběr časové osy"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/betternotify/notifyprefs.ui:171
+msgid "Select Timelines"
+msgstr "Vyberte časové osy"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/betternotify/notifyprefs.ui:181
+msgid "Accounts"
+msgstr "Účty"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/betternotify/notifyprefs.ui:197
+msgid "Select timelines you wish to see notifications for their new posts:"
+msgstr ""
+"Vyberte časové osy pro které chcete získávat upozornění na nové příspěvky:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: plugins/betternotify/notifyprefs.ui:249
+msgid ""
+"<html><head/><body><p><span style=\" font-weight:600;\">Note:</span> Any "
+"change, needs plugin re-load (disable/enable) to take effect.</p></body></"
+"html>"
+msgstr ""
+"<html><head/><body><p><span style=\" font-weight:600;\">Poznámka:</span> "
+"Jakákoliv změna vyžaduje znovunačtení modulu (vypnout/zapnout).</p></body></"
+"html>"
+
+#: plugins/filter/addeditfilter.cpp:60
+msgid "Modify filter rules"
+msgstr "Upravit pravidla filtru"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, AddEditFilterBase)
+#: plugins/filter/addeditfilter_base.ui:14
+msgid "Define new filter rules"
+msgstr "Definovat nová pravidla filtru"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/filter/addeditfilter_base.ui:22
+msgid "Fi&lter field:"
+msgstr "Fi&ltrovat pole:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/filter/addeditfilter_base.ui:52
+msgid "Fi&lter type:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/filter/addeditfilter_base.ui:82
+msgid "Te&xt:"
+msgstr "Te&xt:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: plugins/filter/addeditfilter_base.ui:102
+msgid "Filter action:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, dontHideReplies)
+#: plugins/filter/addeditfilter_base.ui:133
+msgid "Do not hide replies to me"
+msgstr "Neskrývat mi odpovědi"
+
+#: plugins/filter/filtermanager.cpp:51
+msgid "Configure Filters..."
+msgstr "Nastavit filtry..."
+
+#: plugins/filter/filtermanager.cpp:59
+msgid "Hide Post"
+msgstr "Skrýt příspěvek"
+
+#: plugins/filter/filtermanager.cpp:239
+#, kde-format
+msgid "Hide all posts from <b>@%1</b>?"
+msgstr "Skrýt všechny příspěvky od <b>@%1</b>?"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, mFilteringCtl)
+#: plugins/filter/filterprefs.ui:14
+msgid "Configure Filters"
+msgstr "Nastavit filtry"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: plugins/filter/filterprefs.ui:24
+msgid "Rules"
+msgstr "Pravidla"
+
+#. i18n: ectx: property (text), widget (QTableWidget, filters)
+#: plugins/filter/filterprefs.ui:43
+msgid "Field"
+msgstr "Pole"
+
+#. i18n: ectx: property (text), widget (QTableWidget, filters)
+#: plugins/filter/filterprefs.ui:48
+msgid "Type"
+msgstr "Typ"
+
+#. i18n: ectx: property (text), widget (QTableWidget, filters)
+#: plugins/filter/filterprefs.ui:53
+msgid "Filter"
+msgstr "Filtr"
+
+#. i18n: ectx: property (text), widget (QTableWidget, filters)
+#: plugins/filter/filterprefs.ui:58
+msgid "Action"
+msgstr "Činnost"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnEdit)
+#: plugins/filter/filterprefs.ui:91
+msgid "Modify"
+msgstr "Změnit"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, btnRemove)
+#: plugins/filter/filterprefs.ui:114
+msgid "Remove"
+msgstr "Odstranit"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabSpecial)
+#: plugins/filter/filterprefs.ui:127
+msgid "Special Rules"
+msgstr "Speciální pravidla"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cfg_hideRepliesNotRelatedToMe)
+#: plugins/filter/filterprefs.ui:133
+msgid "You will see just replies came to you, or mentions you."
+msgstr "Uvidíte pouze odpovědi, které přijdou vám, nebo které vás zmiňují."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_hideRepliesNotRelatedToMe)
+#: plugins/filter/filterprefs.ui:136
+msgid "Just show replies to me"
+msgstr "Zobrazit pouze odpovědi"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cfg_hideNoneFriendsReplies)
+#: plugins/filter/filterprefs.ui:143
+msgid "You will see just replies between your friends."
+msgstr "Uvidíte pouze odpovědi mezi vašimi přáteli."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_hideNoneFriendsReplies)
+#: plugins/filter/filterprefs.ui:146
+msgid "Just show replies to me and my friends"
+msgstr "Zobrazit pouze odpovědi pro mě a mé přátele"
+
+#: plugins/filter/filtersettings.cpp:45
+msgid "Author Username"
+msgstr "Uživatelské jméno autora"
+
+#: plugins/filter/filtersettings.cpp:46
+msgid "Post Text"
+msgstr "Text příspěvku"
+
+#: plugins/filter/filtersettings.cpp:47
+msgid "Author Client"
+msgstr ""
+
+#: plugins/filter/filtersettings.cpp:48
+msgid "Reply to User"
+msgstr "Odpovědět uživateli"
+
+#: plugins/filter/filtersettings.cpp:50
+msgid "Contain"
+msgstr "Obsahuje"
+
+#: plugins/filter/filtersettings.cpp:51
+msgid "Does Not Contain"
+msgstr "Neobsahuje"
+
+#: plugins/filter/filtersettings.cpp:52
+msgid "Exact Match"
+msgstr "Přesná shoda"
+
+#: plugins/filter/filtersettings.cpp:53
+msgid "Regular Expression"
+msgstr "Regulární výraz"
+
+#: plugins/filter/filtersettings.cpp:55
+msgctxt "@action"
+msgid "Hide Posts"
+msgstr "Skrýt příspěvky"
+
+#: plugins/filter/filtersettings.cpp:56
+msgctxt "@action"
+msgid "Highlight Posts"
+msgstr "Zvýraznit příspěvky"
+
+#. i18n: ectx: property (text), widget (QLabel, label_im)
+#: plugins/imstatus/imstatusprefs.ui:19
+msgid "Instant Messenger:"
+msgstr "Komunikátor:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_reply)
+#: plugins/imstatus/imstatusprefs.ui:31
+msgid "Add replies to status"
+msgstr "Přidat odpovědí ke stavu"
+
+#. i18n: ectx: property (text), widget (QLabel, label_status_templ)
+#: plugins/imstatus/imstatusprefs.ui:38
+msgid "Status template"
+msgstr "Šablona stavu"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/imstatus/imstatusprefs.ui:64
+#, no-c-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<table border=\"0\" style=\"-qt-table-type: root; margin-top:4px; margin-"
+"bottom:4px; margin-left:4px; margin-right:4px;\">\n"
+"<tr>\n"
+"<td style=\"border: none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt;\">Available markup:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%status%</span><span style=\" font-size:8pt;\"> "
+"- new status</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%time%</span><span style=\" font-size:8pt;\"> - "
+"time of adding new status</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%url%</span><span style=\" font-size:8pt;\"> - "
+"URL of new status</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%username%</span><span style=\" font-size:8pt;"
+"\"> - your username</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%fullname%</span><span style=\" font-size:8pt;"
+"\"> - your full name</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"size:8pt; font-weight:600;\">%client%</span><span style=\" font-size:8pt;\"> "
+"- add </span><span style=\" font-size:8pt; font-style:italic;\">Choqok</"
+"span><span style=\" font-size:8pt;\"> to status</span></p></td></tr></"
+"table></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_repeat)
+#: plugins/imstatus/imstatusprefs.ui:87
+msgid "Add repeats to status"
+msgstr "Přidat opakování ke stavu"
+
+#: plugins/konqueror/konqchoqok.cpp:51 plugins/konqueror/konqchoqok.cpp:106
+msgid "Post Text with Choqok"
+msgstr "Odeslat text s Choqok"
+
+#: plugins/konqueror/konqchoqok.cpp:56
+msgid "Shorten URL on Paste"
+msgstr "Zkrátit URL při vkládání"
+
+#: plugins/konqueror/konqchoqok.cpp:105
+msgid "You need to select text to post."
+msgstr "Musíte vybrat text pro příspěvek."
+
+#. i18n: ectx: Menu (tools)
+#: plugins/konqueror/konqchoqok.rc:4
+msgid "&Tools"
+msgstr "Nás&troje"
+
+#: plugins/nowlistening/nowlistening.cpp:49
+msgid "Now Listening"
+msgstr "Nyní poslouchám"
+
+#: plugins/nowlistening/nowlistening.cpp:242
+msgctxt "Player is running, But it's not playing."
+msgid "Play your desired music player."
+msgstr ""
+
+#: plugins/nowlistening/nowlistening.cpp:245
+msgid "No supported player found."
+msgstr "Žádný podporovaný přehrávač nebyl nalezen."
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: plugins/nowlistening/nowlisteningprefs.ui:17
+msgid "Valid metadata:"
+msgstr "Platná metadata:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/nowlistening/nowlisteningprefs.ui:51
+msgid "Template:"
+msgstr "Šablona:"
+
+#: plugins/quickfilter/quickfilter.cpp:50
+msgid "Filter by author"
+msgstr "Filtrovat podle autora"
+
+#: plugins/quickfilter/quickfilter.cpp:52
+msgid "Filter by content"
+msgstr "Filtrovat podle obsahu"
+
+#: plugins/quickfilter/quickfilter.cpp:108
+msgid "Filter out timeline by author"
+msgstr "Filtrovat časovou osu podle autora"
+
+#: plugins/quickfilter/quickfilter.cpp:110
+msgid "Filter out timeline by text"
+msgstr "Filtrovat časovou osu podle textu"
+
+#: plugins/quickfilter/quickfilter.cpp:122
+msgid "Author"
+msgstr "Autor"
+
+#: plugins/quickfilter/quickfilter.cpp:123
+msgid "Text"
+msgstr "Text"
+
+#: plugins/searchaction/searchaction.cpp:65
+msgid "The Search action plugin does not support the current microblog."
+msgstr "Vyhledávací zásuvný modul nepodporuje současný mikroblog."
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:85
+msgid "API key is invalid"
+msgstr "Klíč API je neplatný"
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:88
+msgid "Login is invalid"
+msgstr "Přihlášení je neplatné"
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:91
+msgid "Rate limit exceeded. Try another shortener."
+msgstr ""
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:94
+#: plugins/shorteners/goo_gl/goo_gl.cpp:69
+#: plugins/shorteners/is_gd/is_gd.cpp:81 plugins/shorteners/ur_ly/ur_ly.cpp:69
+#: plugins/uploaders/flickr/flickr.cpp:208
+#: plugins/uploaders/flickr/flickr.cpp:214
+#: plugins/uploaders/flickr/flickrconfig.cpp:172
+#: plugins/uploaders/flickr/flickrconfig.cpp:177
+#: plugins/uploaders/flickr/flickrconfig.cpp:246
+#: plugins/uploaders/flickr/flickrconfig.cpp:251
+#: plugins/uploaders/imageshack/imageshack.cpp:127
+#: plugins/uploaders/mobypicture/mobypicture.cpp:168
+#: plugins/uploaders/posterous/posterous.cpp:192
+#: plugins/uploaders/twitgoo/twitgoo.cpp:131
+#: plugins/uploaders/twitpic/twitpic.cpp:131
+msgid "Malformed response"
+msgstr ""
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:94
+#: plugins/shorteners/bit_ly/bit_ly.cpp:97
+msgid "Bit.ly error"
+msgstr "Chyba bit.ly"
+
+#: plugins/shorteners/bit_ly/bit_ly.cpp:96
+#: plugins/shorteners/goo_gl/goo_gl.cpp:71
+#: plugins/shorteners/is_gd/is_gd.cpp:84
+#: plugins/shorteners/tighturl/tighturl.cpp:69
+#: plugins/shorteners/tinyarro_ws/tinyarro_ws.cpp:73
+#: plugins/shorteners/ur1_ca/ur1_ca.cpp:74
+#: plugins/shorteners/ur_ly/ur_ly.cpp:73
+#: plugins/shorteners/yourls/yourls.cpp:89
+#, kde-format
+msgid ""
+"Cannot create a short URL.\n"
+"%1"
+msgstr ""
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:64
+msgctxt ""
+"The your_api_key part of the URL is a fixed part of the URL and should "
+"probably not be changed in localization."
+msgid ""
+"You can find your API key <a href=\"http://bit.ly/a/your_api_key\">here</a>"
+msgstr ""
+"Svůj API klíč můžete najít <a href=\"http://bit.ly/a/your_api_key\">zde</a>"
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:107
+msgid "Checking..."
+msgstr "Kontroluji..."
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:133
+msgctxt ""
+"The your_api_key part of the URL is a fixed part of the URL and should "
+"probably not be changed in localization."
+msgid ""
+"Provided data is invalid. Try another login or API key.\n"
+"You can find it on http://bit.ly/a/your_api_key"
+msgstr ""
+"Poskytnutá data jsou neplatná. Zkuste jiné přihlášení nebo jiný klíč API.\n"
+"Můžete jej najít na http://bit.ly/a/your_api_key"
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:136
+msgid "You entered valid information."
+msgstr "Zadali jste platnou informaci."
+
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:139
+msgid "bit.ly Config Error"
+msgstr "Chyba v nastavení bit.ly"
+
+#. i18n: ectx: property (text), widget (QPushButton, validate_button)
+#: plugins/shorteners/bit_ly/bit_ly_config.cpp:143
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:49
+msgid "Validate"
+msgstr "Potvrdit"
+
+#. i18n: ectx: property (text), widget (QLabel, login)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:19
+msgid "Bit.ly login:"
+msgstr "Přihlášení bit.ly:"
+
+#. i18n: ectx: property (text), widget (QLabel, api_key)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:32
+msgid "Bit.ly API key:"
+msgstr "API klíč bit.ly:"
+
+#. i18n: ectx: property (text), widget (QLabel, help_label)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:58
+msgid "You can find your API key here"
+msgstr "Zde můžete najít svůj API klíč"
+
+#. i18n: ectx: property (text), widget (QLabel, domain)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:73
+msgid "Domain:"
+msgstr "Doména:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/shorteners/bit_ly/bit_ly_prefs.ui:86
+msgid "(No matter for Bit.ly Pro accounts)"
+msgstr ""
+
+#: plugins/shorteners/goo_gl/goo_gl.cpp:52
+msgid "Error when creating job"
+msgstr ""
+
+#: plugins/shorteners/goo_gl/goo_gl.cpp:52
+#: plugins/shorteners/goo_gl/goo_gl.cpp:64
+#: plugins/shorteners/goo_gl/goo_gl.cpp:69
+#: plugins/shorteners/goo_gl/goo_gl.cpp:71
+msgid "Goo.gl Error"
+msgstr "Chyba goo.gl"
+
+#: plugins/shorteners/is_gd/is_gd.cpp:73 plugins/shorteners/is_gd/is_gd.cpp:81
+#: plugins/shorteners/is_gd/is_gd.cpp:84
+msgid "is.gd Error"
+msgstr "Chyba is.gd"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_logstats)
+#: plugins/shorteners/is_gd/is_gd_prefs.ui:19
+msgid "Generate Statistics"
+msgstr "Generovat statistiky"
+
+#: plugins/shorteners/tighturl/tighturl.cpp:70
+msgid "TightUrl Error"
+msgstr "Chyba TightUrl"
+
+#: plugins/shorteners/tinyarro_ws/tinyarro_ws.cpp:71
+msgid "Tinyarro.ws error"
+msgstr "Chyba tinyarro.ws"
+
+#: plugins/shorteners/tinyarro_ws/tinyarro_ws_config.cpp:63
+msgid "Random host"
+msgstr "Náhodný hostitel"
+
+#. i18n: ectx: property (text), widget (QLabel, urlHostLabel)
+#: plugins/shorteners/tinyarro_ws/tinyarro_ws_prefs.ui:40
+msgid "Shortener URL host:"
+msgstr ""
+
+#: plugins/shorteners/ur1_ca/ur1_ca.cpp:74
+msgid "ur1.ca Error"
+msgstr "Chyba ur1.ca"
+
+#: plugins/shorteners/ur_ly/ur_ly.cpp:69 plugins/shorteners/ur_ly/ur_ly.cpp:74
+msgid "Ur.ly Error"
+msgstr "Chyba ur.ly"
+
+#: plugins/shorteners/yourls/yourls.cpp:86
+msgid "Yourls Error"
+msgstr "Chyba yourls"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/shorteners/yourls/yourlsprefs.ui:17
+msgid "Yourls API URL:"
+msgstr "Yourls API URL:"
+
+#. i18n: ectx: property (clickMessage), widget (QLineEdit, kcfg_yourlsHost)
+#: plugins/shorteners/yourls/yourlsprefs.ui:27
+msgid "http://SomeDomain.com/yourls/yourls-api.php"
+msgstr "http://NejakaDomena.com/yourls/vase-api.php"
+
+#: plugins/translator/sharedtools.cpp:33
+msgctxt "Translation Language"
+msgid "Chinese Simplified"
+msgstr "Zjednodušená čínština"
+
+#: plugins/translator/sharedtools.cpp:34
+msgctxt "Translation Language"
+msgid "Chinese Traditional"
+msgstr "Tradiční čínština"
+
+#: plugins/translator/sharedtools.cpp:35
+msgctxt "Translation Language"
+msgid "Filipino"
+msgstr "Filipínština"
+
+#: plugins/translator/sharedtools.cpp:36
+msgctxt "Translation Language"
+msgid "Haitian Creole"
+msgstr "Haitská Kreolština"
+
+#: plugins/translator/sharedtools.cpp:37
+msgctxt "Translation Language"
+msgid "Hebrew"
+msgstr "Hebrejština"
+
+#: plugins/translator/sharedtools.cpp:38
+msgctxt "Translation Language"
+msgid "Norwegian"
+msgstr "Norština"
+
+#: plugins/translator/translator.cpp:53
+msgid "Translate to..."
+msgstr "Přeložit do ..."
+
+#: plugins/translator/translator.cpp:105
+#, kde-format
+msgctxt "%1 is the name of the source language in localized form"
+msgid ""
+"<span style=\"color:%2; font-size:small;\">Translated from %1: (<a "
+"href='choqok://showoriginalpost' style=\"text-decoration:none\" >original "
+"post</a>)</span>"
+msgstr ""
+"<span style=\"color:%2; font-size:small;\">Přeloženo z %1: (<a "
+"href='choqok://showoriginalpost' style=\"text-decoration:none\" >původní "
+"příspěvek</a>)</span>"
+
+#: plugins/translator/translator.cpp:116
+#, kde-format
+msgid "Translation failed: %1"
+msgstr "Překlad selhal: %1"
+
+#: plugins/translator/translator.cpp:135
+msgid "Configure Translator"
+msgstr "Nastavit překladač"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/translator/translatorprefs.ui:17
+msgid "Select languages to be shown in translate menu"
+msgstr "Vyberte jazyky pro zobrazení v nabídce překladů"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useUntinyDotCom)
+#: plugins/untiny/untinyprefs.ui:17
+msgid "Use untiny.com service"
+msgstr "Použít službu untiny.com"
+
+#: plugins/uploaders/flickr/flickr.cpp:172
+msgid "The photo required argument was missing"
+msgstr ""
+
+#: plugins/uploaders/flickr/flickr.cpp:175
+msgid "The file was not correctly uploaded"
+msgstr "Soubor nebyl korektně odeslán"
+
+#: plugins/uploaders/flickr/flickr.cpp:178
+msgid "The file was zero bytes in length"
+msgstr ""
+
+#: plugins/uploaders/flickr/flickr.cpp:181
+msgid "Filetype was not recognised"
+msgstr "Nebyl rozpoznán typ souboru"
+
+#: plugins/uploaders/flickr/flickr.cpp:184
+msgid "The calling user has reached their monthly bandwidth limit"
+msgstr ""
+
+#: plugins/uploaders/flickr/flickr.cpp:188
+#: plugins/uploaders/flickr/flickrconfig.cpp:161
+msgid "Signature problem. Please try again later"
+msgstr "Problém s podepisováním. Prosím, zkuste to později"
+
+#: plugins/uploaders/flickr/flickr.cpp:195
+msgid "Login failed. Please re-authenticate Choqok"
+msgstr "Přihlášení selhalo. Prosím, znovu ověřte Choqok"
+
+#: plugins/uploaders/flickr/flickr.cpp:198
+#: plugins/uploaders/flickr/flickrconfig.cpp:164
+#: plugins/uploaders/flickr/flickrconfig.cpp:238
+msgid "The requested service is temporarily unavailable. Try again later"
+msgstr "Požadovaná služba je dočasně nedostupná. Zkuste to později"
+
+#: plugins/uploaders/flickr/flickr.cpp:201
+#: plugins/uploaders/flickr/flickrconfig.cpp:167
+#, kde-format
+msgid "Unknown Error:%1. Please try again later"
+msgstr "Neznámá chyba: %1. Prosím, zkuste to později"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:183
+#: plugins/uploaders/flickr/flickrconfig.cpp:258
+msgid "Flickr authorization"
+msgstr "Oprávnění Flickr"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:235
+msgid "Something happens with signature. Please retry"
+msgstr "Něco se stalo s podpisem. Prosím, opakujte"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:241
+#, kde-format
+msgid "Something happens wrong. Error %1. Try again later"
+msgstr "Něco se pokazilo. Chyba %1. Zkuste to později"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:278
+#, kde-format
+msgid "Authorized as %1"
+msgstr "Autorizován jako %1"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:285
+msgid "Not authorized"
+msgstr "Přístup nepovolen"
+
+#: plugins/uploaders/flickr/flickrconfig.cpp:299
+msgid "Click here when you authorized Choqok"
+msgstr "Klikněte zde jakmile autorizujete Choqok"
+
+#. i18n: ectx: attribute (title), widget (QWidget, authTab)
+#: plugins/uploaders/flickr/flickrprefs.ui:24
+msgid "Authorization"
+msgstr "Udělení oprávnění"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/uploaders/flickr/flickrprefs.ui:51
+msgid ""
+"Click the below button; if everything goes well, you will pointed to Flickr."
+"com website to allow access to Choqok."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, authButton)
+#: plugins/uploaders/flickr/flickrprefs.ui:61
+msgid "Click here to authorize Choqok on Flickr.com"
+msgstr "Klikněte zde pro autorizaci Choqok na Flickr.com"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: plugins/uploaders/flickr/flickrprefs.ui:90
+msgid "Who can view photo"
+msgstr "Kdo může vidět fotku"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_forprivate)
+#: plugins/uploaders/flickr/flickrprefs.ui:96
+msgid "Private"
+msgstr "Soukromý"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_forfriends)
+#: plugins/uploaders/flickr/flickrprefs.ui:105
+msgid "Visible for friends"
+msgstr "Viditelný pro přátele"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_forfamily)
+#: plugins/uploaders/flickr/flickrprefs.ui:112
+msgid "Visible for family"
+msgstr "Viditelný pro rodinu"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: plugins/uploaders/flickr/flickrprefs.ui:134
+msgid "Set safety level"
+msgstr "Nastavit úroveň bezpečí"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_safe)
+#: plugins/uploaders/flickr/flickrprefs.ui:140
+msgid "Safe"
+msgstr "Bezpečný"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_moderate)
+#: plugins/uploaders/flickr/flickrprefs.ui:150
+msgid "Moderate"
+msgstr "Střední"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_restricted)
+#: plugins/uploaders/flickr/flickrprefs.ui:157
+msgid "Restricted"
+msgstr "Omezený"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_hidefromsearch)
+#: plugins/uploaders/flickr/flickrprefs.ui:169
+msgid "Hide picture from public search"
+msgstr "Skrýt obrázek před veřejným vyhledáváním"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_shorturl)
+#: plugins/uploaders/flickr/flickrprefs.ui:176
+msgid "Use Flic.kr to short URLs"
+msgstr "Použít Flic.kr ke zkracování URL"
+
+#: plugins/uploaders/imageshack/imageshack.cpp:53
+msgid "Just supporting image uploading"
+msgstr "Pouze podpora odesílání obrázků"
+
+#: plugins/uploaders/mobypicture/mobypicture.cpp:64
+#: plugins/uploaders/posterous/posterous.cpp:119
+#: plugins/uploaders/twitgoo/twitgoo.cpp:61
+#: plugins/uploaders/twitpic/twitpic.cpp:60
+msgid "There is no Twitter account configured to use."
+msgstr "Není zde k použití žádný konfigurovaný účet Twitter."
+
+#: plugins/uploaders/mobypicture/mobypictureconfig.cpp:88
+#: plugins/uploaders/posterous/posterousconfig.cpp:89
+#: plugins/uploaders/twitgoo/twitgooconfig.cpp:78
+#: plugins/uploaders/twitpic/twitpicconfig.cpp:78
+msgid "You have to configure at least one Twitter account to use this plugin."
+msgstr ""
+"Musíte konfigurovat alespoň jeden účet na Twitter pro použití tohoto "
+"zásuvného modulu."
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_oauth)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:40
+#: plugins/uploaders/posterous/posterousprefs.ui:40
+msgid "&Twitter account"
+msgstr "Účet na &Twitteru"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_basic)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:47
+msgid "Mobypicture &login and password:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:57
+#: plugins/uploaders/posterous/posterousprefs.ui:57
+msgid "Upload files using:"
+msgstr "Odeslat soubory použitím:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:64
+msgid "Login:"
+msgstr "Přihlášení:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/uploaders/mobypicture/mobypictureprefs.ui:74
+msgid "Password (PIN):"
+msgstr "Heslo (PIN):"
+
+#. i18n: ectx: property (text), widget (QRadioButton, cfg_basic)
+#: plugins/uploaders/posterous/posterousprefs.ui:47
+msgid "Posterous &login and password:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/uploaders/posterous/posterousprefs.ui:64
+msgid "E-mail:"
+msgstr "E-mail:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/uploaders/twitgoo/twitgooprefs.ui:17
+#: plugins/uploaders/twitpic/twitpicprefs.ui:17
+msgid "Twitter account:"
+msgstr "Účet na Twitteru:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cfg_directLink)
+#: plugins/uploaders/twitgoo/twitgooprefs.ui:50
+msgid "Get direct link to file"
+msgstr "Získat přímý odkaz na soubor"

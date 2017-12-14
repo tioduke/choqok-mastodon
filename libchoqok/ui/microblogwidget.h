@@ -129,7 +129,7 @@ protected Q_SLOTS:
                    const QString &errorMsg, Choqok::MicroBlog::ErrorLevel level);
     void slotAbortAllJobs();
 
-    virtual void keyPressEvent(QKeyEvent *) override;
+    virtual void keyPressEvent(QKeyEvent *);
 
     void slotAccountModified(Choqok::Account *theAccount);
 protected:

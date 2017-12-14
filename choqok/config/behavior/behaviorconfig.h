@@ -34,8 +34,8 @@ public:
     BehaviorConfig(QWidget *parent, const QVariantList &args) ;
     ~BehaviorConfig();
 
-    virtual void save() override;
-    virtual void load() override;
+    virtual void save();
+    virtual void load();
 
 private:
     class Private;

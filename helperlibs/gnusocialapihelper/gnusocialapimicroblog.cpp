@@ -108,28 +108,27 @@ Choqok::Post *GNUSocialApiMicroBlog::readPost(Choqok::Account *account, const QV
 
     post = TwitterApiMicroBlog::readPost(account, var, post);
 
-    post->author.homePageUrl = var[QLatin1String("user")].toMap()[QLatin1String("statusnet_profile_url")].toString();
-
-    if (var.contains(QLatin1String("external_url"))) {
-        post->link = var[QLatin1String("external_url")].toString();
-    } else {
-        QVariantMap userMap;
-        if (var[QLatin1String("repeated")].toBool()) {
-            userMap = var[QLatin1String("retweeted_status")].toMap()[QLatin1String("user")].toMap();
-        } else {
-            userMap = var[QLatin1String("user")].toMap();
-        }
-        const QUrl profileUrl = userMap[QLatin1String("statusnet_profile_url")].toUrl();
-        post->link = QStringLiteral("%1://%2/notice/%3").arg(profileUrl.scheme()).arg(profileUrl.host()).arg(post->postId);
-    }
+    post->link = var[QLatin1String("external_url")].toString();
 
     return post;
 }
 
-QUrl GNUSocialApiMicroBlog::profileUrl(Choqok::Account *account, const Choqok::User &user) const
+QString GNUSocialApiMicroBlog::profileUrl(Choqok::Account *account, const QString &username) const
 {
-    Q_UNUSED(account)
-    return QUrl(user.homePageUrl);
+    if (username.contains(QLatin1Char('@'))) {
+        const QStringList lst = username.split(QLatin1Char('@'), QString::SkipEmptyParts);
+
+        if (lst.count() == 2) {
+            return QStringLiteral("https://%1/%2").arg(lst[1]).arg(lst[0]);
+        }
+    }
+
+    TwitterApiAccount *acc = qobject_cast<TwitterApiAccount *>(account);
+    if (acc) {
+        return QString(acc->homepageUrl().toDisplayString() + QLatin1Char('/') + username) ;
+    } else {
+        return QString();
+    }
 }
 
 QString GNUSocialApiMicroBlog::postUrl(Choqok::Account *account,  const QString &username,
@@ -208,7 +207,7 @@ void GNUSocialApiMicroBlog::createPostWithAttachment(Choqok::Account *theAccount
                          QStringLiteral("Content-Type: multipart/form-data; boundary=AaB03x"));
         job->addMetaData(QStringLiteral("customHTTPHeader"),
                          QStringLiteral("Authorization: ") +
-                         QLatin1String(authorizationHeader(account, url, QNetworkAccessManager::PostOperation)));
+                         QLatin1String(authorizationHeader(account, url, QOAuth::POST)));
         mCreatePostMap[ job ] = post;
         mJobsAccount[job] = theAccount;
         connect(job, SIGNAL(result(KJob*)),
@@ -287,9 +286,9 @@ void GNUSocialApiMicroBlog::doRequestFriendsScreenName(TwitterApiAccount *theAcc
     QUrl url = account->apiUrl();
     url = url.adjusted(QUrl::StripTrailingSlash);
     url.setPath(url.path() + QStringLiteral("/statuses/friends.%1").arg(format));
-    QVariantMap params;
+    QOAuth::ParamMap params;
     if (page > 1) {
-        params.insert(QLatin1String("page"), QByteArray::number(page));
+        params.insert("page", QByteArray::number(page));
         QUrlQuery urlQuery;
         urlQuery.addQueryItem(QLatin1String("page"), QString::number(page));
         url.setQuery(urlQuery);
@@ -302,7 +301,7 @@ void GNUSocialApiMicroBlog::doRequestFriendsScreenName(TwitterApiAccount *theAcc
     }
     job->addMetaData(QStringLiteral("customHTTPHeader"),
                      QStringLiteral("Authorization: ") +
-                     QLatin1String(authorizationHeader(account, url, QNetworkAccessManager::GetOperation, params)));
+                     QLatin1String(authorizationHeader(account, url, QOAuth::GET, params)));
     mJobsAccount[job] = theAccount;
     connect(job, SIGNAL(result(KJob*)), this, SLOT(slotRequestFriendsScreenName(KJob*)));
     job->start();
@@ -386,7 +385,7 @@ void GNUSocialApiMicroBlog::fetchConversation(Choqok::Account *theAccount, const
     }
     job->addMetaData(QStringLiteral("customHTTPHeader"),
                      QStringLiteral("Authorization: ") +
-                     QLatin1String(authorizationHeader(account, url, QNetworkAccessManager::GetOperation)));
+                     QLatin1String(authorizationHeader(account, url, QOAuth::GET)));
     mFetchConversationMap[ job ] = conversationId;
     mJobsAccount[ job ] = theAccount;
     connect(job, SIGNAL(result(KJob*)), this, SLOT(slotFetchConversation(KJob*)));

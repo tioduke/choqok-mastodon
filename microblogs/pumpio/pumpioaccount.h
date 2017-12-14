@@ -23,10 +23,10 @@
 #ifndef PUMPIOACCOUNT_H
 #define PUMPIOACCOUNT_H
 
+#include <QtOAuth/QtOAuth>
+
 #include "account.h"
 #include "choqoktypes.h"
-
-#include "pumpiooauth.h"
 
 class PumpIOMicroBlog;
 
@@ -65,7 +65,7 @@ public:
     void setTimelineNames(const QStringList &list);
 
     QString webfingerID();
-    PumpIOOAuth *oAuth();
+    QOAuth::Interface *oAuth();
 
 private:
     class Private;

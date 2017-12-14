@@ -36,7 +36,7 @@ public:
     Ur1_ca(QObject *parent, const QVariantList &args);
     ~Ur1_ca();
 
-    virtual QString shorten(const QString &url) override;
+    virtual QString shorten(const QString &url);
 };
 
 #endif

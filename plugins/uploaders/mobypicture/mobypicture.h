@@ -35,7 +35,7 @@ public:
     Mobypicture(QObject *parent, const QList< QVariant > &args);
     ~Mobypicture();
 
-    virtual void upload(const QUrl &localUrl, const QByteArray &medium, const QByteArray &mediumType) override;
+    virtual void upload(const QUrl &localUrl, const QByteArray &medium, const QByteArray &mediumType);
 
 protected Q_SLOTS:
     void slotUpload(KJob *job);

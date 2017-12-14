@@ -18,7 +18,6 @@ kcoreaddons_desktop_to_json(choqok_laconica choqok_laconica.desktop)
 target_link_libraries(choqok_laconica
 PUBLIC
     Qt5::Core
-    Qt5::NetworkAuth
     Qt5::Widgets
     KF5::CoreAddons
     KF5::I18n
@@ -26,6 +25,7 @@ PUBLIC
     KF5::KIOWidgets
     choqok
     gnusocialapihelper
+    ${QTOAUTH_LIBRARY}
 )
 
 install(TARGETS choqok_laconica DESTINATION ${PLUGIN_INSTALL_DIR})

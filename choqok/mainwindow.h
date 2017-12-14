@@ -80,7 +80,6 @@ private Q_SLOTS:
     void loadAllAccounts();
     void newPluginAvailable(Choqok::Plugin *plugin);
     void addBlog(Choqok::Account *account, bool isStartup = false);
-    void updateBlog(Choqok::Account *account, bool enabled);
     void removeBlog(const QString &alias);
     void setTimeLineUpdatesEnabled(bool isEnabled);
     void setNotificationsEnabled(bool isEnabled);
