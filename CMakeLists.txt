@@ -2,6 +2,8 @@ project(choqok)
 
 cmake_minimum_required(VERSION 2.8.12)
 
+set (QT_MIN_VERSION "5.8.0")
+
 find_package(ECM REQUIRED NO_MODULE)
 
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
@@ -12,10 +14,11 @@ include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(KDECMakeSettings)
 include(FeatureSummary)
 
-find_package(Qt5 CONFIG REQUIRED
+find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED
     Core
     DBus
     Network
+    NetworkAuth
     Widgets
 )
 find_package(KF5 REQUIRED
@@ -40,7 +43,6 @@ find_package(KF5 REQUIRED
 #option(QTINDICATE_DISABLE "Disable support for notifications via indicator")
 
 find_package(Qca-qt5 REQUIRED)
-find_package(QtOAuth 2.0.1 REQUIRED)
 
 #if(NOT QTINDICATE_DISABLE)
 #    find_package(QtIndicate)
@@ -73,6 +75,3 @@ include(ECMOptionalAddSubdirectory)
 ecm_optional_add_subdirectory( doc )
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
-
-find_package(KF5I18n CONFIG REQUIRED)
-ki18n_install(po)

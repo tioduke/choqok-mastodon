@@ -23,7 +23,7 @@
 #ifndef PUMPIOMICROBLOG_H
 #define PUMPIOMICROBLOG_H
 
-#include "QtOAuth/qoauth_namespace.h"
+#include <QNetworkAccessManager>
 
 #include "microblog.h"
 
@@ -72,7 +72,7 @@ public:
     virtual QString postUrl(Choqok::Account *account, const QString &username,
                             const QString &postId) const override;
 
-    virtual QString profileUrl(Choqok::Account *account, const QString &username) const override;
+    virtual QUrl profileUrl(Choqok::Account *account, const Choqok::User &user) const override;
 
     virtual void saveTimeline(Choqok::Account *account, const QString &timelineName,
                               const QList< Choqok::UI::PostWidget * > &timeline) override;
@@ -128,8 +128,8 @@ protected:
     static const QString outboxActivity;
 
     QString authorizationMetaData(PumpIOAccount *account, const QUrl &url,
-                                  const QOAuth::HttpMethod &method,
-                                  const QOAuth::ParamMap &map = QOAuth::ParamMap()) const;
+                                  QNetworkAccessManager::Operation method,
+                                  const QVariantMap &map = QVariantMap()) const;
 
     QString lastTimelineId(Choqok::Account *theAccount, const QString &timeline) const;
 

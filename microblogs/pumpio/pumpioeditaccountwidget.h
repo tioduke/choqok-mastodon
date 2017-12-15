@@ -27,8 +27,6 @@
 
 #include <QUrlQuery>
 
-#include <QtOAuth/QtOAuth>
-
 #include "ui_pumpioeditaccountwidget.h"
 
 class PumpIOAccount;
@@ -48,15 +46,16 @@ public:
 
 private Q_SLOTS:
     void authorizeUser();
+    void getPinCode();
 
 private:
-    bool isAuthenticated();
+    void setAuthenticated(bool authenticated);
     void loadTimelinesTable();
     void registerClient();
     void saveTimelinesTable();
 
     PumpIOAccount *m_account;
-    QOAuth::Interface *m_qoauth;
+    bool isAuthenticated;
 };
 
 #endif // PUMPIOEDITACCOUNTWIDGET_H

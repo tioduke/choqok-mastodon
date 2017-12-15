@@ -35,6 +35,7 @@ along with this program; if not, see http://www.gnu.org/licenses/
 #include "account.h"
 #include "accountmanager.h"
 #include "choqokappearancesettings.h"
+#include "choqokbehaviorsettings.h"
 #include "choqoktypes.h"
 #include "composerwidget.h"
 #include "editaccountwidget.h"
@@ -123,9 +124,10 @@ Choqok::UI::ComposerWidget *TwitterMicroBlog::createComposerWidget(Choqok::Accou
     return new TwitterComposerWidget(account, parent);
 }
 
-QString TwitterMicroBlog::profileUrl(Choqok::Account *, const QString &username) const
+QUrl TwitterMicroBlog::profileUrl(Choqok::Account *account, const Choqok::User &user) const
 {
-    return QStringLiteral("https://twitter.com/#!/%1").arg(username);
+    Q_UNUSED(account)
+    return QUrl::fromUserInput(QStringLiteral("https://twitter.com/%1").arg(user.userName));
 }
 
 QString TwitterMicroBlog::postUrl(Choqok::Account *, const QString &username,
@@ -198,12 +200,52 @@ void TwitterMicroBlog::createPostWithAttachment(Choqok::Account *theAccount, Cho
                          QStringLiteral("Content-Type: multipart/form-data; boundary=AaB03x"));
         job->addMetaData(QStringLiteral("customHTTPHeader"),
                          QStringLiteral("Authorization: ") +
-                         QLatin1String(authorizationHeader(account, url, QOAuth::POST)));
+                         QLatin1String(authorizationHeader(account, url, QNetworkAccessManager::PostOperation)));
         mCreatePostMap[ job ] = post;
         mJobsAccount[job] = theAccount;
         connect(job, SIGNAL(result(KJob*)),
                 SLOT(slotCreatePost(KJob*)));
         job->start();
+    }
+}
+
+void TwitterMicroBlog::verifyCredentials(TwitterAccount *theAccount)
+{
+    qCDebug(CHOQOK);
+    QUrl url = theAccount->apiUrl();
+    url.setPath(url.path() + QStringLiteral("/account/verify_credentials.json"));
+
+    KIO::StoredTransferJob *job = KIO::storedGet(url, KIO::Reload, KIO::HideProgressInfo) ;
+    if (!job) {
+        qCDebug(CHOQOK) << "Cannot create an http GET request!";
+        return;
+    }
+    job->addMetaData(QStringLiteral("customHTTPHeader"),
+                     QStringLiteral("Authorization: ") +
+                     QLatin1String(authorizationHeader(theAccount, url, QNetworkAccessManager::GetOperation)));
+    mJobsAccount[ job ] = theAccount;
+    connect(job, SIGNAL(result(KJob*)), this, SLOT(slotFetchVerifyCredentials(KJob*)));
+    job->start();
+}
+
+void TwitterMicroBlog::slotFetchVerifyCredentials(KJob *job)
+{
+    if (!job) {
+        qCWarning(CHOQOK) << "NULL Job returned";
+        return;
+    }
+    TwitterAccount *theAccount = qobject_cast<TwitterAccount *>(mJobsAccount.take(job));
+    if (job->error()) {
+        qCDebug(CHOQOK) << "Job Error:" << job->errorString();
+        Q_EMIT error(theAccount, Choqok::MicroBlog::CommunicationError,
+                     i18n("Verify credentials failed. %1", job->errorString()), Low);
+    } else {
+        KIO::StoredTransferJob *stj = qobject_cast<KIO::StoredTransferJob *> (job);
+        const QJsonDocument json = QJsonDocument::fromJson(stj->data());
+        if (!json.isNull()) {
+            theAccount->setUsername(json.object()[QLatin1String("screen_name")].toString());
+            theAccount->setUserId(json.object()[QLatin1String("id_str")].toString());
+        }
     }
 }
 
@@ -272,8 +314,8 @@ void TwitterMicroBlog::fetchUserLists(TwitterAccount *theAccount, const QString 
     QUrlQuery urlQuery;
     urlQuery.addQueryItem(QLatin1String("screen_name"), username);
     url.setQuery(urlQuery);
-    QOAuth::ParamMap params;
-    params.insert("screen_name", username.toLatin1());
+    QVariantMap params;
+    params.insert(QLatin1String("screen_name"), username.toLocal8Bit());
 
     KIO::StoredTransferJob *job = KIO::storedGet(url, KIO::Reload, KIO::HideProgressInfo) ;
     if (!job) {
@@ -283,7 +325,7 @@ void TwitterMicroBlog::fetchUserLists(TwitterAccount *theAccount, const QString 
 
     job->addMetaData(QStringLiteral("customHTTPHeader"),
                      QStringLiteral("Authorization: ") +
-                     QLatin1String(authorizationHeader(theAccount, url_for_oauth, QOAuth::GET, params)));
+                     QLatin1String(authorizationHeader(theAccount, url_for_oauth, QNetworkAccessManager::GetOperation, params)));
     mFetchUsersListMap[ job ] = username;
     mJobsAccount[ job ] = theAccount;
     connect(job, SIGNAL(result(KJob*)), this, SLOT(slotFetchUserLists(KJob*)));
@@ -430,6 +472,11 @@ Choqok::Post *TwitterMicroBlog::readPost(Choqok::Account *account, const QVarian
     post->replyToPostId = var[QLatin1String("in_reply_to_status_id_str")].toString();
     post->replyToUserId = var[QLatin1String("in_reply_to_user_id_str")].toString();
 
+    // Support for extended tweet_mode
+    if (var.contains(QLatin1String("full_text"))) {
+        post->content = var[QLatin1String("full_text")].toString();
+    }
+
     //postId is changed, regenerate link url
     post->link = postUrl(account, post->author.userName, post->postId);
 
@@ -437,6 +484,106 @@ Choqok::Post *TwitterMicroBlog::readPost(Choqok::Account *account, const QVarian
     post->author.userId = userMap[QLatin1String("id_str")].toString();
 
     return post;
+}
+
+void TwitterMicroBlog::fetchPost(Choqok::Account *theAccount, Choqok::Post *post)
+{
+    qCDebug(CHOQOK);
+    if (!post || post->postId.isEmpty()) {
+        return;
+    }
+    TwitterAccount *account = qobject_cast<TwitterAccount *>(theAccount);
+    QUrl url = account->apiUrl();
+    url.setPath(url.path() + QStringLiteral("/statuses/show/%1.%2").arg(post->postId).arg(format));
+
+    QUrl tmpUrl(url);
+    QUrlQuery urlQuery;
+    urlQuery.addQueryItem(QLatin1String("tweet_mode"), QLatin1String("extended"));
+    url.setQuery(urlQuery);
+
+    KIO::StoredTransferJob *job = KIO::storedGet(url, KIO::Reload, KIO::HideProgressInfo) ;
+    if (!job) {
+        qCDebug(CHOQOK) << "Cannot create an http GET request!";
+//         QString errMsg = i18n ( "Fetching the new post failed. Cannot create an HTTP GET request."
+//                                 "Please check your KDE installation." );
+//         emit errorPost ( theAccount, post, Choqok::MicroBlog::OtherError, errMsg, Low );
+        return;
+    }
+    job->addMetaData(QStringLiteral("customHTTPHeader"),
+                     QStringLiteral("Authorization: ") +
+                     QLatin1String(authorizationHeader(account, tmpUrl, QNetworkAccessManager::GetOperation)));
+    mFetchPostMap[ job ] = post;
+    mJobsAccount[ job ] = theAccount;
+    connect(job, SIGNAL(result(KJob*)), this, SLOT(slotFetchPost(KJob*)));
+    job->start();
+}
+
+void TwitterMicroBlog::requestTimeLine(Choqok::Account *theAccount, QString type,
+        QString latestStatusId, int page, QString maxId)
+{
+    qCDebug(CHOQOK);
+    TwitterAccount *account = qobject_cast<TwitterAccount *>(theAccount);
+    QUrl url = account->apiUrl();
+    url.setPath(url.path() + timelineApiPath[type].arg(format));
+    QUrl tmpUrl(url);
+
+    QUrlQuery urlQuery;
+    QVariantMap params;
+    // needed because lists have different parameter names but
+    // returned timelines have the same JSON format
+    if (timelineApiPath[type].contains(QLatin1String("lists/statuses"))) {
+
+        // type contains @username/timelinename
+        const QString slug = type.mid(type.indexOf(QLatin1String("/")) + 1);
+        urlQuery.addQueryItem(QLatin1String("slug"), slug);
+        params.insert(QLatin1String("slug"), slug.toLatin1());
+
+        const QString owner = type.mid(1, type.indexOf(QLatin1String("/")) - 1);
+        urlQuery.addQueryItem(QLatin1String("owner_screen_name"), owner);
+        params.insert(QLatin1String("owner_screen_name"), owner.toLatin1());
+    } else {
+        int countOfPost = Choqok::BehaviorSettings::countOfPosts();
+        if (!latestStatusId.isEmpty()) {
+            urlQuery.addQueryItem(QLatin1String("since_id"), latestStatusId);
+            params.insert(QLatin1String("since_id"), latestStatusId.toLatin1());
+            countOfPost = 200;
+        }
+
+        urlQuery.addQueryItem(QLatin1String("count"), QString::number(countOfPost));
+        params.insert(QLatin1String("count"), QByteArray::number(countOfPost));
+
+        if (!maxId.isEmpty()) {
+            urlQuery.addQueryItem(QLatin1String("max_id"), maxId);
+            params.insert(QLatin1String("max_id"), maxId.toLatin1());
+        }
+
+        if (page) {
+            urlQuery.addQueryItem(QLatin1String("page"), QString::number(page));
+            params.insert(QLatin1String("page"), QByteArray::number(page));
+        }
+    }
+
+    urlQuery.addQueryItem(QLatin1String("tweet_mode"), QLatin1String("extended"));
+    params.insert(QLatin1String("tweet_mode"), QLatin1String("extended"));
+
+    url.setQuery(urlQuery);
+
+    qCDebug(CHOQOK) << "Latest" << type << "Id:" << latestStatusId;// << "apiReq:" << url;
+
+    KIO::StoredTransferJob *job = KIO::storedGet(url, KIO::Reload, KIO::HideProgressInfo) ;
+    if (!job) {
+        qCDebug(CHOQOK) << "Cannot create an http GET request!";
+//         QString errMsg = i18n ( "Cannot create an http GET request. Please check your KDE installation." );
+//         emit error ( theAccount, OtherError, errMsg, Low );
+        return;
+    }
+    job->addMetaData(QStringLiteral("customHTTPHeader"),
+                     QStringLiteral("Authorization: ")
+                     + QLatin1String(authorizationHeader(account, tmpUrl, QNetworkAccessManager::GetOperation, params)));
+    mRequestTimelineMap[job] = type;
+    mJobsAccount[job] = theAccount;
+    connect(job, SIGNAL(result(KJob*)), this, SLOT(slotRequestTimeline(KJob*)));
+    job->start();
 }
 
 #include "twittermicroblog.moc"

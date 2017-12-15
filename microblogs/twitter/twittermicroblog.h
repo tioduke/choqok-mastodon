@@ -54,7 +54,9 @@ public:
 
     virtual QString postUrl(Choqok::Account *account, const QString &username, const QString &postId) const override;
 
-    virtual QString profileUrl(Choqok::Account *account, const QString &username) const override;
+    virtual QUrl profileUrl(Choqok::Account *account, const Choqok::User &user) const override;
+
+    virtual void fetchPost(Choqok::Account *theAccount, Choqok::Post *post) override;
 
     virtual TwitterApiSearch *searchBackend() override;
 
@@ -69,6 +71,9 @@ public:
     virtual Choqok::TimelineInfo *timelineInfo(const QString &timelineName) override;
 
     void createPostWithAttachment(Choqok::Account *theAccount, Choqok::Post *post, const QString &mediumToAttach = QString());
+
+    void verifyCredentials(TwitterAccount *theAccount);
+
 Q_SIGNALS:
     void userLists(Choqok::Account *theAccount, const QString &username, QList<Twitter::List> lists);
 
@@ -79,8 +84,11 @@ public Q_SLOTS:
 protected Q_SLOTS:
     void showListDialog(TwitterApiAccount *theAccount = 0);
     void slotFetchUserLists(KJob *job);
+    void slotFetchVerifyCredentials(KJob *job);
 
 protected:
+    virtual void requestTimeLine(Choqok::Account *theAccount, QString timelineName,
+                                 QString sincePostId, int page = 1, QString maxId = QString()) override;
     using TwitterApiMicroBlog::readDirectMessage;
     virtual Choqok::Post *readDirectMessage(Choqok::Account *theAccount, const QVariantMap &var) override;
     using TwitterApiMicroBlog::readPost;
