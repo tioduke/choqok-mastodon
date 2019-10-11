@@ -1,4 +1,4 @@
-add_subdirectory(betternotify)
+#add_subdirectory(betternotify)
 add_subdirectory(filter)
 add_subdirectory(imagepreview)
 add_subdirectory(imstatus)
